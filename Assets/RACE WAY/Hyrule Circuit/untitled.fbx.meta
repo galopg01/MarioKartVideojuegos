@@ -1,0 +1,911 @@
+fileFormatVersion: 2
+guid: 27e99054afe53b84da61efc880e526c0
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: 25_-hyDepthShadow_0.5_0_0_0
+    100002: 25_Barrel10_0.5_0_0
+    100004: 25_BCFlagL10_0.5_0_0
+    100006: 25_bh14_0.5_0_0_CasIn_Wall0_0.5_0_0
+    100008: 25_carpetArea1_0.5_0_0_0
+    100010: 25_carpetArea2_0.5_0_0_0_0
+    100012: 25_CasOutdeco2_0.5_0_0_0_0
+    100014: 25_CasOutRoyalMark_0.5_0_0_0
+    100016: 25_DashJump11_0.5_0_0
+    100018: 25_EntranceGate blackiron_0.5_0_0_0
+    100020: 25_EntranceGate IronObj_0.5_0_0
+    100022: 25_f16hyIron_0.5_0_0_0.5_0_0
+    100024: 25_Fence2_0.5_0_0_hy_CasOut_Fence_0.5_0_0
+    100026: 25_firewood1hyTownObj_0.5_0_0_0.5_0_0
+    100028: 25_FlagRope1_0.5_0_0
+    100030: 25_floweryellowA011_0.5_0_0__hy_Flowers_0.5_0_0
+    100032: 25_GrassB50_0.5_0_0_di_Grass_B_0.5_0_0
+    100034: 25_High1hycliffB01_0.5_0_0_0.5_0_0
+    100036: 25_houseroof2_0.5_0_0
+    100038: 25_hyblock0_0.5_0_0_0_0
+    100040: 25_hyblock0Area2_0.5_0_0_0_0
+    100042: 25_hyblock1_0.5_0_0_0_0
+    100044: 25_hyCannon_0.5_0_0_0
+    100046: 25_hycarpet_0.5_0_0_0
+    100048: 25_hyCasInWall1Ceiling_0.5_0_0_0.5_0_0
+    100050: 25_hyCasInWall2_0.5_0_0_0.5_0_0
+    100052: 25_hyCasInWall3_0.5_0_0_0.5_0_0
+    100054: 25_hyCasOutdeco2_0.5_0_0_0_0
+    100056: 25_hyCasOutdeco2Area2_0.5_0_0_0.5_0_0
+    100058: 25_hyCasOutwall0_0.5_0_0_0_0
+    100060: 25_hyCasOutwall1_0.5_0_0_2_0.5_0_0
+    100062: 25_hyCasOutwall3_0.5_0_0_0.5_0_0
+    100064: 25_hycaveA01_0.5_0_0_0
+    100066: 25_hycliffB01Edge_0.5_0_0_0_0
+    100068: 25_hycmnwood2_0.5_0_0_0.5_0_0
+    100070: 25_hycmnwood3_0.5_0_0_0_0
+    100072: 25_hycmnwood_0.5_0_0_0.5_0_0
+    100074: 25_hyhouse_0.5_0_0_0_0
+    100076: 25_hyhouseroof_0.5_0_0_0
+    100078: 25_hyhouseWall_0.5_0_0_0.5_0_0
+    100080: 25_hyJumpPanelIron_0.5_0_0_0.5_0_0
+    100082: 25_hyKaidan_0.5_0_0_0_0
+    100084: 25_hyroad2_0.5_0_0_0_0
+    100086: 25_hyroad3_0.5_0_0_0_0
+    100088: 25_hytuta01_0.5_0_0_0
+    100090: 25_InSideWallhy_0.5_0_0_CasIn_Wall1_0.5_0_0
+    100092: 25_IsekiHasiraEx_0.5_0_0__hy_pole_0.5_0_0
+    100094: 25_JumpBase00_0.5_0_0_hy_Block_Moss_0.5_0_0
+    100096: 25_JumpPanelWood_0.5_0_0_0
+    100098: 25_Kusa02_0.5_0_0_kusa02_0.5_0_0
+    100100: 25_L10_0.5_0_0_CasOut_wall1_0.5_0_0
+    100102: 25_L12_0.5_0_0_StartGate_0.5_0_0
+    100104: 25_Lake2efsea_0.5_0_0_0.5_0_0
+    100106: 25_OutsadeWall_0.5_0_0_CasOut_wall3_0.5_0_0
+    100108: 25_PanelFlame_0.5_0_0
+    100110: 25_Roadstart1hy_0.5_0_0_Startline_0.5_0_0
+    100112: 25_Torch10_0.5_0_0_Area2_0.5_0_0
+    100114: 25_Torch19_0.5_0_0_0.5_0_0
+    100116: 25_Torch53IronObj_0.5_0_0_Area2_0.5_0_0
+    100118: 25_VolcaneRockMt030_0.5_0_0_DethMountain_0.5_0_0
+    100120: 31_TorchCM_0.5_0_0_0_0
+    100122: 39_CasInsideEmiCM_0.5_0_0_0_0
+    100124: 39_hyCasInside_0.5_0_0_0_0
+    100126: 39_hyCasInsideEmi_0.5_0_0_0.5_0_0
+    100128: 39_hyCasInWindow_0.5_0_0_0_0
+    100130: 39_hyCasInWindowCM_0.5_0_0_0.5_0_0
+    100132: 39_hyCasOutWindow_0.5_0_0_0_0
+    100134: 39_hyroad4_0.5_0_0_0_0
+    100136: 39_hyroad4Area2off_0.5_0_0_0_0
+    100138: 39_hyroad4InCastle_0.5_0_0_0_0
+    100140: 39_hyroad4InCastleCM_0.5_0_0_0.5_0_0
+    100142: 39_L43_0.5_0_0_CasInside_0_Area0_0.5_0_0
+    100144: 8_glideboardef_0.5_0_0_0.5_0_0
+    100146: 8_grassnuki_0.5_0_0_0
+    100148: 8_Highhygrass_0.5_0_0_OutSide_0.5_0_0
+    100150: 8_JumpBase01_0.5_0_0_hy_roadC_0.5_0_0
+    100152: 8_Roadhyroad_0.5_0_0_0.5_0_0
+    100154: 8_TordBench010_0.5_0_0_hwood03_0.5_0_0
+    100156: 9_CasOutroof2_0.5_0_0_0
+    100158: 9_Depth Shadow Leaf_0.5_0_0
+    100160: 9_FakeLeaf2_0.5_0_0__hy_FakeLeaf1_0.5_0_0
+    100162: 9_forest1ForestEnkei_0.5_0_0_0_0
+    100164: 9_gravityboardef_0.5_0_0_0.5_0_0
+    100166: 9_hyCasOutroof_0.5_0_0_0.5_0_0
+    100168: 9_hystraw_0.5_0_0_0
+    100170: 9_Kusa01_0.5_0_0_kusa01_0.5_0_0
+    100172: 9_Mountain03VolcaneRockM013_0.5_0_0__mm_moutain01_0.5_0_0
+    100174: 9_TreeLow_0.5_0_0_FakeLeaf_0.5_0_0
+    100176: 9_TreeMiddle01_0.5_0_0_TreeA_Leaf_0.5_0_0
+    100178: 9_TreeMiddle02_0.5_0_0_TreeB_Base_0.5_0_0
+    100180: Armature
+    100182: root
+    100184: root_end
+    100186: //RootNode
+    400000: 25_-hyDepthShadow_0.5_0_0_0
+    400002: 25_Barrel10_0.5_0_0
+    400004: 25_BCFlagL10_0.5_0_0
+    400006: 25_bh14_0.5_0_0_CasIn_Wall0_0.5_0_0
+    400008: 25_carpetArea1_0.5_0_0_0
+    400010: 25_carpetArea2_0.5_0_0_0_0
+    400012: 25_CasOutdeco2_0.5_0_0_0_0
+    400014: 25_CasOutRoyalMark_0.5_0_0_0
+    400016: 25_DashJump11_0.5_0_0
+    400018: 25_EntranceGate blackiron_0.5_0_0_0
+    400020: 25_EntranceGate IronObj_0.5_0_0
+    400022: 25_f16hyIron_0.5_0_0_0.5_0_0
+    400024: 25_Fence2_0.5_0_0_hy_CasOut_Fence_0.5_0_0
+    400026: 25_firewood1hyTownObj_0.5_0_0_0.5_0_0
+    400028: 25_FlagRope1_0.5_0_0
+    400030: 25_floweryellowA011_0.5_0_0__hy_Flowers_0.5_0_0
+    400032: 25_GrassB50_0.5_0_0_di_Grass_B_0.5_0_0
+    400034: 25_High1hycliffB01_0.5_0_0_0.5_0_0
+    400036: 25_houseroof2_0.5_0_0
+    400038: 25_hyblock0_0.5_0_0_0_0
+    400040: 25_hyblock0Area2_0.5_0_0_0_0
+    400042: 25_hyblock1_0.5_0_0_0_0
+    400044: 25_hyCannon_0.5_0_0_0
+    400046: 25_hycarpet_0.5_0_0_0
+    400048: 25_hyCasInWall1Ceiling_0.5_0_0_0.5_0_0
+    400050: 25_hyCasInWall2_0.5_0_0_0.5_0_0
+    400052: 25_hyCasInWall3_0.5_0_0_0.5_0_0
+    400054: 25_hyCasOutdeco2_0.5_0_0_0_0
+    400056: 25_hyCasOutdeco2Area2_0.5_0_0_0.5_0_0
+    400058: 25_hyCasOutwall0_0.5_0_0_0_0
+    400060: 25_hyCasOutwall1_0.5_0_0_2_0.5_0_0
+    400062: 25_hyCasOutwall3_0.5_0_0_0.5_0_0
+    400064: 25_hycaveA01_0.5_0_0_0
+    400066: 25_hycliffB01Edge_0.5_0_0_0_0
+    400068: 25_hycmnwood2_0.5_0_0_0.5_0_0
+    400070: 25_hycmnwood3_0.5_0_0_0_0
+    400072: 25_hycmnwood_0.5_0_0_0.5_0_0
+    400074: 25_hyhouse_0.5_0_0_0_0
+    400076: 25_hyhouseroof_0.5_0_0_0
+    400078: 25_hyhouseWall_0.5_0_0_0.5_0_0
+    400080: 25_hyJumpPanelIron_0.5_0_0_0.5_0_0
+    400082: 25_hyKaidan_0.5_0_0_0_0
+    400084: 25_hyroad2_0.5_0_0_0_0
+    400086: 25_hyroad3_0.5_0_0_0_0
+    400088: 25_hytuta01_0.5_0_0_0
+    400090: 25_InSideWallhy_0.5_0_0_CasIn_Wall1_0.5_0_0
+    400092: 25_IsekiHasiraEx_0.5_0_0__hy_pole_0.5_0_0
+    400094: 25_JumpBase00_0.5_0_0_hy_Block_Moss_0.5_0_0
+    400096: 25_JumpPanelWood_0.5_0_0_0
+    400098: 25_Kusa02_0.5_0_0_kusa02_0.5_0_0
+    400100: 25_L10_0.5_0_0_CasOut_wall1_0.5_0_0
+    400102: 25_L12_0.5_0_0_StartGate_0.5_0_0
+    400104: 25_Lake2efsea_0.5_0_0_0.5_0_0
+    400106: 25_OutsadeWall_0.5_0_0_CasOut_wall3_0.5_0_0
+    400108: 25_PanelFlame_0.5_0_0
+    400110: 25_Roadstart1hy_0.5_0_0_Startline_0.5_0_0
+    400112: 25_Torch10_0.5_0_0_Area2_0.5_0_0
+    400114: 25_Torch19_0.5_0_0_0.5_0_0
+    400116: 25_Torch53IronObj_0.5_0_0_Area2_0.5_0_0
+    400118: 25_VolcaneRockMt030_0.5_0_0_DethMountain_0.5_0_0
+    400120: 31_TorchCM_0.5_0_0_0_0
+    400122: 39_CasInsideEmiCM_0.5_0_0_0_0
+    400124: 39_hyCasInside_0.5_0_0_0_0
+    400126: 39_hyCasInsideEmi_0.5_0_0_0.5_0_0
+    400128: 39_hyCasInWindow_0.5_0_0_0_0
+    400130: 39_hyCasInWindowCM_0.5_0_0_0.5_0_0
+    400132: 39_hyCasOutWindow_0.5_0_0_0_0
+    400134: 39_hyroad4_0.5_0_0_0_0
+    400136: 39_hyroad4Area2off_0.5_0_0_0_0
+    400138: 39_hyroad4InCastle_0.5_0_0_0_0
+    400140: 39_hyroad4InCastleCM_0.5_0_0_0.5_0_0
+    400142: 39_L43_0.5_0_0_CasInside_0_Area0_0.5_0_0
+    400144: 8_glideboardef_0.5_0_0_0.5_0_0
+    400146: 8_grassnuki_0.5_0_0_0
+    400148: 8_Highhygrass_0.5_0_0_OutSide_0.5_0_0
+    400150: 8_JumpBase01_0.5_0_0_hy_roadC_0.5_0_0
+    400152: 8_Roadhyroad_0.5_0_0_0.5_0_0
+    400154: 8_TordBench010_0.5_0_0_hwood03_0.5_0_0
+    400156: 9_CasOutroof2_0.5_0_0_0
+    400158: 9_Depth Shadow Leaf_0.5_0_0
+    400160: 9_FakeLeaf2_0.5_0_0__hy_FakeLeaf1_0.5_0_0
+    400162: 9_forest1ForestEnkei_0.5_0_0_0_0
+    400164: 9_gravityboardef_0.5_0_0_0.5_0_0
+    400166: 9_hyCasOutroof_0.5_0_0_0.5_0_0
+    400168: 9_hystraw_0.5_0_0_0
+    400170: 9_Kusa01_0.5_0_0_kusa01_0.5_0_0
+    400172: 9_Mountain03VolcaneRockM013_0.5_0_0__mm_moutain01_0.5_0_0
+    400174: 9_TreeLow_0.5_0_0_FakeLeaf_0.5_0_0
+    400176: 9_TreeMiddle01_0.5_0_0_TreeA_Leaf_0.5_0_0
+    400178: 9_TreeMiddle02_0.5_0_0_TreeB_Base_0.5_0_0
+    400180: Armature
+    400182: root
+    400184: root_end
+    400186: //RootNode
+    4300000: 9_hystraw_0.5_0_0_0
+    4300002: 9_hyCasOutroof_0.5_0_0_0.5_0_0
+    4300004: 9_gravityboardef_0.5_0_0_0.5_0_0
+    4300006: 9_forest1ForestEnkei_0.5_0_0_0_0
+    4300008: 9_TreeMiddle02_0.5_0_0_TreeB_Base_0.5_0_0
+    4300010: 9_TreeMiddle01_0.5_0_0_TreeA_Leaf_0.5_0_0
+    4300012: 9_TreeLow_0.5_0_0_FakeLeaf_0.5_0_0
+    4300014: 9_Mountain03VolcaneRockM013_0.5_0_0__mm_moutain01_0.5_0_0
+    4300016: 9_Kusa01_0.5_0_0_kusa01_0.5_0_0
+    4300018: 9_FakeLeaf2_0.5_0_0__hy_FakeLeaf1_0.5_0_0
+    4300020: 9_Depth Shadow Leaf_0.5_0_0
+    4300022: 9_CasOutroof2_0.5_0_0_0
+    4300024: 8_grassnuki_0.5_0_0_0
+    4300026: 8_glideboardef_0.5_0_0_0.5_0_0
+    4300028: 8_TordBench010_0.5_0_0_hwood03_0.5_0_0
+    4300030: 8_Roadhyroad_0.5_0_0_0.5_0_0
+    4300032: 8_JumpBase01_0.5_0_0_hy_roadC_0.5_0_0
+    4300034: 8_Highhygrass_0.5_0_0_OutSide_0.5_0_0
+    4300036: 39_hyroad4_0.5_0_0_0_0
+    4300038: 39_hyroad4InCastle_0.5_0_0_0_0
+    4300040: 39_hyroad4InCastleCM_0.5_0_0_0.5_0_0
+    4300042: 39_hyroad4Area2off_0.5_0_0_0_0
+    4300044: 39_hyCasOutWindow_0.5_0_0_0_0
+    4300046: 39_hyCasInside_0.5_0_0_0_0
+    4300048: 39_hyCasInsideEmi_0.5_0_0_0.5_0_0
+    4300050: 39_hyCasInWindow_0.5_0_0_0_0
+    4300052: 39_hyCasInWindowCM_0.5_0_0_0.5_0_0
+    4300054: 39_L43_0.5_0_0_CasInside_0_Area0_0.5_0_0
+    4300056: 39_CasInsideEmiCM_0.5_0_0_0_0
+    4300058: 31_TorchCM_0.5_0_0_0_0
+    4300060: 25_hytuta01_0.5_0_0_0
+    4300062: 25_hyroad3_0.5_0_0_0_0
+    4300064: 25_hyroad2_0.5_0_0_0_0
+    4300066: 25_hyhouseroof_0.5_0_0_0
+    4300068: 25_hyhouse_0.5_0_0_0_0
+    4300070: 25_hyhouseWall_0.5_0_0_0.5_0_0
+    4300072: 25_hycmnwood_0.5_0_0_0.5_0_0
+    4300074: 25_hycmnwood3_0.5_0_0_0_0
+    4300076: 25_hycmnwood2_0.5_0_0_0.5_0_0
+    4300078: 25_hycliffB01Edge_0.5_0_0_0_0
+    4300080: 25_hycaveA01_0.5_0_0_0
+    4300082: 25_hycarpet_0.5_0_0_0
+    4300084: 25_hyblock1_0.5_0_0_0_0
+    4300086: 25_hyblock0_0.5_0_0_0_0
+    4300088: 25_hyblock0Area2_0.5_0_0_0_0
+    4300090: 25_hyKaidan_0.5_0_0_0_0
+    4300092: 25_hyJumpPanelIron_0.5_0_0_0.5_0_0
+    4300094: 25_hyCasOutwall3_0.5_0_0_0.5_0_0
+    4300096: 25_hyCasOutwall1_0.5_0_0_2_0.5_0_0
+    4300098: 25_hyCasOutwall0_0.5_0_0_0_0
+    4300100: 25_hyCasOutdeco2_0.5_0_0_0_0
+    4300102: 25_hyCasOutdeco2Area2_0.5_0_0_0.5_0_0
+    4300104: 25_hyCasInWall3_0.5_0_0_0.5_0_0
+    4300106: 25_hyCasInWall2_0.5_0_0_0.5_0_0
+    4300108: 25_hyCasInWall1Ceiling_0.5_0_0_0.5_0_0
+    4300110: 25_hyCannon_0.5_0_0_0
+    4300112: 25_houseroof2_0.5_0_0
+    4300114: 25_floweryellowA011_0.5_0_0__hy_Flowers_0.5_0_0
+    4300116: 25_firewood1hyTownObj_0.5_0_0_0.5_0_0
+    4300118: 25_f16hyIron_0.5_0_0_0.5_0_0
+    4300120: 25_carpetArea2_0.5_0_0_0_0
+    4300122: 25_carpetArea1_0.5_0_0_0
+    4300124: 25_bh14_0.5_0_0_CasIn_Wall0_0.5_0_0
+    4300126: 25_VolcaneRockMt030_0.5_0_0_DethMountain_0.5_0_0
+    4300128: 25_Torch53IronObj_0.5_0_0_Area2_0.5_0_0
+    4300130: 25_Torch19_0.5_0_0_0.5_0_0
+    4300132: 25_Torch10_0.5_0_0_Area2_0.5_0_0
+    4300134: 25_Roadstart1hy_0.5_0_0_Startline_0.5_0_0
+    4300136: 25_PanelFlame_0.5_0_0
+    4300138: 25_OutsadeWall_0.5_0_0_CasOut_wall3_0.5_0_0
+    4300140: 25_Lake2efsea_0.5_0_0_0.5_0_0
+    4300142: 25_L12_0.5_0_0_StartGate_0.5_0_0
+    4300144: 25_L10_0.5_0_0_CasOut_wall1_0.5_0_0
+    4300146: 25_Kusa02_0.5_0_0_kusa02_0.5_0_0
+    4300148: 25_JumpPanelWood_0.5_0_0_0
+    4300150: 25_JumpBase00_0.5_0_0_hy_Block_Moss_0.5_0_0
+    4300152: 25_IsekiHasiraEx_0.5_0_0__hy_pole_0.5_0_0
+    4300154: 25_InSideWallhy_0.5_0_0_CasIn_Wall1_0.5_0_0
+    4300156: 25_High1hycliffB01_0.5_0_0_0.5_0_0
+    4300158: 25_GrassB50_0.5_0_0_di_Grass_B_0.5_0_0
+    4300160: 25_FlagRope1_0.5_0_0
+    4300162: 25_Fence2_0.5_0_0_hy_CasOut_Fence_0.5_0_0
+    4300164: 25_EntranceGate blackiron_0.5_0_0_0
+    4300166: 25_EntranceGate IronObj_0.5_0_0
+    4300168: 25_DashJump11_0.5_0_0
+    4300170: 25_CasOutdeco2_0.5_0_0_0_0
+    4300172: 25_CasOutRoyalMark_0.5_0_0_0
+    4300174: 25_Barrel10_0.5_0_0
+    4300176: 25_BCFlagL10_0.5_0_0
+    4300178: 25_-hyDepthShadow_0.5_0_0_0
+    9500000: //RootNode
+    13700000: 25_-hyDepthShadow_0.5_0_0_0
+    13700002: 25_Barrel10_0.5_0_0
+    13700004: 25_BCFlagL10_0.5_0_0
+    13700006: 25_bh14_0.5_0_0_CasIn_Wall0_0.5_0_0
+    13700008: 25_carpetArea1_0.5_0_0_0
+    13700010: 25_carpetArea2_0.5_0_0_0_0
+    13700012: 25_CasOutdeco2_0.5_0_0_0_0
+    13700014: 25_CasOutRoyalMark_0.5_0_0_0
+    13700016: 25_DashJump11_0.5_0_0
+    13700018: 25_EntranceGate blackiron_0.5_0_0_0
+    13700020: 25_EntranceGate IronObj_0.5_0_0
+    13700022: 25_f16hyIron_0.5_0_0_0.5_0_0
+    13700024: 25_Fence2_0.5_0_0_hy_CasOut_Fence_0.5_0_0
+    13700026: 25_firewood1hyTownObj_0.5_0_0_0.5_0_0
+    13700028: 25_FlagRope1_0.5_0_0
+    13700030: 25_floweryellowA011_0.5_0_0__hy_Flowers_0.5_0_0
+    13700032: 25_GrassB50_0.5_0_0_di_Grass_B_0.5_0_0
+    13700034: 25_High1hycliffB01_0.5_0_0_0.5_0_0
+    13700036: 25_houseroof2_0.5_0_0
+    13700038: 25_hyblock0_0.5_0_0_0_0
+    13700040: 25_hyblock0Area2_0.5_0_0_0_0
+    13700042: 25_hyblock1_0.5_0_0_0_0
+    13700044: 25_hyCannon_0.5_0_0_0
+    13700046: 25_hycarpet_0.5_0_0_0
+    13700048: 25_hyCasInWall1Ceiling_0.5_0_0_0.5_0_0
+    13700050: 25_hyCasInWall2_0.5_0_0_0.5_0_0
+    13700052: 25_hyCasInWall3_0.5_0_0_0.5_0_0
+    13700054: 25_hyCasOutdeco2_0.5_0_0_0_0
+    13700056: 25_hyCasOutdeco2Area2_0.5_0_0_0.5_0_0
+    13700058: 25_hyCasOutwall0_0.5_0_0_0_0
+    13700060: 25_hyCasOutwall1_0.5_0_0_2_0.5_0_0
+    13700062: 25_hyCasOutwall3_0.5_0_0_0.5_0_0
+    13700064: 25_hycaveA01_0.5_0_0_0
+    13700066: 25_hycliffB01Edge_0.5_0_0_0_0
+    13700068: 25_hycmnwood2_0.5_0_0_0.5_0_0
+    13700070: 25_hycmnwood3_0.5_0_0_0_0
+    13700072: 25_hycmnwood_0.5_0_0_0.5_0_0
+    13700074: 25_hyhouse_0.5_0_0_0_0
+    13700076: 25_hyhouseroof_0.5_0_0_0
+    13700078: 25_hyhouseWall_0.5_0_0_0.5_0_0
+    13700080: 25_hyJumpPanelIron_0.5_0_0_0.5_0_0
+    13700082: 25_hyKaidan_0.5_0_0_0_0
+    13700084: 25_hyroad2_0.5_0_0_0_0
+    13700086: 25_hyroad3_0.5_0_0_0_0
+    13700088: 25_hytuta01_0.5_0_0_0
+    13700090: 25_InSideWallhy_0.5_0_0_CasIn_Wall1_0.5_0_0
+    13700092: 25_IsekiHasiraEx_0.5_0_0__hy_pole_0.5_0_0
+    13700094: 25_JumpBase00_0.5_0_0_hy_Block_Moss_0.5_0_0
+    13700096: 25_JumpPanelWood_0.5_0_0_0
+    13700098: 25_Kusa02_0.5_0_0_kusa02_0.5_0_0
+    13700100: 25_L10_0.5_0_0_CasOut_wall1_0.5_0_0
+    13700102: 25_L12_0.5_0_0_StartGate_0.5_0_0
+    13700104: 25_Lake2efsea_0.5_0_0_0.5_0_0
+    13700106: 25_OutsadeWall_0.5_0_0_CasOut_wall3_0.5_0_0
+    13700108: 25_PanelFlame_0.5_0_0
+    13700110: 25_Roadstart1hy_0.5_0_0_Startline_0.5_0_0
+    13700112: 25_Torch10_0.5_0_0_Area2_0.5_0_0
+    13700114: 25_Torch19_0.5_0_0_0.5_0_0
+    13700116: 25_Torch53IronObj_0.5_0_0_Area2_0.5_0_0
+    13700118: 25_VolcaneRockMt030_0.5_0_0_DethMountain_0.5_0_0
+    13700120: 31_TorchCM_0.5_0_0_0_0
+    13700122: 39_CasInsideEmiCM_0.5_0_0_0_0
+    13700124: 39_hyCasInside_0.5_0_0_0_0
+    13700126: 39_hyCasInsideEmi_0.5_0_0_0.5_0_0
+    13700128: 39_hyCasInWindow_0.5_0_0_0_0
+    13700130: 39_hyCasInWindowCM_0.5_0_0_0.5_0_0
+    13700132: 39_hyCasOutWindow_0.5_0_0_0_0
+    13700134: 39_hyroad4_0.5_0_0_0_0
+    13700136: 39_hyroad4Area2off_0.5_0_0_0_0
+    13700138: 39_hyroad4InCastle_0.5_0_0_0_0
+    13700140: 39_hyroad4InCastleCM_0.5_0_0_0.5_0_0
+    13700142: 39_L43_0.5_0_0_CasInside_0_Area0_0.5_0_0
+    13700144: 8_glideboardef_0.5_0_0_0.5_0_0
+    13700146: 8_grassnuki_0.5_0_0_0
+    13700148: 8_Highhygrass_0.5_0_0_OutSide_0.5_0_0
+    13700150: 8_JumpBase01_0.5_0_0_hy_roadC_0.5_0_0
+    13700152: 8_Roadhyroad_0.5_0_0_0.5_0_0
+    13700154: 8_TordBench010_0.5_0_0_hwood03_0.5_0_0
+    13700156: 9_CasOutroof2_0.5_0_0_0
+    13700158: 9_Depth Shadow Leaf_0.5_0_0
+    13700160: 9_FakeLeaf2_0.5_0_0__hy_FakeLeaf1_0.5_0_0
+    13700162: 9_forest1ForestEnkei_0.5_0_0_0_0
+    13700164: 9_gravityboardef_0.5_0_0_0.5_0_0
+    13700166: 9_hyCasOutroof_0.5_0_0_0.5_0_0
+    13700168: 9_hystraw_0.5_0_0_0
+    13700170: 9_Kusa01_0.5_0_0_kusa01_0.5_0_0
+    13700172: 9_Mountain03VolcaneRockM013_0.5_0_0__mm_moutain01_0.5_0_0
+    13700174: 9_TreeLow_0.5_0_0_FakeLeaf_0.5_0_0
+    13700176: 9_TreeMiddle01_0.5_0_0_TreeA_Leaf_0.5_0_0
+    13700178: 9_TreeMiddle02_0.5_0_0_TreeB_Base_0.5_0_0
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_-hyDepthShadow_0.5_0_0_0
+    second: {fileID: 2100000, guid: 4fc6859dd10586e49b83eb0441dbb345, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_BCFlagL10_0.5_0_0
+    second: {fileID: 2100000, guid: 46269c7f62da3ae46b209340aecffd58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_Barrel10_0.5_0_0
+    second: {fileID: 2100000, guid: d7d8f89ba61dda34a9e14173fe3b8d6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_CasOutRoyalMark_0.5_0_0_0
+    second: {fileID: 2100000, guid: e2bf1279db7a8d744bb9552de578e6c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_CasOutdeco2_0.5_0_0_0_0
+    second: {fileID: 2100000, guid: 1d8459453ac942f47806d81c48027ade, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_DashJump11_0.5_0_0
+    second: {fileID: 2100000, guid: 60554bac24034d14bb346e8ab13f6fc2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_EntranceGate IronObj_0.5_0_0
+    second: {fileID: 2100000, guid: ed056786d77817749b4dd35c191e2415, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_EntranceGate blackiron_0.5_0_0_0
+    second: {fileID: 2100000, guid: 5625d213d3120904fbc5ee842a80bb88, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_Fence2_0.5_0_0_hy_CasOut_Fence_0.5_0_0
+    second: {fileID: 2100000, guid: 4df098ba966a5c543ab4e0374a6a3fdb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_FlagRope1_0.5_0_0
+    second: {fileID: 2100000, guid: 3d767b8adf7af294bb2211fb8f815def, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_GrassB50_0.5_0_0_di_Grass_B_0.5_0_0
+    second: {fileID: 2100000, guid: 6752fcc483f545e4ca988e7e1b93dde4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_High1hycliffB01_0.5_0_0_0.5_0_0
+    second: {fileID: 2100000, guid: 4aeac155ac49671439f8bb6d5b2eacdd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_InSideWallhy_0.5_0_0_CasIn_Wall1_0.5_0_0
+    second: {fileID: 2100000, guid: d62df8031891fa2499399f933fd55dd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_IsekiHasiraEx_0.5_0_0__hy_pole_0.5_0_0
+    second: {fileID: 2100000, guid: b3221e38222015e4bbf762071d4b2ae3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_JumpBase00_0.5_0_0_hy_Block_Moss_0.5_0_0
+    second: {fileID: 2100000, guid: b3221e38222015e4bbf762071d4b2ae3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_JumpPanelWood_0.5_0_0_0
+    second: {fileID: 2100000, guid: d7d8f89ba61dda34a9e14173fe3b8d6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_Kusa02_0.5_0_0_kusa02_0.5_0_0
+    second: {fileID: 2100000, guid: 2a3aa4e028d911a40a92ccf7a75c4250, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_L10_0.5_0_0_CasOut_wall1_0.5_0_0
+    second: {fileID: 2100000, guid: f9bc84f884a59c3409f3f9a8c46e0afd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_L12_0.5_0_0_StartGate_0.5_0_0
+    second: {fileID: 2100000, guid: 4fc6859dd10586e49b83eb0441dbb345, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_Lake2efsea_0.5_0_0_0.5_0_0
+    second: {fileID: 2100000, guid: e070fe86edcf5bf4188ab3386e09034b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_OutsadeWall_0.5_0_0_CasOut_wall3_0.5_0_0
+    second: {fileID: 2100000, guid: dfa8ea11a040d554fb0a10a00ec6d849, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_PanelFlame_0.5_0_0
+    second: {fileID: 2100000, guid: d7a365930d5ba3545ba8b1c5d33cf231, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_Roadstart1hy_0.5_0_0_Startline_0.5_0_0
+    second: {fileID: 2100000, guid: 3d39d4e5284c9144b8820f3dfa80c988, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_Torch10_0.5_0_0_Area2_0.5_0_0
+    second: {fileID: 2100000, guid: c23cca5f8ca00d847ae1a1eeaf916cb1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_Torch19_0.5_0_0_0.5_0_0
+    second: {fileID: 2100000, guid: c23cca5f8ca00d847ae1a1eeaf916cb1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_Torch53IronObj_0.5_0_0_Area2_0.5_0_0
+    second: {fileID: 2100000, guid: ed056786d77817749b4dd35c191e2415, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_VolcaneRockMt030_0.5_0_0_DethMountain_0.5_0_0
+    second: {fileID: 2100000, guid: 6c322cfeb6977664ba6ebcfae03e67e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_bh14_0.5_0_0_CasIn_Wall0_0.5_0_0
+    second: {fileID: 2100000, guid: 1a418f2315c4afe45a0a3da6cec8b58d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_carpetArea1_0.5_0_0_0
+    second: {fileID: 2100000, guid: 2fb2b2293ce98744cb06c04bbc5d366d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_carpetArea2_0.5_0_0_0_0
+    second: {fileID: 2100000, guid: 2fb2b2293ce98744cb06c04bbc5d366d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_f16hyIron_0.5_0_0_0.5_0_0
+    second: {fileID: 2100000, guid: 6745514628a8ed143992062dced2a5d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_firewood1hyTownObj_0.5_0_0_0.5_0_0
+    second: {fileID: 2100000, guid: 10ed3b2e3a6f02c43b03e2088ecf936e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_floweryellowA011_0.5_0_0__hy_Flowers_0.5_0_0
+    second: {fileID: 2100000, guid: 31cebdc631bc0514e99d3559ae2bbb23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_houseroof2_0.5_0_0
+    second: {fileID: 2100000, guid: a80eb1358b9af0240b2fab61ac7f93db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hyCannon_0.5_0_0_0
+    second: {fileID: 2100000, guid: 54fd2d7f5dd01694ba027fa75dc57661, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hyCasInWall1Ceiling_0.5_0_0_0.5_0_0
+    second: {fileID: 2100000, guid: d62df8031891fa2499399f933fd55dd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hyCasInWall2_0.5_0_0_0.5_0_0
+    second: {fileID: 2100000, guid: fa411b9dc77fe8d4b84925faff2645ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hyCasInWall3_0.5_0_0_0.5_0_0
+    second: {fileID: 2100000, guid: bfa95f15d33568645a75054e3230a577, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hyCasOutdeco2Area2_0.5_0_0_0.5_0_0
+    second: {fileID: 2100000, guid: b602abe209066b44db57fdf526735c69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hyCasOutdeco2_0.5_0_0_0_0
+    second: {fileID: 2100000, guid: b602abe209066b44db57fdf526735c69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hyCasOutwall0_0.5_0_0_0_0
+    second: {fileID: 2100000, guid: 1a418f2315c4afe45a0a3da6cec8b58d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hyCasOutwall1_0.5_0_0_2_0.5_0_0
+    second: {fileID: 2100000, guid: 033d5cfba7eea8044a37861909c0653a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hyCasOutwall3_0.5_0_0_0.5_0_0
+    second: {fileID: 2100000, guid: e130e2c80e90cea4ab0701cec998324e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hyJumpPanelIron_0.5_0_0_0.5_0_0
+    second: {fileID: 2100000, guid: eea17139e5d432547b1b8b961709997d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hyKaidan_0.5_0_0_0_0
+    second: {fileID: 2100000, guid: 181b9f56ec62d11439622f783077b137, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hyblock0Area2_0.5_0_0_0_0
+    second: {fileID: 2100000, guid: fcc78b3adc92eb54a987ff4a5d91cc4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hyblock0_0.5_0_0_0_0
+    second: {fileID: 2100000, guid: fcc78b3adc92eb54a987ff4a5d91cc4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hyblock1_0.5_0_0_0_0
+    second: {fileID: 2100000, guid: e25a7c97dc3313e4b84aa4132648e7d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hycarpet_0.5_0_0_0
+    second: {fileID: 2100000, guid: 2fb2b2293ce98744cb06c04bbc5d366d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hycaveA01_0.5_0_0_0
+    second: {fileID: 2100000, guid: ee27e158abbc2434385703a61e35561f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hycliffB01Edge_0.5_0_0_0_0
+    second: {fileID: 2100000, guid: 4aeac155ac49671439f8bb6d5b2eacdd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hycmnwood2_0.5_0_0_0.5_0_0
+    second: {fileID: 2100000, guid: d7d8f89ba61dda34a9e14173fe3b8d6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hycmnwood3_0.5_0_0_0_0
+    second: {fileID: 2100000, guid: b4cb8e1212f864f4199baabb8a8b5d9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hycmnwood_0.5_0_0_0.5_0_0
+    second: {fileID: 2100000, guid: 35cdfca3b3dd1b34bb8ba7e633792d58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hyhouseWall_0.5_0_0_0.5_0_0
+    second: {fileID: 2100000, guid: 58d783b4511a9ce419644b3dc30ad2b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hyhouse_0.5_0_0_0_0
+    second: {fileID: 2100000, guid: 58d783b4511a9ce419644b3dc30ad2b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hyhouseroof_0.5_0_0_0
+    second: {fileID: 2100000, guid: 86b236775b5ada341a3554f6078403c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hyroad2_0.5_0_0_0_0
+    second: {fileID: 2100000, guid: fabccbed1fddd9443b76fb41280576f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hyroad3_0.5_0_0_0_0
+    second: {fileID: 2100000, guid: 1d9e128062a9454428f5a7f75bcbb5f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 25_hytuta01_0.5_0_0_0
+    second: {fileID: 2100000, guid: 7ecd1305dad05ec4884e7e09644c860c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 31_TorchCM_0.5_0_0_0_0
+    second: {fileID: 2100000, guid: 1b429502295a42e4197b8ecff438190b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 39_CasInsideEmiCM_0.5_0_0_0_0
+    second: {fileID: 2100000, guid: 7b48d2a3f3d50f34fb6fdd0b794450e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 39_L43_0.5_0_0_CasInside_0_Area0_0.5_0_0
+    second: {fileID: 2100000, guid: 7b48d2a3f3d50f34fb6fdd0b794450e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 39_hyCasInWindowCM_0.5_0_0_0.5_0_0
+    second: {fileID: 2100000, guid: 89df4a42e90640a4d92c0f46f76f0943, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 39_hyCasInWindow_0.5_0_0_0_0
+    second: {fileID: 2100000, guid: 89df4a42e90640a4d92c0f46f76f0943, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 39_hyCasInsideEmi_0.5_0_0_0.5_0_0
+    second: {fileID: 2100000, guid: 7b48d2a3f3d50f34fb6fdd0b794450e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 39_hyCasInside_0.5_0_0_0_0
+    second: {fileID: 2100000, guid: 7b48d2a3f3d50f34fb6fdd0b794450e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 39_hyCasOutWindow_0.5_0_0_0_0
+    second: {fileID: 2100000, guid: 89df4a42e90640a4d92c0f46f76f0943, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 39_hyroad4Area2off_0.5_0_0_0_0
+    second: {fileID: 2100000, guid: e25512a06991fdc4ab7965a3d08f12db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 39_hyroad4InCastleCM_0.5_0_0_0.5_0_0
+    second: {fileID: 2100000, guid: e25512a06991fdc4ab7965a3d08f12db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 39_hyroad4InCastle_0.5_0_0_0_0
+    second: {fileID: 2100000, guid: e25512a06991fdc4ab7965a3d08f12db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 39_hyroad4_0.5_0_0_0_0
+    second: {fileID: 2100000, guid: e25512a06991fdc4ab7965a3d08f12db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 8_Highhygrass_0.5_0_0_OutSide_0.5_0_0
+    second: {fileID: 2100000, guid: 0db88a0bc5e96b14ba4ab0642ea98c0b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 8_JumpBase01_0.5_0_0_hy_roadC_0.5_0_0
+    second: {fileID: 2100000, guid: d1b0fc176d1fb924db04d039f808849f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 8_Roadhyroad_0.5_0_0_0.5_0_0
+    second: {fileID: 2100000, guid: d38e10b4129f73141ae5755f45617fb9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 8_TordBench010_0.5_0_0_hwood03_0.5_0_0
+    second: {fileID: 2100000, guid: 7e8506288ca1cf540b945ebe1ea8c970, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 8_glideboardef_0.5_0_0_0.5_0_0
+    second: {fileID: 2100000, guid: 965cc2e6971ef9543996bdfd4de46fb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 8_grassnuki_0.5_0_0_0
+    second: {fileID: 2100000, guid: 0db88a0bc5e96b14ba4ab0642ea98c0b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 9_CasOutroof2_0.5_0_0_0
+    second: {fileID: 2100000, guid: b0e8c8a7494dc584b9005acd44c3383a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 9_Depth Shadow Leaf_0.5_0_0
+    second: {fileID: 2100000, guid: 060b69025370a554aa36675448b0e31b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 9_FakeLeaf2_0.5_0_0__hy_FakeLeaf1_0.5_0_0
+    second: {fileID: 2100000, guid: 9954bb7d93487d94199435b1e42ce723, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 9_Kusa01_0.5_0_0_kusa01_0.5_0_0
+    second: {fileID: 2100000, guid: ef1e4f6696540114aa1bb81a59ddcc28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 9_Mountain03VolcaneRockM013_0.5_0_0__mm_moutain01_0.5_0_0
+    second: {fileID: 2100000, guid: 54b62226762fb5646bccd7aa4d7c4e74, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 9_TreeLow_0.5_0_0_FakeLeaf_0.5_0_0
+    second: {fileID: 2100000, guid: 886cca38c2116484291913d862058b77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 9_TreeMiddle01_0.5_0_0_TreeA_Leaf_0.5_0_0
+    second: {fileID: 2100000, guid: 060b69025370a554aa36675448b0e31b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 9_TreeMiddle02_0.5_0_0_TreeB_Base_0.5_0_0
+    second: {fileID: 2100000, guid: 077fbd62392d8df43b09603e339aabb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 9_forest1ForestEnkei_0.5_0_0_0_0
+    second: {fileID: 2100000, guid: f5006d3f665e7d84a812516205f3bd69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 9_gravityboardef_0.5_0_0_0.5_0_0
+    second: {fileID: 2100000, guid: 0a162ced7acd1324db89762f8c9ec7ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 9_hyCasOutroof_0.5_0_0_0.5_0_0
+    second: {fileID: 2100000, guid: 8ec8f6cdfbac67347910f60a3dcda2c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 9_hystraw_0.5_0_0_0
+    second: {fileID: 2100000, guid: b5f65fa76a079024795a66e38dbbc7e7, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

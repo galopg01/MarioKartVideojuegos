@@ -1,0 +1,475 @@
+fileFormatVersion: 2
+guid: 0adb62f82b7f9b840a7f368b2a26e941
+ModelImporter:
+  serializedVersion: 26
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CmnStartGrid2
+    second: {fileID: 2100000, guid: 54181940017c970469ab6385ef4733f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FlagRope_1
+    second: {fileID: 2100000, guid: d3c550018391e7342b1f2f5323d6bfbe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Guardrail_Curve_m
+    second: {fileID: 2100000, guid: 86dcf434a7d722d48ac8340f67b77680, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HatenaBlockA
+    second: {fileID: 2100000, guid: 1ad49e48a3f676f48845f525a636982d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PanelFlame
+    second: {fileID: 2100000, guid: d1c0f8e9b5c3f0e4180525936fbd6551, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TreeSph_LeafBase_green
+    second: {fileID: 2100000, guid: c0ffa364b7a4dfd428bcf4a4b67d18d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: YVrock
+    second: {fileID: 2100000, guid: dd98aa49b070c0c4b8bab83fd2eade80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: YVrock_noshadow
+    second: {fileID: 2100000, guid: df9619856980a1943bccdc2f542fa71b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: di_flowers
+    second: {fileID: 2100000, guid: 29913fde470a661479dd22cf5ad57a49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ef_dashboard
+    second: {fileID: 2100000, guid: be98d7afc72380c41be99c4ffa6d2ba7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ef_glideboard
+    second: {fileID: 2100000, guid: bdb20de50d308d543bbcda7410171a4e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ef_sea04
+    second: {fileID: 2100000, guid: 6296fcca151647344973c170f6f413b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ef_waterline
+    second: {fileID: 2100000, guid: 48dc6864788389e4c900328e0fd3ffeb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kanaami1
+    second: {fileID: 2100000, guid: a3b26e822ad40af489e7be32f71f835f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mountain1
+    second: {fileID: 2100000, guid: 92147d919f3018145bf47ba9dc3a1386, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mountain2_inside
+    second: {fileID: 2100000, guid: 9ad82fadd68de5245b1624423149535e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mountain_dark
+    second: {fileID: 2100000, guid: 78217dbe03f1e2543afdb2cec5467641, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_PlantA
+    second: {fileID: 2100000, guid: b9fde1c1ee1f2fc49ba0d5ff52f8518b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_WhiteWall
+    second: {fileID: 2100000, guid: 4964a57c6a646164ea2e3eb7285c27aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_bickcheck_pink
+    second: {fileID: 2100000, guid: b65f2860f5da6eb4bbabfc6d7232518b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_bickcheck_white
+    second: {fileID: 2100000, guid: ce04e23d01932ea41aa77283cc06796d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_bigflag
+    second: {fileID: 2100000, guid: 0f8973c19e82a114cb96bdc29939593e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_cloth
+    second: {fileID: 2100000, guid: bc379a91eace21e4fb84383aaa2a6db5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_conkuri
+    second: {fileID: 2100000, guid: 096a5b0c9529dd648a3bd95896f9779c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_cubemap_lake
+    second: {fileID: 2100000, guid: 301e5503f6a006b48aba19bfd98ab3af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_curvestone
+    second: {fileID: 2100000, guid: 6449100e098a3a34a9c3c29b91122f39, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_dokan
+    second: {fileID: 2100000, guid: 433d5cc4d13763a489df3fea54b211c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_drum
+    second: {fileID: 2100000, guid: ff77839f0f437fd4884426aa2d0036cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_enkeiTree_Leaf
+    second: {fileID: 2100000, guid: dbd5916596938e0479de1e1926fc83bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_fc_DenkoKeijiban
+    second: {fileID: 2100000, guid: d54ebe358ffea1d4d86fb15ae9bd4bad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_fc_Obj_01
+    second: {fileID: 2100000, guid: c3b8cf9021959f44596196460d252932, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_fc_pit
+    second: {fileID: 2100000, guid: 4cb9a0e3545c6c34a8137ffd3254a767, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_fc_tire
+    second: {fileID: 2100000, guid: 32a02d04488bf6a488b98a2178d045f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_fence
+    second: {fileID: 2100000, guid: 5a4e4760eb5875d42806a9b8f6b3de2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_garage
+    second: {fileID: 2100000, guid: e6d5086fbaa96cf408e6fe543a0a6fab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_glass
+    second: {fileID: 2100000, guid: 6d847477326403742a6e509543d961dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_gold
+    second: {fileID: 2100000, guid: 80055433793a4084595bbdbdf280170b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_grass
+    second: {fileID: 2100000, guid: 022780cd630584145b10c2c4984cdccb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_hikarimono
+    second: {fileID: 2100000, guid: 5c50bd77e3d89eb4b977233fdb0947a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_kaidan3
+    second: {fileID: 2100000, guid: bdcf0b8188f13d84c8de01c2604bcfdd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_kanban
+    second: {fileID: 2100000, guid: 346d8f090780af2428c50376d493c0e1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_kanban2
+    second: {fileID: 2100000, guid: 6b86cf6526d355349ad4297d83f19c78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_kanban_seal
+    second: {fileID: 2100000, guid: 183b3e22df8ee5640983108b374fd533, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_kanban_waku
+    second: {fileID: 2100000, guid: 31557d1c5200da34383da7f59ff8dc87, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_kankyakuseki
+    second: {fileID: 2100000, guid: 57a5d7fdfacd4e2469a9c232253510a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_komono
+    second: {fileID: 2100000, guid: 275133aec5670e54a9233106e0dbe6cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_komono2
+    second: {fileID: 2100000, guid: 9a1a62b9100c4ea4e9353b855f5d0c06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_m_TreeBush_Leaf
+    second: {fileID: 2100000, guid: 39ec7a984217f974394f368281f59988, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_marumi
+    second: {fileID: 2100000, guid: 9b789797acda95244baacc07556c0c1d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_mc_tou
+    second: {fileID: 2100000, guid: 537b544036294a344884d06c4b022b22, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_metal_black
+    second: {fileID: 2100000, guid: 8de1a8e3eff43ce40b1f8d42d631a7bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_mokume
+    second: {fileID: 2100000, guid: cf807def575724540856ec936f90a2cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_mon_metal
+    second: {fileID: 2100000, guid: 0c1881988740b10499c5370f9ca0a3fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_pink
+    second: {fileID: 2100000, guid: b992c669d5c6f5b41934de7452b5dd81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_planetree
+    second: {fileID: 2100000, guid: a33fca8ab26268640a367a3236b1f146, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_pmark
+    second: {fileID: 2100000, guid: edefa1043404284448734356eb474281, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_road
+    second: {fileID: 2100000, guid: 73a89811b5c649a43a01e391b3a2517a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_road_pink
+    second: {fileID: 2100000, guid: 869f671fee4b52545b3c867d54ba0ee6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_sakura1
+    second: {fileID: 2100000, guid: 1a24fe665681284459506ffdb7694d73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_sakura_road
+    second: {fileID: 2100000, guid: 9b5077bea11eeb04cad4ab265f7e3618, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_sakuramix
+    second: {fileID: 2100000, guid: bb7a6fc5ec9da3b4090a150b7a701800, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_sakuramix2
+    second: {fileID: 2100000, guid: b05b45eb477c6a04d822c385ddec4828, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_shirorenga_big
+    second: {fileID: 2100000, guid: a81e997744e4d514987c098212a7d530, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_startgate
+    second: {fileID: 2100000, guid: b2c65be3d91356141ae024f81e75d0b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_startgrid
+    second: {fileID: 2100000, guid: 4627e8f2e8e1d944aa46dbe603d920df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_suna
+    second: {fileID: 2100000, guid: 94d9dc812d6c8be478de45880d515c65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_tunagi
+    second: {fileID: 2100000, guid: e0d68932c005a4e498ea202abaab91e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_yane
+    second: {fileID: 2100000, guid: 1a022ea79a252b4489f13959ead46ec7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pc_zaseki
+    second: {fileID: 2100000, guid: f08d984111b14d740ac2158c37b8f030, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shirokabe
+    second: {fileID: 2100000, guid: ea0598edb5ced864eb40a341935a8209, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shirokabe_groupe4
+    second: {fileID: 2100000, guid: 1854473d969de7942857e5b4b35e3cca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sn_NS2_Gallery_00
+    second: {fileID: 2100000, guid: ba34da0457d066a4a9aef40b0e2793f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tc_karekusa
+    second: {fileID: 2100000, guid: 60d3f30ab04466d4396485da7a0f9a59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: upc_juel
+    second: {fileID: 2100000, guid: 2353d1d4bdbc10b45a2106697307271d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: whidou_naka
+    second: {fileID: 2100000, guid: a8a81e3ed9c04e24aa9e4357f67e851f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: yane_ue
+    second: {fileID: 2100000, guid: 071541d5a579e6a408c79eb2ce7ea784, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
