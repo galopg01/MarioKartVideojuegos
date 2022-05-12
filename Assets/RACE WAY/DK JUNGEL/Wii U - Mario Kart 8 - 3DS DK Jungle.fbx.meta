@@ -1,0 +1,555 @@
+fileFormatVersion: 2
+guid: 9f3705efc0956924a8049888b3feeafe
+ModelImporter:
+  serializedVersion: 26
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CausticsArea11
+    second: {fileID: 2100000, guid: 081a31be02a2b064da1355b0a1615942, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DkTree_Dk_palm1
+    second: {fileID: 2100000, guid: a383c23b7d40ed34fb4021ad056c5e4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DkTree_Dk_palm1_field
+    second: {fileID: 2100000, guid: b52129c75264de248b67a016fd8ebf79, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_CmnStartGridwood
+    second: {fileID: 2100000, guid: 7ad6bd417a93d1449a44b4db8b7e1ca8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_StartLine
+    second: {fileID: 2100000, guid: 1cb9b4a1cbd68f6459edcbbffcb08312, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_StartLine2
+    second: {fileID: 2100000, guid: 45eeea037efc632429c576473f5db9d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_WarterPlant
+    second: {fileID: 2100000, guid: 8eeade56efc7bf943bac33a99b6e540e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_dirtRoad
+    second: {fileID: 2100000, guid: f7510ff5d13fb3e4d9174e85b1ea117c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_dirtRoadGrass_field
+    second: {fileID: 2100000, guid: 741ff98a22db1bd45a2fc3fadf3ce2fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_dirtRoadMud
+    second: {fileID: 2100000, guid: 4a72887f7196ad54692650488feca88e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_dirtRoad_field
+    second: {fileID: 2100000, guid: 4ce4d66caa79f6e4e9bbb9231fb7f1ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_flag
+    second: {fileID: 2100000, guid: 69af497a86a577a40b10e9f409b9a805, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_grass_field
+    second: {fileID: 2100000, guid: 386e57b1a5b5c6f4793cdfb653b443bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_grass_wood
+    second: {fileID: 2100000, guid: 4bd2db26eafcb534cb594ee7c4e85065, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_hut_home
+    second: {fileID: 2100000, guid: 4fc775884e4652a48a428c1ec5b74c59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_hut_wara
+    second: {fileID: 2100000, guid: 44c314d7cdbaa21479892e5f0fd217ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_junglewall
+    second: {fileID: 2100000, guid: 45c307a57d39a7c4da2e44c92af2cdea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_leaf01
+    second: {fileID: 2100000, guid: a2a94c6a849979d4e9508ce2333b4bf6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_leaf01_field
+    second: {fileID: 2100000, guid: 7d6d62e7022e3cb41812ab7ae10a83f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_leaf02
+    second: {fileID: 2100000, guid: 66f021e32357113429df1e97e9445e0a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_leaf02_field
+    second: {fileID: 2100000, guid: 0d1ce06e0519a03429df5afd55682a45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_leaf03
+    second: {fileID: 2100000, guid: e8c399b3f48218447951aef514d8ae06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_leaf03_field
+    second: {fileID: 2100000, guid: ad661a0726aa5ee48b6af7a02409ae51, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_leaf04
+    second: {fileID: 2100000, guid: ccbcac75a1e8ea14681e9eaa855143ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_leaf04_depth
+    second: {fileID: 2100000, guid: b562fe18595023447a0265539b3e6da4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_leaf04_field
+    second: {fileID: 2100000, guid: ab25c6af062f24e47906818d4079d9ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_leaf05
+    second: {fileID: 2100000, guid: 66cba6773642e0541a5e3deb0ffba2f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_leaf05_Emm
+    second: {fileID: 2100000, guid: 5248b419c371508418e71d2f24d67dc1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_leaf05_depth
+    second: {fileID: 2100000, guid: c4775a53d448de84b9a7308143b7da84, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_leaf05_depth.002
+    second: {fileID: 2100000, guid: 60bb12dbb663d864c817fe74707e4a37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_leaf05_ref
+    second: {fileID: 2100000, guid: a2e956fd387b1044c936551c980b738c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_leaf06
+    second: {fileID: 2100000, guid: d65ceae11c16c7c4ea6537a22c7395ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_leaf07_field
+    second: {fileID: 2100000, guid: 1e032eab369977d4cb85e9853af6e7ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_leaf08_field
+    second: {fileID: 2100000, guid: eb718d074a04b1948a1a9cb13e82ee71, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_leaf08_field2
+    second: {fileID: 2100000, guid: e0a03819bfbb97b4b8bb47280a6e982d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_mVines03_t_c
+    second: {fileID: 2100000, guid: ae85b091aa24ecf4d9d39dcb516307e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_mVines04
+    second: {fileID: 2100000, guid: 1408e27f4a3678d488cf0c99178429c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_mVines05
+    second: {fileID: 2100000, guid: b590db1f6ebcb464a99eba2e03328470, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_madwall
+    second: {fileID: 2100000, guid: 28a17d54e809456479b0d73a5db3f967, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_madwall_water
+    second: {fileID: 2100000, guid: 27bda67c086d4484fb248f2818a2d096, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_ref
+    second: {fileID: 2100000, guid: 867377c8ffeee3b4f85f8e282859fae7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_roads04_field
+    second: {fileID: 2100000, guid: 171fce915d06a994a9b07968df882a5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_roads04_fieldEmm
+    second: {fileID: 2100000, guid: 3deac6ef28241fe43bba8bcd3f948b48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_roads04_temple
+    second: {fileID: 2100000, guid: 46c27b1b9d8f5db4d8363dd6fb56a44c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_roads04_templeEmm
+    second: {fileID: 2100000, guid: d8c1a12b91f858d4c97e29722a700de7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_roads05
+    second: {fileID: 2100000, guid: a4d12f2068eb6584e9157d3fdf38368b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_stone
+    second: {fileID: 2100000, guid: db648d4ee19c3b14c9e5d59f95ff1799, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_stone_water
+    second: {fileID: 2100000, guid: eedf91887de79d347b84ac2623cb09de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_stone_wood
+    second: {fileID: 2100000, guid: 555aecd81c996ff4d8d0289f686f75be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_temple3
+    second: {fileID: 2100000, guid: c9a5d9905a97f2d4fa65302200498610, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_temple3_field
+    second: {fileID: 2100000, guid: 6e3b4d5a4ee8a564785830c5ef8ed6e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_temple4
+    second: {fileID: 2100000, guid: d2ee7778282d4a14c99deac20f72b2c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_treeRoad2
+    second: {fileID: 2100000, guid: 2299fda0e993dde46b22807f62bc169b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_treeRoad3
+    second: {fileID: 2100000, guid: 5be940af5217c9647880828ae5f00bf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dkj_treeRoad4
+    second: {fileID: 2100000, guid: d4752d45c38599b4d9e039447cce5711, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PanelFlame
+    second: {fileID: 2100000, guid: 9599daecb73c3bc4e9aad33ef1b40d3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PanelFlame_wood
+    second: {fileID: 2100000, guid: fade371211a399545b0eb64c2fee248d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_Pruinsleaf1_rk_C
+    second: {fileID: 2100000, guid: 9a1bc95993077af4a99e6d620af91efc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_RP_palm_leaf_MG
+    second: {fileID: 2100000, guid: c6a6dffb63481e4418835b845bf26724, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_Tree3_RL
+    second: {fileID: 2100000, guid: b0c96de452583104bacbbe721f510831, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_arrow01
+    second: {fileID: 2100000, guid: 0f85a8b63acda8d48983278354166071, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_bridge
+    second: {fileID: 2100000, guid: 93844f943e2c9354aa8a506e7e70359b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_bridge_field
+    second: {fileID: 2100000, guid: 13c2edaf4e393504fa0f1519a1ec9d50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_grassWall_wood
+    second: {fileID: 2100000, guid: 8af320005e1f1a146997c1bf6ba1ae39, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_jump
+    second: {fileID: 2100000, guid: a8a9e918591e98b428454068ade8f7ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_mVines03_t_c
+    second: {fileID: 2100000, guid: e1f370fa506442045af901db6a1bd78e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_metalframe01
+    second: {fileID: 2100000, guid: b59a321045e143443a4127b4eb2c1125, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_metalframe01_field
+    second: {fileID: 2100000, guid: f2b780816cc5de24387fe486aaa4f456, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_pNewTreeFlower_field
+    second: {fileID: 2100000, guid: e03b9001a2a7c474ca05829d83fd9ee7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_pNewTreeFlower_t_2C
+    second: {fileID: 2100000, guid: 8353b1373e6c1c24288ca0a2b7be25f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_rootTree_dark_MG258
+    second: {fileID: 2100000, guid: bf60977450a8e0048bceb2b641a12313, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_ruins_field
+    second: {fileID: 2100000, guid: 50b84a8b87f98694caa57836190e4aab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_ruins_water
+    second: {fileID: 2100000, guid: 9630a9aaf071e6f4bae40b71896afe1d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_ruins_wood
+    second: {fileID: 2100000, guid: 5ca29970d6837c8478923e0defb365ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_temple_bricks01
+    second: {fileID: 2100000, guid: e3017f06406bc1e46824f7dd9bf5f966, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_temple_bricks01_in
+    second: {fileID: 2100000, guid: 9ff0cdfd37675e748b76420bb84c297a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_temple_bricks02
+    second: {fileID: 2100000, guid: 5dd5e364b4962154897eaeafbf3dd166, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_temple_bricks02_in
+    second: {fileID: 2100000, guid: 731e35fc7330d944a8cc5d680ad7dd3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_temple_bricks03
+    second: {fileID: 2100000, guid: 384b314d131a8ab43a83cdd216e0751d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_temple_bricks04
+    second: {fileID: 2100000, guid: 5b5d05dc48ecf734482675477fb00b41, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_temple_bricks04_in
+    second: {fileID: 2100000, guid: 98c7163c10abe4e46973c97c43cafef0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_underWaterMud
+    second: {fileID: 2100000, guid: 4ff782b7f5aae564bbf8879750e7e214, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dkj_wood02
+    second: {fileID: 2100000, guid: 553a8a6e7afa78a4abc6b3c2958b9736, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ef_dashboard
+    second: {fileID: 2100000, guid: 356b92c2a75fb9c40a139e64b309913f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ef_glideboard
+    second: {fileID: 2100000, guid: 298ab8d4bc23fae4c924f6b27689e90d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ef_glideboard_wood
+    second: {fileID: 2100000, guid: 6cce64183a0ba27429e490fdd91369cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ef_gravityboard
+    second: {fileID: 2100000, guid: 4d14504e2ecdd1d4ca426dff81b1ef7f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ef_river01B
+    second: {fileID: 2100000, guid: 6edac4fddd3e99444bed3f6b9aba7c09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ef_river01F
+    second: {fileID: 2100000, guid: 9921c32ab2147bf49a3acf53a4e00a2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ef_waterfall06
+    second: {fileID: 2100000, guid: e72158dbdee301143ab094dedff60964, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ef_waterline
+    second: {fileID: 2100000, guid: 56459529bea470d43bf48b98dd97eec9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ex_arrow01
+    second: {fileID: 2100000, guid: 43acf9173c54817408bc0dec4c720d16, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
