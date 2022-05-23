@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.2f1 (d6360bedb9a0) revision 14038539'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'es' Physical Memory: 8066 MB
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'es' Physical Memory: 16330 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-D:\ProgramFiles\Unity\Hub\Editor\2021.3.2f1\Editor\Unity.exe
+D:\unity\Editor\2021.3.2f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/Nico/Uma/TERCERO/Videojuegos/Proyectos/MarioKartVideojuegos
+C:/Users/Galo/Desktop/Universidad/Tercero/Programación de videojuegos/Proyecto Grupal/MarioKartVideojuegos
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63151
-Successfully changed project path to: D:/Nico/Uma/TERCERO/Videojuegos/Proyectos/MarioKartVideojuegos
-D:/Nico/Uma/TERCERO/Videojuegos/Proyectos/MarioKartVideojuegos
+54307
+Successfully changed project path to: C:/Users/Galo/Desktop/Universidad/Tercero/Programación de videojuegos/Proyecto Grupal/MarioKartVideojuegos
+C:/Users/Galo/Desktop/Universidad/Tercero/Programación de videojuegos/Proyecto Grupal/MarioKartVideojuegos
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,112 +47,110 @@ D:/Nico/Uma/TERCERO/Videojuegos/Proyectos/MarioKartVideojuegos
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 154.29 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 57.82 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.2f1 (d6360bedb9a0)
-[Subsystems] Discovering subsystems at path D:/ProgramFiles/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Nico/Uma/TERCERO/Videojuegos/Proyectos/MarioKartVideojuegos/Assets
+[Subsystems] Discovering subsystems at path D:/unity/Editor/2021.3.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Galo/Desktop/Universidad/Tercero/Programación de videojuegos/Proyecto Grupal/MarioKartVideojuegos/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c8d)
+    Renderer: NVIDIA GeForce GTX 1060 3GB (ID=0x1c02)
     Vendor:   NVIDIA
-    VRAM:     4021 MB
-    Driver:   30.0.14.7212
+    VRAM:     2988 MB
+    Driver:   30.0.14.9709
 Initialize mono
-Mono path[0] = 'D:/ProgramFiles/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Managed'
-Mono path[1] = 'D:/ProgramFiles/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'D:/ProgramFiles/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56276
+Mono path[0] = 'D:/unity/Editor/2021.3.2f1/Editor/Data/Managed'
+Mono path[1] = 'D:/unity/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/unity/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56932
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/ProgramFiles/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Register platform support module: D:/ProgramFiles/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.019194 seconds.
-Native extension for LinuxStandalone target not found
+Register platform support module: D:/unity/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005328 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 111.59 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 40.94 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.097 seconds
+- Completed reload, in  0.802 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2099ms)
-		BeginReloadAssembly (404ms)
+	ReloadAssembly (802ms)
+		BeginReloadAssembly (111ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (5ms)
-		EndReloadAssembly (1315ms)
-			LoadAssemblies (399ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (558ms)
+			LoadAssemblies (111ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (346ms)
+			SetupTypeCache (132ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (104ms)
-			SetupLoadedEditorAssemblies (712ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (327ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (34ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (112ms)
-				BeforeProcessingInitializeOnLoad (4ms)
-				ProcessInitializeOnLoadAttributes (427ms)
-				ProcessInitializeOnLoadMethodAttributes (134ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (41ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (218ms)
+				ProcessInitializeOnLoadMethodAttributes (58ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.057840 seconds.
+Registered in 0.025909 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.59 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  4.099 seconds
+- Completed reload, in  1.733 seconds
 Domain Reload Profiling:
-	ReloadAssembly (4101ms)
-		BeginReloadAssembly (388ms)
+	ReloadAssembly (1735ms)
+		BeginReloadAssembly (170ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (16ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (45ms)
-		EndReloadAssembly (3307ms)
-			LoadAssemblies (427ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (1419ms)
+			LoadAssemblies (165ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1673ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (149ms)
-			SetupLoadedEditorAssemblies (1026ms)
+			SetupTypeCache (704ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (450ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (84ms)
-				ProcessInitializeOnLoadAttributes (813ms)
-				ProcessInitializeOnLoadMethodAttributes (103ms)
-				AfterProcessingInitializeOnLoad (13ms)
-				EditorAssembliesLoaded (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (322ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (25ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.49 seconds
-Refreshing native plugins compatible for Editor in 1.23 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 0.79 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1706 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 54 unused Assets / (48.8 KB). Loaded Objects now: 2135.
-Memory consumption went from 78.4 MB to 78.3 MB.
-Total: 7.398000 ms (FindLiveObjects: 0.335900 ms CreateObjectMapping: 0.228300 ms MarkObjects: 6.653500 ms  DeleteObjects: 0.177600 ms)
+Unloading 54 unused Assets / (48.9 KB). Loaded Objects now: 2137.
+Memory consumption went from 79.1 MB to 79.1 MB.
+Total: 2.812600 ms (FindLiveObjects: 0.180500 ms CreateObjectMapping: 0.089700 ms MarkObjects: 2.453900 ms  DeleteObjects: 0.087100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -160,13 +158,739 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 282333.028692 seconds.
-  path: Assets/RACE WAY/MARIO KART/Kart/Materials/Default.mat
-  artifactKey: Guid(cc803113383c1d1499ce26c430b1e57b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RACE WAY/MARIO KART/Kart/Materials/Default.mat using Guid(cc803113383c1d1499ce26c430b1e57b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5725f64f0d054c5cad6f051ebdeafef1') in 0.766781 seconds 
+  Time since last request: 501359.380645 seconds.
+  path: Assets/RACE WAY
+  artifactKey: Guid(7f38bd6367976c74cad6a966020dfa9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY using Guid(7f38bd6367976c74cad6a966020dfa9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46e5db59768d67e8cda8fd6941148f57') in 0.013999 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1090.514539 seconds.
+  Time since last request: 0.000025 seconds.
+  path: Assets/RACE WAY/Mushroom+Bridgepart.fbx
+  artifactKey: Guid(cff1b7b9c44572b4b8d69908366e05a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/Mushroom+Bridgepart.fbx using Guid(cff1b7b9c44572b4b8d69908366e05a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aab6813bd389ff778bce39c4f0c0b434') in 0.365793 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/RACE WAY/Mushroom+Bridge.fbx
+  artifactKey: Guid(dd0d0e4af5d2e184f83fde93a3c3b5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/Mushroom+Bridge.fbx using Guid(dd0d0e4af5d2e184f83fde93a3c3b5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46571a870c4d6069325355a74f9d5806') in 0.156731 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.557259 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(fa5fcdbec9ddb044c844c0e33df22173) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(fa5fcdbec9ddb044c844c0e33df22173) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd14dd30a37cf76d197481c433fdedd3f') in 0.009936 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.079522 seconds.
+  path: Assets/RACE WAY/Materials
+  artifactKey: Guid(c6d410f64c277494ebe291533413f0a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/Materials using Guid(c6d410f64c277494ebe291533413f0a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b3d82d816716ec653de9ddbdd25a69a') in 0.012269 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.035068 seconds.
+  path: Assets/RACE WAY/Materials/m0.mat
+  artifactKey: Guid(cecc5eceb7da6b141b77c970f9214a97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/Materials/m0.mat using Guid(cecc5eceb7da6b141b77c970f9214a97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff3deeae1c6ecae09b53e23a3fa54228') in 0.129499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/RACE WAY/Materials/m2.mat
+  artifactKey: Guid(483e995909b17c24aa954d7a37bce828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/Materials/m2.mat using Guid(483e995909b17c24aa954d7a37bce828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4cceab52f10879eae9ff765328407c6') in 0.025217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/RACE WAY/Materials/m11.mat
+  artifactKey: Guid(2d0851cc8802ac14998e0d92168c8dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/Materials/m11.mat using Guid(2d0851cc8802ac14998e0d92168c8dee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0fee6e21df28c35aff6174b66bc1c4c') in 0.021559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/RACE WAY/Materials/m4.mat
+  artifactKey: Guid(ccb97c957eb4fd1469b23f11cf8a1f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/Materials/m4.mat using Guid(ccb97c957eb4fd1469b23f11cf8a1f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea991ba24f1860615cfc16426afafe4c') in 0.020870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/RACE WAY/Materials/m8.mat
+  artifactKey: Guid(ba00eb7aa2522524d828580f39222291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/Materials/m8.mat using Guid(ba00eb7aa2522524d828580f39222291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81822c51f52e8dbb020d51e8199d6402') in 0.027144 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/RACE WAY/Materials/m7.mat
+  artifactKey: Guid(ca0284af4a4920940b9fd2ad463f43aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/Materials/m7.mat using Guid(ca0284af4a4920940b9fd2ad463f43aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f68ebb359030bc02f4ccecf2c27dbdb') in 0.014526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/RACE WAY/Materials/m6.mat
+  artifactKey: Guid(71907ccb80c8fe840bc176601b0541bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/Materials/m6.mat using Guid(71907ccb80c8fe840bc176601b0541bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cc4f2f5f37e42a9ba82645a855f858f') in 0.017340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/RACE WAY/Materials/m13.mat
+  artifactKey: Guid(1d9beceaac298e246a8d11a511b547d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/Materials/m13.mat using Guid(1d9beceaac298e246a8d11a511b547d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '350d3fe95589f534afb7989698711a41') in 0.019088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/RACE WAY/Materials/m1.mat
+  artifactKey: Guid(2af170693b02dc64f8afb1530688191f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/Materials/m1.mat using Guid(2af170693b02dc64f8afb1530688191f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0a4940ae7fa356d6d13110c1cd5dcec') in 0.023771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/RACE WAY/Materials/m10.mat
+  artifactKey: Guid(ed99da25b1fb29a459736db6c58fe43c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/Materials/m10.mat using Guid(ed99da25b1fb29a459736db6c58fe43c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71665897f1b31a60831a4e05387ce70a') in 0.017179 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/RACE WAY/Materials/m12.mat
+  artifactKey: Guid(baae8f645fa977f48bfa031ba674e7ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/Materials/m12.mat using Guid(baae8f645fa977f48bfa031ba674e7ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5da0d63dbfa11b527b3b7fcf43979773') in 0.022081 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/RACE WAY/Materials/m14.mat
+  artifactKey: Guid(f539185fcb779044eb47659c9ac1038b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/Materials/m14.mat using Guid(f539185fcb779044eb47659c9ac1038b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75bb0c8236216450f725e73fee871847') in 0.020083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/RACE WAY/Materials/m15.mat
+  artifactKey: Guid(10b5196eb9f0e4d4d97db4b14d56fbd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/Materials/m15.mat using Guid(10b5196eb9f0e4d4d97db4b14d56fbd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c852d02d54f4ecaca5bf728238659c67') in 0.020757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/RACE WAY/Materials/m16.mat
+  artifactKey: Guid(77a8fc4cf7673ed4f9703e82a1d2a2f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/Materials/m16.mat using Guid(77a8fc4cf7673ed4f9703e82a1d2a2f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4f2b93b594e2ad6b8d8fcc535fac209') in 0.023248 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/RACE WAY/Materials/m5.mat
+  artifactKey: Guid(fc799424f9b250b4bb99a9238c48a57f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/Materials/m5.mat using Guid(fc799424f9b250b4bb99a9238c48a57f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4483d775e3ee29362636a3060d427e2') in 0.023256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/RACE WAY/Materials/m3.mat
+  artifactKey: Guid(02839f8a9cca7fc46851a090e48b5cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/Materials/m3.mat using Guid(02839f8a9cca7fc46851a090e48b5cf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baa9a367718d73fb9af4841baf7ec4e1') in 0.019494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.006841 seconds.
+  path: Assets/RACE WAY/MARIO KART
+  artifactKey: Guid(6ea31d68dfed3074db4e7ec2be20eef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART using Guid(6ea31d68dfed3074db4e7ec2be20eef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '799a8af7e6f7870651262ddbb7dc05f8') in 0.011799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.039631 seconds.
+  path: Assets/RACE WAY/MARIO KART/Waluigi+Stadium.fbx
+  artifactKey: Guid(62874547f2a10224094c3a46d247a658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Waluigi+Stadium.fbx using Guid(62874547f2a10224094c3a46d247a658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f76e134b93f4f335cc9c0c3a8ca7f7a4') in 0.284359 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/RACE WAY/MARIO KART/Waluigi+Stadium.prefab
+  artifactKey: Guid(836314e7ff38a234b8bd497461b61fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Waluigi+Stadium.prefab using Guid(836314e7ff38a234b8bd497461b61fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65eb46d735cac07db3c8fa894334cade') in 0.090418 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.684292 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart
+  artifactKey: Guid(1ff705e614e08c248a7661c4c4111cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart using Guid(1ff705e614e08c248a7661c4c4111cde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83a4066dff9e15a5c58c5eaffaffdfe9') in 0.012151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.016814 seconds.
   path: Assets/RACE WAY/MARIO KART/Kart/Standard Kart.obj
   artifactKey: Guid(e9a29d8e2929ada4aad1c1eedc9f1315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/RACE WAY/MARIO KART/Kart/Standard Kart.obj using Guid(e9a29d8e2929ada4aad1c1eedc9f1315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a116c3cc26a3f2f1cce61be2dc078e75') in 0.223370 seconds 
+Start importing Assets/RACE WAY/MARIO KART/Kart/Standard Kart.obj using Guid(e9a29d8e2929ada4aad1c1eedc9f1315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a6c3079c1043ea336a039218934b3c7') in 0.031047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 264.270288 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires
+  artifactKey: Guid(fe9e6d8b7ddfa564a99ca0716f480121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires using Guid(fe9e6d8b7ddfa564a99ca0716f480121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e6b8b96b9aef098385b29f17d978c61') in 0.014745 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.040476 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Bake_TireB_Slk_g00_b00_f00.png
+  artifactKey: Guid(c8acd456615363b41a5a112d9fa04d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Bake_TireB_Slk_g00_b00_f00.png using Guid(c8acd456615363b41a5a112d9fa04d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '891ffe464600e223edd12570f1137a1d') in 0.072450 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Tire_Slk_Emm .png
+  artifactKey: Guid(6849fbecae6049a4d92632383e4d76a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Tire_Slk_Emm .png using Guid(6849fbecae6049a4d92632383e4d76a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1b7d711b260872c07e0a47d554176a6') in 0.025160 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Tire_Slk_Drt .png
+  artifactKey: Guid(55d294c4c31232f48993f9309eeaca71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Tire_Slk_Drt .png using Guid(55d294c4c31232f48993f9309eeaca71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe67333df38bd4398c539d9aa899a7f2') in 0.020274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Tire_Slk_Nrm .png
+  artifactKey: Guid(342932914b7c3d543a236e9b06995868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Tire_Slk_Nrm .png using Guid(342932914b7c3d543a236e9b06995868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c403de7f4463c2ccaa67fd06b8cbe9ac') in 0.017355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Tire_Zsl_Emm .png
+  artifactKey: Guid(b37cf106e2f7f3743ac5f9f60834440d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Tire_Zsl_Emm .png using Guid(b37cf106e2f7f3743ac5f9f60834440d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18785054d917b48c0e8a54f63b47ffae') in 0.021498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Tire_Zsl_Alb .png
+  artifactKey: Guid(35e97683a02ad924480fa2bb543ab70d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Tire_Zsl_Alb .png using Guid(35e97683a02ad924480fa2bb543ab70d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c692b9cf643c9ca13a7eb4932f24ab74') in 0.020636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Bake_TireB_Zsl_g00_b00_f00.png
+  artifactKey: Guid(fc642ebc4d1e4fe48831000d005f49e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Bake_TireB_Zsl_g00_b00_f00.png using Guid(fc642ebc4d1e4fe48831000d005f49e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d0a612e05723dfc988620c55547925b') in 0.020067 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/TireK_Slk.dae
+  artifactKey: Guid(ad4f7ea092c5a804ab103f8228fb8655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/TireK_Slk.dae using Guid(ad4f7ea092c5a804ab103f8228fb8655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86fe6791b339ba8246c7ef74383bc77f') in 0.111576 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/TireT_Slk.dae
+  artifactKey: Guid(f034b86becf29e34fa162f89b3287c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/TireT_Slk.dae using Guid(f034b86becf29e34fa162f89b3287c68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed34c56b1a9dbf2699db84987eb16077') in 0.074355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Bake_TireT_Zsl_g00_b00_f00.png
+  artifactKey: Guid(b064073bd1e43134e93b0c01cbd8dd81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Bake_TireT_Zsl_g00_b00_f00.png using Guid(b064073bd1e43134e93b0c01cbd8dd81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d6c4c65e1bfae7c7ad3a49b135d4eec') in 0.028381 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Tire_Zsl_Drt .png
+  artifactKey: Guid(f317c46d4658878488f0b2775f154583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Tire_Zsl_Drt .png using Guid(f317c46d4658878488f0b2775f154583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fc564dbae24b679ca63c8254e76d8c8') in 0.023122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/TireB_Slk.dae
+  artifactKey: Guid(6839d51973b0ec84c81b0f6284871d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/TireB_Slk.dae using Guid(6839d51973b0ec84c81b0f6284871d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62c6965097a7cd8456c94892d7f153e1') in 0.054560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Bake_TireT_Slk_g00_b00_f00.png
+  artifactKey: Guid(aeaab28849a64b4479d5d34be4e3eb87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Bake_TireT_Slk_g00_b00_f00.png using Guid(aeaab28849a64b4479d5d34be4e3eb87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dba854df112bf7eaefbd8dfd7de17ef') in 0.024362 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/TireK_SlkOpenCollada.dae
+  artifactKey: Guid(315cbc966f4569146a51a70cda3895b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/TireK_SlkOpenCollada.dae using Guid(315cbc966f4569146a51a70cda3895b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f2a0a6ba126ec9a23ff41f1a0691dd8') in 0.091689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Tire_Slk_Spm .png
+  artifactKey: Guid(ce07d0dbde2286e45988287e2375f2e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Tire_Slk_Spm .png using Guid(ce07d0dbde2286e45988287e2375f2e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '578adf4ba3cd517c52a71d2db5e26402') in 0.024127 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/TireB_SlkOpenCollada.dae
+  artifactKey: Guid(4bb883eb619c5ec45be1ac2165e5ffe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/TireB_SlkOpenCollada.dae using Guid(4bb883eb619c5ec45be1ac2165e5ffe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '477db127645aaae59dfef3f18549cd4e') in 0.084171 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/TireT_SlkOpenCollada.dae
+  artifactKey: Guid(a48d13f3e63a1cf499f23f4b45019d56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/TireT_SlkOpenCollada.dae using Guid(a48d13f3e63a1cf499f23f4b45019d56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eed2d0c6eaccfe246c45fe8263f89a4b') in 0.077521 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Tire_Slk_Alb .png
+  artifactKey: Guid(e74a0890e89dcf6489caead91d8bbd79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Tire_Slk_Alb .png using Guid(e74a0890e89dcf6489caead91d8bbd79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5bf365a51e4d3497514313b12feccb5') in 0.022271 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Tire_Zsl_Nrm .png
+  artifactKey: Guid(7429eb72fcbf0134cb4e6780db0d90df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Tire_Zsl_Nrm .png using Guid(7429eb72fcbf0134cb4e6780db0d90df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '843e6852b82924083081cf0f2a4e03d0') in 0.018131 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Bake_TireK_Zsl_g00_b00_f00 .png
+  artifactKey: Guid(c9fe3dc134818f24a99ca0f95f3ffc04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Bake_TireK_Zsl_g00_b00_f00 .png using Guid(c9fe3dc134818f24a99ca0f95f3ffc04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fffa13058c927190185005ba015b6bc6') in 0.018296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Tire_Zsl_Spm .png
+  artifactKey: Guid(ef25ec1da903d07499dc46012d09b957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Tire_Zsl_Spm .png using Guid(ef25ec1da903d07499dc46012d09b957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f99026acd6d2b569f152d07005eda0d') in 0.020429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Bake_TireK_Slk_g00_b00_f00 .png
+  artifactKey: Guid(1aefae87a173fe34387d8a6b16f58c28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/Bake_TireK_Slk_g00_b00_f00 .png using Guid(1aefae87a173fe34387d8a6b16f58c28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51828ae3e2e671c989393d9d813e1c85') in 0.019088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.647184 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/SMDs
+  artifactKey: Guid(760d44815b1f64e49bea50b06f51454a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/SMDs using Guid(760d44815b1f64e49bea50b06f51454a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69413d1c19e682df14eb1b2f038b31ea') in 0.010217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.554220 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/SMDs/Bike
+  artifactKey: Guid(aefaa07f9bf599b4793bc3ed0cb36854) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/SMDs/Bike using Guid(aefaa07f9bf599b4793bc3ed0cb36854) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29049e036df4f725f176c1a117a8ff88') in 0.012059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.001942 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/SMDs/Kart
+  artifactKey: Guid(2f714c202386d0e46b1f83287f95516d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/SMDs/Kart using Guid(2f714c202386d0e46b1f83287f95516d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1b562a4f2f296c68bf41d40cb3a0497') in 0.006517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.107849 seconds.
+  path: Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/SMDs/Trike
+  artifactKey: Guid(647a3cb37a0c2014d854b267ff73523f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Slick & Cyber Slick Tires/SMDs/Trike using Guid(647a3cb37a0c2014d854b267ff73523f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daddaa93b3aa53c2bc33622258c21ad6') in 0.014264 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 217.504819 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures
+  artifactKey: Guid(825f7997d5213404c808b327d34f0065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures using Guid(825f7997d5213404c808b327d34f0065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '698f7980963ce9f7c536748a8fa09e40') in 0.008376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.108010 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bake_bodyk_std_g00_b00_f00.png
+  artifactKey: Guid(00a05de437ea231418e5f50f4c76d593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bake_bodyk_std_g00_b00_f00.png using Guid(00a05de437ea231418e5f50f4c76d593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '337ddbbbcd20c7d63866ea5a5c0a1b63') in 0.020281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_lig_alb.png
+  artifactKey: Guid(2c8a0f4dc10972345b9572b82bba16e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_lig_alb.png using Guid(2c8a0f4dc10972345b9572b82bba16e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe836489e6a47137a320ae10cb579734') in 0.022809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_dsy_alb.png
+  artifactKey: Guid(8df1451296a5ed04db12ae4fe812b315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_dsy_alb.png using Guid(8df1451296a5ed04db12ae4fe812b315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c2a2ca9301ee85418f361d10310df99') in 0.027020 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_emm.1.png
+  artifactKey: Guid(8cbff2c64c711bb4c9e1816776719137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_emm.1.png using Guid(8cbff2c64c711bb4c9e1816776719137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c20595f7c6b237202860ddb83b79028') in 0.021410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_jgm_alb.png
+  artifactKey: Guid(63b24ce1ade1b3e46a7373f72a6a1034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_jgm_alb.png using Guid(63b24ce1ade1b3e46a7373f72a6a1034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca9c333d2da03bf72bebb6f3020cb06b') in 0.022595 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_lry_alb.png
+  artifactKey: Guid(2b9351c510d58564284c896b16d96a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_lry_alb.png using Guid(2b9351c510d58564284c896b16d96a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '679cdc65cc6d3adfcebc7a68d33c2e18') in 0.022707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_mii01_alb.png
+  artifactKey: Guid(cbbcbf3a5425aa14e87a040f17d876b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_mii01_alb.png using Guid(cbbcbf3a5425aa14e87a040f17d876b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b75774c602ac0ab843e978770f3a9043') in 0.021792 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_emm.2.png
+  artifactKey: Guid(3647fcb6a9e023e4185b37bedaa9e269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_emm.2.png using Guid(3647fcb6a9e023e4185b37bedaa9e269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85ab9fdee1adb9afaef78b7efa5549ea') in 0.018104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_mii05_alb.png
+  artifactKey: Guid(28db30a88b6a4924eb671800c26fbfae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_mii05_alb.png using Guid(28db30a88b6a4924eb671800c26fbfae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caf811a42c30b54e0e938276fc253110') in 0.019283 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_lmy_alb.png
+  artifactKey: Guid(6520a60191745fe4b8e271c515da0791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_lmy_alb.png using Guid(6520a60191745fe4b8e271c515da0791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8db0f425d97d9ea83536f4095b5f4e3') in 0.020831 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_kno_alb.png
+  artifactKey: Guid(b9ff905da665ed24380395de64955830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_kno_alb.png using Guid(b9ff905da665ed24380395de64955830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17b83397a4dbb7b65d583bf9f543a9c2') in 0.020333 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_mii03_alb.png
+  artifactKey: Guid(9a8f48a4d78956c438d13a04d229df25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_mii03_alb.png using Guid(9a8f48a4d78956c438d13a04d229df25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcb239a9f66ba2fcb393f3591781454c') in 0.016171 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_hyh00_alb.png
+  artifactKey: Guid(40220da3177cc444f8452f69e78bd85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_hyh00_alb.png using Guid(40220da3177cc444f8452f69e78bd85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c339ec56afecebe33ebd779f7cf0db3b') in 0.021555 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_mii04_alb.png
+  artifactKey: Guid(b06d6b735ee1cd442b88a3644c6173d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_mii04_alb.png using Guid(b06d6b735ee1cd442b88a3644c6173d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd515d1668a3faf9d75de841660932998') in 0.015319 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_kop_alb.png
+  artifactKey: Guid(a3af2a29578fd0a42ae1d2436285d240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_kop_alb.png using Guid(a3af2a29578fd0a42ae1d2436285d240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa142ea2d071b8c23403c1ad863a51d7') in 0.029010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_mii06_alb.png
+  artifactKey: Guid(bbd7e5d616389074b8a789c591a75a4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_mii06_alb.png using Guid(bbd7e5d616389074b8a789c591a75a4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6f010f6c0722abfd56563cf770fb814') in 0.015554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/body_dummy_spm.png
+  artifactKey: Guid(f1494ab51b495734a8174f4a22095349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/body_dummy_spm.png using Guid(f1494ab51b495734a8174f4a22095349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16960aa86aa2f4e95fa1cae3bfd7b7c2') in 0.020336 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_ldw_alb.png
+  artifactKey: Guid(ff5c7f016fd29294cb2ad03bd40bee5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_ldw_alb.png using Guid(ff5c7f016fd29294cb2ad03bd40bee5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0194e734055468e613f38124e0bbfc4') in 0.016655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_mii08_alb.png
+  artifactKey: Guid(b8f1b7eb8bff03f4c90bde717f4bade1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_mii08_alb.png using Guid(b8f1b7eb8bff03f4c90bde717f4bade1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed8c6b1ba9335edfbb49e4c355de92b7') in 0.019124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_ligb_alb.png
+  artifactKey: Guid(e52fd313a4e698c4fa014320aa856fed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_ligb_alb.png using Guid(e52fd313a4e698c4fa014320aa856fed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2a336128ec232e96ca8c0c0d722fa43') in 0.018337 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_emm.0.png
+  artifactKey: Guid(941405c0d2fc871429d092d21bfc77a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_emm.0.png using Guid(941405c0d2fc871429d092d21bfc77a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d38afbe7fbd4e6e6fc385f96bf3c26b') in 0.020087 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_dsyb_alb.png
+  artifactKey: Guid(c3a7e195122502842a6e1a61a2c879b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_dsyb_alb.png using Guid(c3a7e195122502842a6e1a61a2c879b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '388036c71a19b70a106d2721bf223590') in 0.015722 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_igy_alb.png
+  artifactKey: Guid(8d2822fef00dfe1418ef87c46c6cafd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_igy_alb.png using Guid(8d2822fef00dfe1418ef87c46c6cafd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00db0ccf51bccb8fa1df198e04c26420') in 0.018398 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_mii07_alb.png
+  artifactKey: Guid(abba4d06748351a41a13e1feca5ac46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_mii07_alb.png using Guid(abba4d06748351a41a13e1feca5ac46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a07901d06ad5819621b8b5f35961d70') in 0.019219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_dkg_alb.png
+  artifactKey: Guid(96fa4e1938f385f458dcb820ac0572eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_dkg_alb.png using Guid(96fa4e1938f385f458dcb820ac0572eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02f8394a13057c3604f64344dbb0f1fc') in 0.019973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_emm.3.png
+  artifactKey: Guid(f60281fdaa810be47b0624fd02eb3914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_emm.3.png using Guid(f60281fdaa810be47b0624fd02eb3914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f142ab5ea79c007488ef37e10730713') in 0.015392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_mii02_alb.png
+  artifactKey: Guid(0f8bad4e299e00644af5b9a454ec9d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_mii02_alb.png using Guid(0f8bad4e299e00644af5b9a454ec9d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aacfbdc357c16b13466f7b486d7ef83') in 0.018017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_a_spm.png
+  artifactKey: Guid(7c536b29f72c4ad4287a52f176df6568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_a_spm.png using Guid(7c536b29f72c4ad4287a52f176df6568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dddaef98ec47c8c41b9765661b9fb08a') in 0.022438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/body_dummy_alb.png
+  artifactKey: Guid(a293550f9c75b0548a9d05f1668e1306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/body_dummy_alb.png using Guid(a293550f9c75b0548a9d05f1668e1306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dfe864c4f2017b10349b61720beb7e8') in 0.019711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_knc_alb.png
+  artifactKey: Guid(48c4f7afb9b6aca4ea4af6fdfd13c8af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_knc_alb.png using Guid(48c4f7afb9b6aca4ea4af6fdfd13c8af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5067519eb343462bb093a052951d074') in 0.020796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_mii00_alb.png
+  artifactKey: Guid(e517b8f81d7ae5b42b8475dc98d51327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Textures/bodyk_std_mii00_alb.png using Guid(e517b8f81d7ae5b42b8475dc98d51327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d427feaa6827f29d5ab4b4cdb44f6d3') in 0.071017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.642779 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Materials
+  artifactKey: Guid(24e969bdf1e01cf4d87a45f883bef2fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Materials using Guid(24e969bdf1e01cf4d87a45f883bef2fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a342fd534a1fa3bc7b9dafd739693b6') in 0.004670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.050884 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Materials/Default.mat
+  artifactKey: Guid(cc803113383c1d1499ce26c430b1e57b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Materials/Default.mat using Guid(cc803113383c1d1499ce26c430b1e57b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23c49f400c07f0089afd2239d994228e') in 0.016922 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.717479 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab
+  artifactKey: Guid(8b81239f4e2c9654391973b3420b3a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab using Guid(8b81239f4e2c9654391973b3420b3a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35d484c53b502de91897f2184e91e332') in 0.009439 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.047238 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Standard Kart.obj
+  artifactKey: Guid(08ddd78780c1e9546bd6a18256c41ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Standard Kart.obj using Guid(08ddd78780c1e9546bd6a18256c41ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fc067ab2b7a30bcbd34558c5414f653') in 0.030586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 146.784004 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Materials
+  artifactKey: Guid(93579af019ea96d4e87b6c6f82608a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Materials using Guid(93579af019ea96d4e87b6c6f82608a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d88f66f17fd494ceac9ccb00eb3e4c4') in 0.009469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.082074 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Materials/Default.mat
+  artifactKey: Guid(9f93021b5e1af2947b45c0378cfcc2b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Materials/Default.mat using Guid(9f93021b5e1af2947b45c0378cfcc2b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f013564bef393accf9bca5201ce9a813') in 0.015810 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 450.308611 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures
+  artifactKey: Guid(d06745f70eec5d14e83461b5a48a373b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures using Guid(d06745f70eec5d14e83461b5a48a373b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7df90bdd9b8e14934bd23e91ededf829') in 0.012559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.103624 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bake_bodyk_std_g00_b00_f00.png
+  artifactKey: Guid(1b66b3d35fe41944abfab128913f23b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bake_bodyk_std_g00_b00_f00.png using Guid(1b66b3d35fe41944abfab128913f23b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a713bbfdd7df218dc67f7ad748ba3ea0') in 0.024052 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_a_spm.png
+  artifactKey: Guid(96f92875fe3fe684291e1ca01de049e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_a_spm.png using Guid(96f92875fe3fe684291e1ca01de049e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fe3605c143f58db1c42615252862fbb') in 0.015462 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/body_dummy_spm.png
+  artifactKey: Guid(4f80f2c3d69976b499bb77e5a4602a21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/body_dummy_spm.png using Guid(4f80f2c3d69976b499bb77e5a4602a21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87af4cdeb61456df8ea951b91e478c37') in 0.029682 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/body_dummy_alb.png
+  artifactKey: Guid(450995a010525244da0a6a4743e88c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/body_dummy_alb.png using Guid(450995a010525244da0a6a4743e88c42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43775d511b4f5573d7d3b41321dfec8b') in 0.015863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_igy_alb.png
+  artifactKey: Guid(c851fad2c95fd9642bef2c85208c8385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_igy_alb.png using Guid(c851fad2c95fd9642bef2c85208c8385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bafcef67a5e2acf48a596228e988ea4b') in 0.014297 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_dsyb_alb.png
+  artifactKey: Guid(4c2d6b93e4f932847af370fce66060a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_dsyb_alb.png using Guid(4c2d6b93e4f932847af370fce66060a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc9fd12737272f45d501ac395b27b0c7') in 0.012414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_ligb_alb.png
+  artifactKey: Guid(ac7e2768e7b41c34d85150297a676579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_ligb_alb.png using Guid(ac7e2768e7b41c34d85150297a676579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5d4302bad5e4c1d840f8af1e795fac0') in 0.018163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_emm.3.png
+  artifactKey: Guid(6d1c53e8f82a3fe489321d0ef170dffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_emm.3.png using Guid(6d1c53e8f82a3fe489321d0ef170dffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '800a93b77e998be2fe4adfd6493f9fb2') in 0.015100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_emm.0.png
+  artifactKey: Guid(69455626fa7930d4bac679b576e3f145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_emm.0.png using Guid(69455626fa7930d4bac679b576e3f145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd9fdc644ffa130ea8c278d187797ae4') in 0.010353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_mii05_alb.png
+  artifactKey: Guid(1f5a98c06cc500747809da6bb83d5d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_mii05_alb.png using Guid(1f5a98c06cc500747809da6bb83d5d54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5779306be0ac29e3e1dfc05e7967d1d') in 0.015270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_dkg_alb.png
+  artifactKey: Guid(f34a5b99d904037418192a0236451f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_dkg_alb.png using Guid(f34a5b99d904037418192a0236451f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bf608343bad435f9d73828ad6a797e2') in 0.021711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_mii02_alb.png
+  artifactKey: Guid(3bc4033f66f699c4ab13c19ed67422b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_mii02_alb.png using Guid(3bc4033f66f699c4ab13c19ed67422b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6ac662ec0e824ad9c53f3fdf6b7a5e0') in 0.013784 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_emm.1.png
+  artifactKey: Guid(e698e6ca16fe75545b3e7b23f9a5f51f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_emm.1.png using Guid(e698e6ca16fe75545b3e7b23f9a5f51f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1be6ad44e5b53353a40ca902dc18037') in 0.017902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_emm.2.png
+  artifactKey: Guid(a728c4c6f7e9ef0419a7e1924ce272e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_emm.2.png using Guid(a728c4c6f7e9ef0419a7e1924ce272e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e91c9dc52f676a450759622ef6e56f2b') in 0.018157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_mii04_alb.png
+  artifactKey: Guid(a7f1715ebdd5b1f438b699ea87da8f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_mii04_alb.png using Guid(a7f1715ebdd5b1f438b699ea87da8f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8bc94f1c6cb9e0c5352cc2e1e98a2cd') in 0.014579 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_lmy_alb.png
+  artifactKey: Guid(1aeda412a46e7b045b2f86a89cefdfbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_lmy_alb.png using Guid(1aeda412a46e7b045b2f86a89cefdfbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9298b07a0fc62f4fb6e6a0a87a4ba6c2') in 0.017087 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_mii00_alb.png
+  artifactKey: Guid(edebcec02ab319b48a0c04ece7bc024a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_mii00_alb.png using Guid(edebcec02ab319b48a0c04ece7bc024a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0be039c458a88270ecf7807d4490ee4') in 0.016781 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_kno_alb.png
+  artifactKey: Guid(2ba4698d54fb2b844969a385d66fb40e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_kno_alb.png using Guid(2ba4698d54fb2b844969a385d66fb40e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32ed52f0fd9245437ea7a4b50be89fdc') in 0.019184 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_ldw_alb.png
+  artifactKey: Guid(819c3a31eb522524fb3b6c0873226c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_ldw_alb.png using Guid(819c3a31eb522524fb3b6c0873226c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7e367a3f65dddd13c10186ddaf591ca') in 0.013348 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_mii07_alb.png
+  artifactKey: Guid(e1f1a0040102ffc45ae5ca57ab2738f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_mii07_alb.png using Guid(e1f1a0040102ffc45ae5ca57ab2738f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c665404df8acc372103bf4d731467f43') in 0.016697 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_lig_alb.png
+  artifactKey: Guid(a8fc36d61ba0a2442ae2a5587ba7b029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_lig_alb.png using Guid(a8fc36d61ba0a2442ae2a5587ba7b029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74b678a65f3b9a399a900b53b856c49b') in 0.018626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_hyh00_alb.png
+  artifactKey: Guid(240e5979fafc9694687d437da0cf1720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_hyh00_alb.png using Guid(240e5979fafc9694687d437da0cf1720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '973b4489769db867766372b7ecd44447') in 0.020234 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_mii01_alb.png
+  artifactKey: Guid(6a335eb094756f74dadad0fff899f023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_mii01_alb.png using Guid(6a335eb094756f74dadad0fff899f023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7fb41683aa002fd9af4f91b26912bf0') in 0.017693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_jgm_alb.png
+  artifactKey: Guid(2a079faaf9a1fe84a9af97f4803e4338) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_jgm_alb.png using Guid(2a079faaf9a1fe84a9af97f4803e4338) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb6ddbc67cd6b4a039b5e31753157267') in 0.018607 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_mii06_alb.png
+  artifactKey: Guid(ae2ce8e4eaf0f2e4a92f25c1032fce61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_mii06_alb.png using Guid(ae2ce8e4eaf0f2e4a92f25c1032fce61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36867f88cdf5d8b4e78bb885d144dcb5') in 0.017102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_knc_alb.png
+  artifactKey: Guid(d1880c8383f687f459675fec523e822c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_knc_alb.png using Guid(d1880c8383f687f459675fec523e822c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73e8399caf2f7862ad3e8603cbed3299') in 0.018555 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_kop_alb.png
+  artifactKey: Guid(04e2bf7faf0ff8d46b6d144adb6ea80c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_kop_alb.png using Guid(04e2bf7faf0ff8d46b6d144adb6ea80c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e4aed30d970694e48d099b44c6a8273') in 0.014781 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_dsy_alb.png
+  artifactKey: Guid(01d652db9e5c69941af8b47b111877c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_dsy_alb.png using Guid(01d652db9e5c69941af8b47b111877c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '323a9c7bd9865f7578fef32678a0422a') in 0.020706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_lry_alb.png
+  artifactKey: Guid(f6eace7b673ccad418bc71a24e80add3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_lry_alb.png using Guid(f6eace7b673ccad418bc71a24e80add3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce7e605a584fc879040e94b39b847fee') in 0.015016 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_mii08_alb.png
+  artifactKey: Guid(559453ce96238e84c92a79d57f05edef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_mii08_alb.png using Guid(559453ce96238e84c92a79d57f05edef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5555673333484a6ef22f95dd3526b88') in 0.020655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_mii03_alb.png
+  artifactKey: Guid(53fe260fc6f2a9f48819a7f23fe653ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/RACE WAY/MARIO KART/Kart/Prefab/Textures/bodyk_std_mii03_alb.png using Guid(53fe260fc6f2a9f48819a7f23fe653ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4469a74a1ee7c566b17654525cf2a790') in 0.020160 seconds 
