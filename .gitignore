@@ -73,3 +73,5 @@ crashlytics-build.properties
 *.log
 
 Logs/
+
+UserSettings/
