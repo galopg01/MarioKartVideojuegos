@@ -9,10 +9,10 @@ public class WheelController : MonoBehaviour
     [SerializeField] WheelCollider backRight;
     [SerializeField] WheelCollider backLeft;
 
-    [SerializeField] Transform frontRight;
-    [SerializeField] Transform frontLeft;
-    [SerializeField] Transform backRight;
-    [SerializeField] Transform backLeft;
+    [SerializeField] Transform frontRightTransform;
+    [SerializeField] Transform frontLeftTransform;
+    [SerializeField] Transform backRightTransform;
+    [SerializeField] Transform backLeftTransform;
 
     public float acceleration = 500f;
     public float breakingForce = 300f;
@@ -44,6 +44,16 @@ public class WheelController : MonoBehaviour
         frontLeft.brakeTorque = currentBreakForce;
         backLeft.brakeTorque = currentBreakForce;
         backRight.brakeTorque = currentBreakForce;
+
+        currentTurnAngle = maxTurnAngle * Input.GetAxis("Horizontal");
+        frontLeft.steerAngle = currentTurnAngle;
+        frontRight.steerAngle = currentTurnAngle;
+
+        UpdateWheel(frontRight, frontRight.transform);
+        UpdateWheel(frontLeft, frontLeft.transform);
+        UpdateWheel(backRight, backRight.transform);
+        UpdateWheel(backLeft, backLeft.transform);
+
     }
 
     void UpdateWheel(WheelCollider col, Transform trans){
