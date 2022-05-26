@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -574,11 +574,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 08ddd78780c1e9546bd6a18256c41ebb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -62.554
+      value: -62.534
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 08ddd78780c1e9546bd6a18256c41ebb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 38.301
+      value: 38.404
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 08ddd78780c1e9546bd6a18256c41ebb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -984,7 +984,7 @@ WheelCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2301304278105383268}
   m_Center: {x: 0, y: 0, z: 0}
-  m_Radius: 0.5
+  m_Radius: 1.8
   m_SuspensionSpring:
     spring: 35000
     damper: 4500
@@ -1134,7 +1134,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132148686157567}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 1000
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -1149,7 +1149,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132148686157567}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 479fc365032dcf041b98c1b2c97adfa9, type: 3}
   m_Name: 
@@ -1541,6 +1541,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 0.05, z: 1.5}
   m_Center: {x: 0, y: -0.2, z: 0.2}
+--- !u!114 &919132148686157569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148686157567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2b02c644ffe2104582893e3010a6cc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frontRight: {fileID: 8878572931762565835}
+  frontLeft: {fileID: 6529409238939625868}
+  backRight: {fileID: 1185385256}
+  backLeft: {fileID: 6298458300291878775}
+  acceleration: 500
+  breakingForce: 300
 --- !u!1 &919132149596408749
 GameObject:
   m_ObjectHideFlags: 0
@@ -1726,6 +1744,7 @@ GameObject:
   - component: {fileID: 6529409238939625867}
   - component: {fileID: 1033122137}
   - component: {fileID: 1033122138}
+  - component: {fileID: 6529409238939625868}
   m_Layer: 0
   m_Name: RuedaDelanteraIz
   m_TagString: Untagged
@@ -1869,7 +1888,7 @@ WheelCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6298458300291878774}
   m_Center: {x: 0, y: 0, z: 0}
-  m_Radius: 0.5
+  m_Radius: 1.8
   m_SuspensionSpring:
     spring: 35000
     damper: 4500
@@ -1920,6 +1939,36 @@ Transform:
   m_Father: {fileID: 6556907976015959733}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!146 &6529409238939625868
+WheelCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4579260086421172626}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 1.8
+  m_SuspensionSpring:
+    spring: 35000
+    damper: 4500
+    targetPosition: 0.5
+  m_SuspensionDistance: 0.3
+  m_ForceAppPointDistance: 0
+  m_Mass: 20
+  m_WheelDampingRate: 0.25
+  m_ForwardFriction:
+    m_ExtremumSlip: 0.4
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.5
+    m_Stiffness: 1
+  m_SidewaysFriction:
+    m_ExtremumSlip: 0.2
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.5
+    m_AsymptoteValue: 0.75
+    m_Stiffness: 1
+  m_Enabled: 1
 --- !u!4 &6556907976015959733
 Transform:
   m_ObjectHideFlags: 0
@@ -2107,6 +2156,7 @@ GameObject:
   - component: {fileID: 5792754077496752630}
   - component: {fileID: 617932652}
   - component: {fileID: 617932653}
+  - component: {fileID: 8878572931762565835}
   m_Layer: 0
   m_Name: RuedaDelanteraDer
   m_TagString: Untagged
@@ -2114,3 +2164,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!146 &8878572931762565835
+WheelCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8878572931762565834}
+  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 1.8
+  m_SuspensionSpring:
+    spring: 35000
+    damper: 4500
+    targetPosition: 0.5
+  m_SuspensionDistance: 0.3
+  m_ForceAppPointDistance: 0
+  m_Mass: 20
+  m_WheelDampingRate: 0.25
+  m_ForwardFriction:
+    m_ExtremumSlip: 0.4
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.8
+    m_AsymptoteValue: 0.5
+    m_Stiffness: 1
+  m_SidewaysFriction:
+    m_ExtremumSlip: 0.2
+    m_ExtremumValue: 1
+    m_AsymptoteSlip: 0.5
+    m_AsymptoteValue: 0.75
+    m_Stiffness: 1
+  m_Enabled: 1
