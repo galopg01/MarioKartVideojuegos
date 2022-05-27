@@ -49,20 +49,19 @@ public class WheelController : MonoBehaviour
         frontLeft.steerAngle = currentTurnAngle;
         frontRight.steerAngle = currentTurnAngle;
 
-        UpdateWheel(frontRight, frontRight.transform);
-        UpdateWheel(frontLeft, frontLeft.transform);
-        UpdateWheel(backRight, backRight.transform);
-        UpdateWheel(backLeft, backLeft.transform);
-
+        UpdateWheel(frontRight, frontRightTransform);
+        UpdateWheel(frontLeft, frontLeftTransform);
+        UpdateWheel(backRight, backRightTransform);
+        UpdateWheel(backLeft, backLeftTransform);
     }
 
-    void UpdateWheel(WheelCollider col, Transform trans){
+    void UpdateWheel(WheelCollider col, Transform trans) 
+    {
          Vector3 position;
          Quaternion rotation;
          col.GetWorldPose(out position, out rotation);
 
          trans.position = position;
          trans.rotation = rotation;
-
     }
 }
