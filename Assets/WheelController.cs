@@ -22,14 +22,21 @@ public class WheelController : MonoBehaviour
     private float currentBreakForce = 0f;
     private float currentTurnAngle = 0f;
 
+    private Rigidbody rb;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     private void FixedUpdate()
     {
+        if (Input.GetKey(KeyCode.X))
+        {
+            rb.AddForce(5000,0,0, ForceMode.Impulse);
+        }
+
         currentAcceleration = acceleration * Input.GetAxis("Vertical");
 
         if (Input.GetKeyUp(KeyCode.Space))
