@@ -2065,6 +2065,7 @@ MonoBehaviour:
   acceleration: 500
   breakingForce: 300
   maxTurnAngle: 15
+  maxSpeed: 8
 --- !u!1 &919132149596408749
 GameObject:
   m_ObjectHideFlags: 0

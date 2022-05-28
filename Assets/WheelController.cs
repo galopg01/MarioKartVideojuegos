@@ -22,6 +22,8 @@ public class WheelController : MonoBehaviour
     private float currentBreakForce = 0f;
     private float currentTurnAngle = 0f;
 
+    public float maxSpeed = 8f;
+
     private Rigidbody rb;
 
     // Start is called before the first frame update
@@ -30,11 +32,19 @@ public class WheelController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+    private void Update()
+    {
+        if (rb.velocity.magnitude > maxSpeed)
+        {
+            rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
+        }
+    }
+
     private void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.X))
         {
-            rb.AddForce(5000,0,0, ForceMode.Impulse);
+            rb.AddForce(2,0,0, ForceMode.VelocityChange);
         }
 
         currentAcceleration = acceleration * Input.GetAxis("Vertical");
