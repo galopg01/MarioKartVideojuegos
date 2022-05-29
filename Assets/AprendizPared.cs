@@ -62,7 +62,7 @@ public class AprendizPared : MonoBehaviour
                 {
                     r.velocity = new Vector3(0, 0, 0);
                     transform.position = posicionActual;
-                    transform.rotation = rotacionActual;
+                    transform.rotation = angulo;
 
                     wheelController.speed = speed;
                     wheelController.turn = giro;
@@ -176,7 +176,7 @@ public class AprendizPared : MonoBehaviour
             {
                 r.velocity = new Vector3(0, 0, 0);
                 transform.position = posicionActual;
-                transform.rotation = rotacionActual;
+                transform.rotation = angulo;
 
                 wheelController.speed = mejorAceleracion;
                 wheelController.turn = mejorGiro;
