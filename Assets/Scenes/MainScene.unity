@@ -1065,7 +1065,23 @@ MonoBehaviour:
   valorMaximoAceleracion: 0
   valorMaximoGiro: 0
   paso: 1
-  Velocidad_Simulacion: 1
+  Velocidad_Simulacion: 15
+--- !u!114 &1189192705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189192687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a3c0836158aeb44ca865a08cc67ca3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  valorMaximoAceleracion: 1
+  valorMaximoGiro: 1
+  paso: 0.1
+  Velocidad_Simulacion: 10
 --- !u!1001 &1208115441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1763,7 +1779,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8709845679535078140, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -58.429
+      value: -58.42
       objectReference: {fileID: 0}
     - target: {fileID: 8709845679535078140, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1771,7 +1787,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8709845679535078140, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -26.5
+      value: -24.66
       objectReference: {fileID: 0}
     - target: {fileID: 8709845679535078140, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
       propertyPath: m_LocalRotation.w
