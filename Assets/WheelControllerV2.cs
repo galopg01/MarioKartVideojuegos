@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WheelController : MonoBehaviour
+public class WheelControllerV2 : MonoBehaviour
 {
     [SerializeField] WheelCollider frontRight;
     [SerializeField] WheelCollider frontLeft;
@@ -17,7 +17,6 @@ public class WheelController : MonoBehaviour
     public float acceleration = 500f;
     public float breakingForce = 300f;
     public float maxTurnAngle = 15f;
-
 
     private float currentAcceleration = 0f;
     private float currentBreakForce = 0f;
@@ -50,7 +49,7 @@ public class WheelController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.X))
         {
-            rb.AddForce(2,0,0, ForceMode.VelocityChange);
+            rb.AddForce(2, 0, 0, ForceMode.VelocityChange);
         }
 
         // currentAcceleration = acceleration * (script.enabled ? speed : Input.GetAxis("Vertical"));
@@ -79,13 +78,13 @@ public class WheelController : MonoBehaviour
         UpdateWheel(backLeft, backLeftTransform);
     }
 
-    void UpdateWheel(WheelCollider col, Transform trans) 
+    void UpdateWheel(WheelCollider col, Transform trans)
     {
-         Vector3 position;
-         Quaternion rotation;
-         col.GetWorldPose(out position, out rotation);
+        Vector3 position;
+        Quaternion rotation;
+        col.GetWorldPose(out position, out rotation);
 
-         trans.position = position;
-         trans.rotation = rotation;
+        trans.position = position;
+        trans.rotation = rotation;
     }
 }

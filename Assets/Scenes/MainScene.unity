@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!146 &78660645 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 9175291505628166245, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
+  m_PrefabInstance: {fileID: 9175291505291335353}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &122413219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -584,6 +589,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5831710145809263539, guid: 9f3705efc0956924a8049888b3feeafe, type: 3}
+--- !u!146 &961996127 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 9175291503770030217, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
+  m_PrefabInstance: {fileID: 9175291505291335353}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,6 +983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dot: 0
+  wall: {fileID: 0}
 --- !u!114 &1189192705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1002,7 +1013,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189192687}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35465fa43b9925f44a49a2ba17def5b8, type: 3}
   m_Name: 
@@ -1012,6 +1023,49 @@ MonoBehaviour:
   valorMaximoGiro: 1
   paso: 0.1
   Velocidad_Simulacion: 1.5
+--- !u!114 &1189192720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189192687}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a903a588161d75d4eb68eb2f2a30f2f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frontRight: {fileID: 1728596725}
+  frontLeft: {fileID: 1637605716}
+  backRight: {fileID: 961996127}
+  backLeft: {fileID: 78660645}
+  frontRightTransform: {fileID: 1855683262}
+  frontLeftTransform: {fileID: 2097880732}
+  backRightTransform: {fileID: 1456350512}
+  backLeftTransform: {fileID: 1626434915}
+  acceleration: 500
+  breakingForce: 300
+  maxTurnAngle: 15
+  maxSpeed: 8
+  speed: 0
+  turn: 0
+--- !u!114 &1189192721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189192687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ffb18b3328645429fec00b6ecc1c6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PuntoObjetivo: {fileID: 0}
+  valorMaximoAceleracion: 0
+  valorMaximoGiro: 0
+  paso: 1
+  Velocidad_Simulacion: 1
 --- !u!1001 &1208115441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1193,6 +1247,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7591549007257017851, guid: 9f3705efc0956924a8049888b3feeafe, type: 3}
+--- !u!4 &1456350512 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1516661779757561452, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
+  m_PrefabInstance: {fileID: 9175291505291335353}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1498307870 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1162422624313666241, guid: 9f3705efc0956924a8049888b3feeafe, type: 3}
@@ -1212,6 +1271,16 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7950177980832886469, guid: 9f3705efc0956924a8049888b3feeafe, type: 3}
+--- !u!4 &1626434915 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9003077712710119909, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
+  m_PrefabInstance: {fileID: 9175291505291335353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!146 &1637605716 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 9175291504261525540, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
+  m_PrefabInstance: {fileID: 9175291505291335353}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1694660314 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6907187590318610874, guid: 9f3705efc0956924a8049888b3feeafe, type: 3}
@@ -1250,6 +1319,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4187059145433612975, guid: 9f3705efc0956924a8049888b3feeafe, type: 3}
+--- !u!146 &1728596725 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 9175291503682419335, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
+  m_PrefabInstance: {fileID: 9175291505291335353}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1786473503
 GameObject:
   m_ObjectHideFlags: 0
@@ -1281,6 +1355,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1855683262 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3402135432432922447, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
+  m_PrefabInstance: {fileID: 9175291505291335353}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1874909394 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5371410225572111670, guid: 9f3705efc0956924a8049888b3feeafe, type: 3}
@@ -1505,6 +1584,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8334787640473770592, guid: e97d185b151bcd348bb56fd60db8d155, type: 3}
   m_PrefabInstance: {fileID: 2088224087}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2097880732 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2722478859410407218, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
+  m_PrefabInstance: {fileID: 9175291505291335353}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4913196912943144830
 PrefabInstance:

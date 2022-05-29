@@ -6,6 +6,7 @@ public class DotProduct : MonoBehaviour
 {
     private Vector3 WallNormal;
     public float dot;
+    public GameObject wall;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class DotProduct : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.forward * 10 + transform.up * 2, out RaycastHit hit, 12, 1 << 3))
         {
             Debug.DrawRay(transform.position, transform.forward * 10 + transform.up * 2, Color.red);
+            wall = hit.transform.gameObject;
             return -hit.transform.forward;
         } else
         {
