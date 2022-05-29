@@ -64,6 +64,7 @@
     <Compile Include="Assets\WheelController.cs" />
     <Compile Include="Assets\Hola_Weka.cs" />
     <Compile Include="Assets\DotProduct.cs" />
+    <Compile Include="Assets\AprendizGiroDot.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Weka\ikvm-7.2.4630.5\bin\IKVM.OpenJDK.SwingAWT.dll" />

@@ -31,6 +31,8 @@ public class AprendizDotProduct : MonoBehaviour
 
     DotProduct script;
 
+    private float DotInicial;
+
     void Start()
     {
         wheelController = GetComponent<WheelController>();
@@ -50,17 +52,17 @@ public class AprendizDotProduct : MonoBehaviour
     {
 
         //Uso de una tabla vacía:
-        casosEntrenamiento = new weka.core.Instances(new java.io.FileReader("Assets/Iniciales_Experiencias.arff"));  //Lee fichero con variables. Sin instancias
+        // casosEntrenamiento = new weka.core.Instances(new java.io.FileReader("Assets/Iniciales_Experiencias_DotProduct.arff"));  //Lee fichero con variables. Sin instancias
 
         //Uso de una tabla con los datos del último entrenamiento:
-        //casosEntrenamiento = new weka.core.Instances(new java.io.FileReader("Assets/Finales_Experiencias.arff"));    //... u otro con muchas experiencias
+        casosEntrenamiento = new weka.core.Instances(new java.io.FileReader("Assets/Finales_Experiencias_DotProduct.arff"));    //... u otro con muchas experiencias
 
         if (casosEntrenamiento.numInstances() < 10)
         {
             // texto.text = "ENTRENAMIENTO: crea una tabla con las fuerzas Fx y Fy utilizadas y las distancias alcanzadas.";
             print("Datos de entrada: valorMaximoAceleracion=" + valorMaximoAceleracion + " valorMaximoGiro=" + valorMaximoGiro + "  " + ((valorMaximoAceleracion == 0 || valorMaximoGiro == 0) ? " ERROR: alguna fuerza es siempre 0" : ""));
 
-            for (float rotation = 0; rotation <= 180; rotation = rotation + 10)
+            for (float rotation = 0; rotation <= 180; rotation = rotation + 30)
             {
                 for (float speed = 0; speed <= valorMaximoAceleracion; speed = speed + paso)                      //Bucle de planificación de la fuerza FX durante el entrenamiento
                 {
@@ -68,27 +70,29 @@ public class AprendizDotProduct : MonoBehaviour
                     {
                         r.velocity = new Vector3(0, 0, 0);
                         transform.position = posicionActual;
-                        transform.eulerAngles = new Vector3(rotation, rotacionActual.y, rotacionActual.z);
+                        transform.eulerAngles = new Vector3(rotacionActual.x, rotation, rotacionActual.z);
 
+                        DotInicial = script.dot;
                         wheelController.speed = speed;
                         wheelController.turn = giro;
 
                         time = Time.time;
-                        yield return new WaitUntil(() => Time.time - time >= 2);       //... y espera a que la pelota llegue al suelo
+                        yield return new WaitUntil(() => Time.time - time >= 1);       //... y espera a que la pelota llegue al suelo
 
                         Instance casoAaprender = new Instance(casosEntrenamiento.numAttributes());
-                        print("ENTRENAMIENTO: con speed " + speed + " y giro " + giro + " se alcanzó una distancia de " + transform.position.z + " m");
+                        print("ENTRENAMIENTO: con rotacion " + DotInicial + "y speed " + speed + " y giro " + giro + " se alcanzó una rotacion de " + script.dot + " m");
                         casoAaprender.setDataset(casosEntrenamiento);                          //crea un registro de experiencia
-                        casoAaprender.setValue(0, speed);                                         //guarda los datos de las fuerzas Fx y Fy utilizadas
-                        casoAaprender.setValue(1, giro);
-                        casoAaprender.setValue(2, transform.position.z);                    //anota la distancia alcanzada
+                        casoAaprender.setValue(0, DotInicial);                                         //guarda los datos de las fuerzas Fx y Fy utilizadas
+                        casoAaprender.setValue(1, speed);
+                        casoAaprender.setValue(2, giro);                    //anota la distancia alcanzada
+                        casoAaprender.setValue(3, script.dot);
                         casosEntrenamiento.add(casoAaprender);                                 //guarda el registro en la lista casosEntrenamiento
                     }                                                                          //FIN bucle de lanzamientos con diferentes de fuerzas
                 }
             }
 
 
-            File salida = new File("Assets/Finales_Experiencias.arff");
+            File salida = new File("Assets/Finales_Experiencias_DotProduct.arff");
             if (!salida.exists())
                 System.IO.File.Create(salida.getAbsoluteFile().toString()).Dispose();
             ArffSaver saver = new ArffSaver();
@@ -99,14 +103,14 @@ public class AprendizDotProduct : MonoBehaviour
 
         //APRENDIZAJE CONOCIMIENTO:  
         saberPredecirSpeed = new M5P();                                                //crea un algoritmo de aprendizaje M5P (árboles de regresión)
-        casosEntrenamiento.setClassIndex(0);                                             //y hace que aprenda Fx dada la distancia y Fy
+        casosEntrenamiento.setClassIndex(1);                                             //y hace que aprenda Fx dada la distancia y Fy
         saberPredecirSpeed.buildClassifier(casosEntrenamiento);                        //REALIZA EL APRENDIZAJE DE FX A PARTIR DE LA DISTANCIA Y FY
 
         saberPredecirDistancia = new M5P();                                              //crea otro algoritmo de aprendizaje M5P (árboles de regresión)  
-        casosEntrenamiento.setClassIndex(2);                                             //La variable a aprender a calcular la distancia dada Fx e FY                                                                                         
+        casosEntrenamiento.setClassIndex(3);                                             //La variable a aprender a calcular la distancia dada Fx e FY                                                                                         
         saberPredecirDistancia.buildClassifier(casosEntrenamiento);                      //este algoritmo aprende un "modelo fisico aproximado"
 
-        distanciaObjetivo = PuntoObjetivo.transform.position.z;
+        distanciaObjetivo = 0;
 
         ESTADO = "Con conocimiento";
         print("uwu");
@@ -156,15 +160,17 @@ public class AprendizDotProduct : MonoBehaviour
             {
                 Instance casoPrueba = new Instance(casosEntrenamiento.numAttributes());
                 casoPrueba.setDataset(casosEntrenamiento);
-                casoPrueba.setValue(1, giro);                                                                   //crea un registro con una Fy
-                casoPrueba.setValue(2, distanciaObjetivo);                                                    //y la distancia
+                casoPrueba.setValue(0, script.dot);
+                casoPrueba.setValue(2, giro);                                                                   //crea un registro con una Fy
+                casoPrueba.setValue(3, distanciaObjetivo);                                                    //y la distancia
                 float speed = (float)saberPredecirSpeed.classifyInstance(casoPrueba);                          //Predice Fx a partir de la distancia y una Fy 
                 if ((speed >= -5) && (speed <= 20))
                 {
                     Instance casoPrueba2 = new Instance(casosEntrenamiento.numAttributes());
-                    casoPrueba2.setDataset(casosEntrenamiento);                                                  //Utiliza el "modelo fisico aproximado" con Fx y Fy                 
-                    casoPrueba2.setValue(0, speed);                                                                 //Crea una registro con una Fx
-                    casoPrueba2.setValue(1, giro);                                                                 //Crea una registro con una Fy
+                    casoPrueba2.setDataset(casosEntrenamiento);                                                  //Utiliza el "modelo fisico aproximado" con Fx y Fy
+                    casoPrueba.setValue(0, script.dot);
+                    casoPrueba2.setValue(1, speed);                                                                 //Crea una registro con una Fx
+                    casoPrueba2.setValue(2, giro);                                                                 //Crea una registro con una Fy
                     float prediccionDistancia = (float)saberPredecirDistancia.classifyInstance(casoPrueba2);     //Predice la distancia dada Fx y Fy
                     if (Mathf.Abs(prediccionDistancia - distanciaObjetivo) < menorDistancia)                     //Busca la Fy con una distancia más cercana al objetivo
                     {
@@ -182,8 +188,8 @@ public class AprendizDotProduct : MonoBehaviour
             }
             else
             {
-                r.velocity = new Vector3(0, 0, 0);
-                transform.position = posicionActual;
+                //r.velocity = new Vector3(0, 0, 0);
+                //transform.position = posicionActual;
                 //transform.rotation = rotacionActual;
 
                 wheelController.speed = mejorAceleracion;

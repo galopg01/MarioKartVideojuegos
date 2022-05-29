@@ -5,6 +5,7 @@ using UnityEngine;
 public class DotProduct : MonoBehaviour
 {
     private Vector3 WallNormal;
+    public float dot;
 
     // Start is called before the first frame update
     void Start()
@@ -16,12 +17,12 @@ public class DotProduct : MonoBehaviour
     void Update()
     {
         WallNormal = getWallNormal();
-        print(Vector3.Dot(WallNormal, transform.forward));
+        dot = Vector3.Dot(WallNormal, transform.forward);
     }
 
     private Vector3 getWallNormal()
     {
-        if (Physics.Raycast(transform.position, transform.forward * 10 + transform.up * 2, out RaycastHit hit, 10, 1 << 3))
+        if (Physics.Raycast(transform.position, transform.forward * 10 + transform.up * 2, out RaycastHit hit, 12, 1 << 3))
         {
             Debug.DrawRay(transform.position, transform.forward * 10 + transform.up * 2, Color.red);
             return -hit.transform.forward;
