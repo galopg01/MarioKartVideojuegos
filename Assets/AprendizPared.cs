@@ -1,4 +1,4 @@
-﻿//Programación de Videojuegos, Universidad de Málaga (Prof. M. Nuñez, mnunez@uma.es)
+//Programación de Videojuegos, Universidad de Málaga (Prof. M. Nuñez, mnunez@uma.es)
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,18 +13,18 @@ using weka.classifiers.functions;
 using weka.classifiers;
 using weka.core.converters; 
 
-public class AprendizLento_2_incognitas : MonoBehaviour
+public class AprendizPared : MonoBehaviour
 {
-    weka.classifiers.trees.M5P saberPredecirDistancia, saberPredecirSpeed;
+    weka.classifiers.trees.M5P saberPredecirDistancia, saberPredecirSpeed, saberPredecirGiro;
     weka.core.Instances casosEntrenamiento;
     Text texto;
     private string ESTADO = "Sin conocimiento";
-    public GameObject PuntoObjetivo;
     public float valorMaximoAceleracion, valorMaximoGiro, paso=1, Velocidad_Simulacion=1;
     float mejorAceleracion, mejorGiro, distanciaObjetivo;
     private Vector3 posicionActual;
-    private Quaternion rotacionActual;
+    private Quaternion angulo;
     Rigidbody r;
+    float distanciaPared;
 
     WheelController wheelController;
     private float time;
@@ -34,7 +34,7 @@ public class AprendizLento_2_incognitas : MonoBehaviour
         wheelController = GetComponent<WheelController>();
 
         posicionActual = transform.position;
-        rotacionActual = transform.rotation;
+        angulo = transform.rotation;
 
         r = GetComponent<Rigidbody>();
 
@@ -47,41 +47,43 @@ public class AprendizLento_2_incognitas : MonoBehaviour
     {
 
         //Uso de una tabla vacía:
-        casosEntrenamiento = new weka.core.Instances(new java.io.FileReader("Assets/Iniciales_Experiencias.arff"));  //Lee fichero con variables. Sin instancias
+        //casosEntrenamiento = new weka.core.Instances(new java.io.FileReader("Assets/ExperienciasParedIniciales.arff"));  //Lee fichero con variables. Sin instancias
         
         //Uso de una tabla con los datos del último entrenamiento:
-        //casosEntrenamiento = new weka.core.Instances(new java.io.FileReader("Assets/Finales_Experiencias.arff"));    //... u otro con muchas experiencias
+        casosEntrenamiento = new weka.core.Instances(new java.io.FileReader("Assets/ExperienciasParedFinales.arff"));    //... u otro con muchas experiencias
 
         if (casosEntrenamiento.numInstances() < 10)
         {
             // texto.text = "ENTRENAMIENTO: crea una tabla con las fuerzas Fx y Fy utilizadas y las distancias alcanzadas.";
             print("Datos de entrada: valorMaximoAceleracion=" + valorMaximoAceleracion + " valorMaximoGiro=" + valorMaximoGiro + "  " + ((valorMaximoAceleracion == 0 || valorMaximoGiro == 0) ? " ERROR: alguna fuerza es siempre 0" : ""));
-            for (float speed = 0; speed <= valorMaximoAceleracion; speed = speed +  0.1f)                      //Bucle de planificación de la fuerza FX durante el entrenamiento
+            for (float speed = 0.2f; speed <= valorMaximoAceleracion; speed = speed +  0.1f)                      //Bucle de planificación de la fuerza FX durante el entrenamiento
             {
                 for (float giro = -1; giro <= valorMaximoGiro; giro = giro + paso)                    //Bucle de planificación de la fuerza FY durante el entrenamiento
                 {
                     r.velocity = new Vector3(0, 0, 0);
                     transform.position = posicionActual;
-                    transform.rotation = rotacionActual;
-
+                    transform.rotation = angulo;
+                
                     wheelController.speed = speed;
                     wheelController.turn = giro;
+                    distanciaPared= getDistance();
 
                     time = Time.time;
                     yield return new WaitUntil(() => Time.time - time >= 2);       //... y espera a que la pelota llegue al suelo
 
                     Instance casoAaprender = new Instance(casosEntrenamiento.numAttributes());
-                    print("ENTRENAMIENTO: con speed " + speed + " y giro " + giro + " se alcanzó una distancia de " + transform.position.z + " m");
+                    print("ENTRENAMIENTO: con speed " + speed + " y giro " + giro + " se alcanzó una distancia de " + distanciaPared + " m");
                     casoAaprender.setDataset(casosEntrenamiento);                          //crea un registro de experiencia
-                    casoAaprender.setValue(0, speed);                                         //guarda los datos de las fuerzas Fx y Fy utilizadas
-                    casoAaprender.setValue(1, giro);
-                    casoAaprender.setValue(2, transform.position.z);                    //anota la distancia alcanzada
+                    casoAaprender.setValue(0,distanciaPared);
+                    casoAaprender.setValue(1, speed);                                         //guarda los datos de las fuerzas Fx y Fy utilizadas
+                    casoAaprender.setValue(2, giro);
+                    casoAaprender.setValue(5, getDistance());                    //anota la distancia alcanzada
                     casosEntrenamiento.add(casoAaprender);                                 //guarda el registro en la lista casosEntrenamiento
                 }                                                                          //FIN bucle de lanzamientos con diferentes de fuerzas
             }
 
 
-            File salida = new File("Assets/Finales_Experiencias.arff");
+            File salida = new File("Assets/ExperienciasParedFinales.arff");
             if (!salida.exists())
                 System.IO.File.Create(salida.getAbsoluteFile().toString()).Dispose();
             ArffSaver saver = new ArffSaver();
@@ -92,17 +94,18 @@ public class AprendizLento_2_incognitas : MonoBehaviour
 
         //APRENDIZAJE CONOCIMIENTO:  
         saberPredecirSpeed = new M5P();                                                //crea un algoritmo de aprendizaje M5P (árboles de regresión)
-        casosEntrenamiento.setClassIndex(0);                                             //y hace que aprenda Fx dada la distancia y Fy
+        casosEntrenamiento.setClassIndex(1);                                             //y hace que aprenda Fx dada la distancia y Fy
         saberPredecirSpeed.buildClassifier(casosEntrenamiento);                        //REALIZA EL APRENDIZAJE DE FX A PARTIR DE LA DISTANCIA Y FY
 
-        saberPredecirDistancia = new M5P();                                              //crea otro algoritmo de aprendizaje M5P (árboles de regresión)  
+        saberPredecirGiro = new M5P();                                              //crea otro algoritmo de aprendizaje M5P (árboles de regresión)  
         casosEntrenamiento.setClassIndex(2);                                             //La variable a aprender a calcular la distancia dada Fx e FY                                                                                         
-        saberPredecirDistancia.buildClassifier(casosEntrenamiento);                      //este algoritmo aprende un "modelo fisico aproximado"
+        saberPredecirGiro.buildClassifier(casosEntrenamiento);                      //este algoritmo aprende un "modelo fisico aproximado"
 
-        distanciaObjetivo = PuntoObjetivo.transform.position.z;
+        saberPredecirDistancia = new M5P();                                              //crea otro algoritmo de aprendizaje M5P (árboles de regresión)  
+        casosEntrenamiento.setClassIndex(5);                                             //La variable a aprender a calcular la distancia dada Fx e FY                                                                                         
+        saberPredecirDistancia.buildClassifier(casosEntrenamiento); 
 
         ESTADO = "Con conocimiento";
-        print("uwu");
 
         /*print(casosEntrenamiento.numInstances() +" espers "+ saberPredecirDistancia.toString());
 
@@ -136,7 +139,7 @@ public class AprendizLento_2_incognitas : MonoBehaviour
     }
     void FixedUpdate()                                                                                 //DURANTEL EL JUEGO: Aplica lo aprendido para lanzar a la canasta
     {
-        if ((ESTADO == "Con conocimiento"))
+        if ((ESTADO == "Con conocimiento") )
         {
             Time.timeScale = 1;                                                                               //Durante el juego, el NPC razona así... (no juega aún)   
             float menorDistancia = 1e9f;
@@ -149,25 +152,26 @@ public class AprendizLento_2_incognitas : MonoBehaviour
             {
                 Instance casoPrueba = new Instance(casosEntrenamiento.numAttributes());
                 casoPrueba.setDataset(casosEntrenamiento);
-                casoPrueba.setValue(1, giro);                                                                   //crea un registro con una Fy
-                casoPrueba.setValue(2, distanciaObjetivo);                                                    //y la distancia
+                casoPrueba.setValue(2, giro);                                                                   //crea un registro con una Fy
+                casoPrueba.setValue(0, 4);                                                    //y la distancia
                 float speed = (float)saberPredecirSpeed.classifyInstance(casoPrueba);                          //Predice Fx a partir de la distancia y una Fy 
-                if ((speed >= -5) && (speed <= 20))
+                if ((speed >= 0) && (speed <= 20))
                 {
                     Instance casoPrueba2 = new Instance(casosEntrenamiento.numAttributes());
                     casoPrueba2.setDataset(casosEntrenamiento);                                                  //Utiliza el "modelo fisico aproximado" con Fx y Fy                 
-                    casoPrueba2.setValue(0, speed);                                                                 //Crea una registro con una Fx
-                    casoPrueba2.setValue(1, giro);                                                                 //Crea una registro con una Fy
+                    casoPrueba2.setValue(0, getDistance());                                                                 //Crea una registro con una Fx
+                    casoPrueba2.setValue(2, giro);                                                                 //Crea una registro con una Fy
                     float prediccionDistancia = (float)saberPredecirDistancia.classifyInstance(casoPrueba2);     //Predice la distancia dada Fx y Fy
-                    if (Mathf.Abs(prediccionDistancia - distanciaObjetivo) < menorDistancia)                     //Busca la Fy con una distancia más cercana al objetivo
+                    if (Mathf.Abs(prediccionDistancia - 4) < menorDistancia)                     //Busca la Fy con una distancia más cercana al objetivo
                     {
-                        menorDistancia = Mathf.Abs(prediccionDistancia - distanciaObjetivo);                     //si encuentra una buena toma nota de esta distancia
+                        menorDistancia = Mathf.Abs(prediccionDistancia - 4);                     //si encuentra una buena toma nota de esta distancia
                         mejorAceleracion = speed;                                                                       //de la fuerzas que uso, Fx
                         mejorGiro = giro;                                                                       //tambien Fy
                         print("RAZONAMIENTO: Una posible acción es ejercer una speed=" + mejorAceleracion + " y giro= " + mejorGiro + " se alcanzaría una distancia de " + prediccionDistancia);
                     }
                 }
-            }                                                                                                     //FIN DEL RAZONAMIENTO PREVIO
+            }        
+                                                                                                         //FIN DEL RAZONAMIENTO PREVIO
             if ((mejorAceleracion == 2000) && (mejorGiro == 2000)) { 
                 texto.text = "NO SE LANZÓ LA PELOTA: La distancia de "+distanciaObjetivo+" m no se ha alcanzado muchas veces.";
                 print(texto.text);
@@ -176,13 +180,13 @@ public class AprendizLento_2_incognitas : MonoBehaviour
             {
                 r.velocity = new Vector3(0, 0, 0);
                 transform.position = posicionActual;
-                transform.rotation = rotacionActual;
+                transform.rotation = angulo;
 
                 wheelController.speed = mejorAceleracion;
                 wheelController.turn = mejorGiro;
 
                 print("DECISION REALIZADA: Se lanzó pelota con speed =" + mejorAceleracion + " y giro= " + mejorGiro);
-                ESTADO = "Acción realizada";
+                //ESTADO = "Acción realizada";
             }
          }
         /*if (ESTADO == "Acción realizada")
@@ -196,5 +200,15 @@ public class AprendizLento_2_incognitas : MonoBehaviour
                 ESTADO = "FIN";
             }
         }*/
+    }
+
+    private float getDistance()
+    {
+        if (Physics.Raycast(transform.position, -transform.right *10 , out RaycastHit hit, 10, 1 << 3))
+        {
+            UnityEngine.Debug.DrawRay(transform.position, -transform.right * 10 , Color.red);
+            return hit.distance;
+        } else 
+            return 0;
     }
 }

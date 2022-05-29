@@ -43,7 +43,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8354972306396503369}
   - component: {fileID: 4357630682511963039}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ParedDer
   m_TagString: Pared
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3104497630531326419}
   - component: {fileID: 3571913950657890956}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ParedIzq
   m_TagString: Pared
   m_Icon: {fileID: 0}
