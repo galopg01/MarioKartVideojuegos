@@ -4,4 +4,5 @@
 @attribute  giro numeric
 @attribute  inercia numeric
 @attribute  angulo numeric
+@attribute  distanciaAlcanzada numeric
 @data 

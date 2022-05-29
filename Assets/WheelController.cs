@@ -28,13 +28,13 @@ public class WheelController : MonoBehaviour
     public float turn = 0;
 
     private Rigidbody rb;
-    AprendizLento_2_incognitas script;
+    AprendizPared script;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        script = GetComponent<AprendizLento_2_incognitas>();
+        script = GetComponent<AprendizPared>();
     }
 
     private void Update()
