@@ -1,0 +1,7 @@
+@relation FuncionCuadratica
+@attribute  distancia  numeric
+@attribute  aceleracion  numeric
+@attribute  giro numeric
+@attribute  inercia numeric
+@attribute  angulo numeric
+@data 
