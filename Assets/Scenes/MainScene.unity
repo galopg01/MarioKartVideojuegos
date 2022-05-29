@@ -967,7 +967,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189192687}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b772077894ee3746b15e25d0598b7c4, type: 3}
   m_Name: 
@@ -979,7 +979,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189192687}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 233b3a0406d9f754b99ea272e3d3b83a, type: 3}
   m_Name: 
@@ -988,7 +988,7 @@ MonoBehaviour:
   valorMaximoAceleracion: 0
   valorMaximoGiro: 0
   paso: 1
-  Velocidad_Simulacion: 1
+  Velocidad_Simulacion: 15
 --- !u!1001 &1208115441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1628,7 +1628,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8328359483698373051, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8328359483698373051, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
       propertyPath: PuntoObjetivo
@@ -1640,7 +1640,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8328359483698373051, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
       propertyPath: Velocidad_Simulacion
-      value: 1
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8328359483698373051, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
       propertyPath: valorMaximoAceleracion
