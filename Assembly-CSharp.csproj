@@ -60,8 +60,10 @@
     <Compile Include="Assets\ComportamientoCoche.cs" />
     <Compile Include="Assets\AprendizLento_2_incognitas.cs" />
     <Compile Include="Assets\Aprendiz_1_incognita.cs" />
+    <Compile Include="Assets\AprendizDotProduct.cs" />
     <Compile Include="Assets\WheelController.cs" />
     <Compile Include="Assets\Hola_Weka.cs" />
+    <Compile Include="Assets\DotProduct.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Weka\ikvm-7.2.4630.5\bin\IKVM.OpenJDK.SwingAWT.dll" />
