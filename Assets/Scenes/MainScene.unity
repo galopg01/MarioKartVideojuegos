@@ -675,6 +675,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1882308534}
     m_Modifications:
+    - target: {fileID: 3104497630531326419, guid: c415d7e8f16451142918b1b23a8d7ba3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104497630531326419, guid: c415d7e8f16451142918b1b23a8d7ba3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104497630531326419, guid: c415d7e8f16451142918b1b23a8d7ba3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104497630531326419, guid: c415d7e8f16451142918b1b23a8d7ba3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3104497630531326419, guid: c415d7e8f16451142918b1b23a8d7ba3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3300593309992727043, guid: c415d7e8f16451142918b1b23a8d7ba3, type: 3}
       propertyPath: m_Name
       value: Tramo(10m)
@@ -701,15 +721,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8936213326709539342, guid: c415d7e8f16451142918b1b23a8d7ba3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8936213326709539342, guid: c415d7e8f16451142918b1b23a8d7ba3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8936213326709539342, guid: c415d7e8f16451142918b1b23a8d7ba3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8936213326709539342, guid: c415d7e8f16451142918b1b23a8d7ba3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -935,6 +955,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8334787640473770592, guid: e97d185b151bcd348bb56fd60db8d155, type: 3}
   m_PrefabInstance: {fileID: 1171570784}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1189192687 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8328359483698372678, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
+  m_PrefabInstance: {fileID: 9175291505291335353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1189192695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189192687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b772077894ee3746b15e25d0598b7c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1189192697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189192687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 233b3a0406d9f754b99ea272e3d3b83a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PuntoObjetivo: {fileID: 0}
+  valorMaximoAceleracion: 0
+  valorMaximoGiro: 0
+  paso: 1
+  Velocidad_Simulacion: 1
 --- !u!1001 &1208115441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1564,9 +1618,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kart
       objectReference: {fileID: 0}
+    - target: {fileID: 8328359483698373048, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8328359483698373051, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
       propertyPath: paso
-      value: 1
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8328359483698373051, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
       propertyPath: m_Enabled
@@ -1582,7 +1640,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8328359483698373051, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
       propertyPath: Velocidad_Simulacion
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8328359483698373051, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
       propertyPath: valorMaximoAceleracion

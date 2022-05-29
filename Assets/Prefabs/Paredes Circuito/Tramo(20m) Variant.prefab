@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3300593309992727043, guid: c415d7e8f16451142918b1b23a8d7ba3, type: 3}
       propertyPath: m_Name
-      value: Tramo(20m)
+      value: Tramo(20m) Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3571913950657890956, guid: c415d7e8f16451142918b1b23a8d7ba3, type: 3}
       propertyPath: m_Size.x
@@ -18,6 +18,14 @@ PrefabInstance:
     - target: {fileID: 4357630682511963039, guid: c415d7e8f16451142918b1b23a8d7ba3, type: 3}
       propertyPath: m_Size.x
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8228086185321699621, guid: c415d7e8f16451142918b1b23a8d7ba3, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8716718940053245170, guid: c415d7e8f16451142918b1b23a8d7ba3, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8936213326709539342, guid: c415d7e8f16451142918b1b23a8d7ba3, type: 3}
       propertyPath: m_RootOrder
