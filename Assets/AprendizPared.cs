@@ -23,7 +23,7 @@ public class AprendizPared : MonoBehaviour
     public float valorMaximoAceleracion, valorMaximoGiro, paso=1, Velocidad_Simulacion=1;
     float mejorAceleracion, mejorGiro, distanciaObjetivo;
     private Vector3 posicionActual;
-    private Quaternion rotacionActual;
+    private Quaternion angulo;
     Rigidbody r;
 
     WheelController wheelController;
@@ -34,7 +34,7 @@ public class AprendizPared : MonoBehaviour
         wheelController = GetComponent<WheelController>();
 
         posicionActual = transform.position;
-        rotacionActual = transform.rotation;
+        angulo = transform.rotation;
 
         r = GetComponent<Rigidbody>();
 
