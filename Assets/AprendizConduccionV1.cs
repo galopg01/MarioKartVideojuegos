@@ -16,7 +16,7 @@ public class AprendizConduccionV1 : MonoBehaviour
     private string ESTADO = "Sin conocimiento";
     public GameObject PuntoObjetivo;
     public float valorMaximoAceleracion, valorMaximoGiro, paso = 1, Velocidad_Simulacion = 1;
-    float mejorGiro, distanciaObjetivo, giroActual, mejorAceleracion;
+    float mejorGiro, giroActual, mejorAceleracion;
     private Vector3 posicionActual;
     private Vector3 rotacionActual;
     Rigidbody r;
@@ -101,7 +101,6 @@ public class AprendizConduccionV1 : MonoBehaviour
         casosEntrenamiento.setClassIndex(1);                                             
         saberPredecirGiro.buildClassifier(casosEntrenamiento);                        
 
-        distanciaObjetivo = 0;
 
         ESTADO = "Con conocimiento";
         print("uwu");
