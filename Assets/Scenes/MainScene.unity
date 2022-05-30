@@ -1213,7 +1213,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189192687}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a903a588161d75d4eb68eb2f2a30f2f7, type: 3}
   m_Name: 
@@ -1256,7 +1256,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189192687}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 032d75c9521f19e41ad39a98ab9c17d1, type: 3}
   m_Name: 
@@ -1264,6 +1264,23 @@ MonoBehaviour:
   PuntoObjetivo: {fileID: 0}
   valorMaximoAceleracion: 0
   valorMaximoGiro: 1
+  paso: 0.1
+  Velocidad_Simulacion: 1
+--- !u!114 &1189192735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189192687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7896d1248610de94087f73a583d42f35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PuntoObjetivo: {fileID: 0}
+  valorMaximoAceleracion: 0
+  valorMaximoGiro: 1.05
   paso: 0.1
   Velocidad_Simulacion: 1
 --- !u!1001 &1200303473
@@ -2511,11 +2528,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8328359483698373048, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
       propertyPath: maxSpeed
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8328359483698373048, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8328359483698373051, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
       propertyPath: paso
@@ -2555,7 +2572,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8709845679535078140, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -24.66
+      value: -26.5
       objectReference: {fileID: 0}
     - target: {fileID: 8709845679535078140, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
       propertyPath: m_LocalRotation.w

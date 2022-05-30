@@ -29,13 +29,13 @@ public class WheelController : MonoBehaviour
     public float turn = 0;
 
     private Rigidbody rb;
-    AprendizGiroDot script;
+    AprendizGiroDotYVelocidad script;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        script = GetComponent<AprendizGiroDot>();
+        script = GetComponent<AprendizGiroDotYVelocidad>();
     }
 
     private void Update()
@@ -53,8 +53,8 @@ public class WheelController : MonoBehaviour
             rb.AddForce(2,0,0, ForceMode.VelocityChange);
         }
 
-        // currentAcceleration = acceleration * (script.enabled ? speed : Input.GetAxis("Vertical"));
-        currentAcceleration = acceleration * 1;
+        currentAcceleration = acceleration * (script.enabled ? speed : Input.GetAxis("Vertical"));
+        //currentAcceleration = acceleration * 1;
 
         if (Input.GetKeyUp(KeyCode.Space))
             currentBreakForce = breakingForce;
