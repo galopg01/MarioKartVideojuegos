@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Aprendiz_2_incognitas.cs" />
+    <Compile Include="Assets\AprendizGiroDotYVelocidad.cs" />
     <Compile Include="Assets\ComportamientoCoche.cs" />
     <Compile Include="Assets\AprendizGiroYAceleracionDot.cs" />
     <Compile Include="Assets\AprendizLento_2_incognitas.cs" />
@@ -69,7 +70,6 @@
     <Compile Include="Assets\Hola_Weka.cs" />
     <Compile Include="Assets\AprendizConduccionV1.cs" />
     <Compile Include="Assets\DotProduct.cs" />
-    <Compile Include="Assets\AprendizGiroDotYVelocidad.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Weka\ikvm-7.2.4630.5\bin\IKVM.OpenJDK.SwingAWT.dll" />

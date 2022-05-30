@@ -166,7 +166,7 @@ public class AprendizGiroDotYVelocidad : MonoBehaviour
                 esperando = true;
             }
 
-            if (esperando && Time.time - time >= 0.25)
+            if (esperando && Time.time - time >= 0.5)
             {
                 for (float aceleracion = 0; aceleracion <= 1.05; aceleracion = aceleracion + 0.2f)                                           //Bucle FOR con fuerza Fy, deduce Fx = f (Fy, distancia) y escoge mejor combinacion         
                 {
