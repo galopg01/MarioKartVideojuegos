@@ -23,7 +23,7 @@ public class DotProduct : MonoBehaviour
 
     private Vector3 getWallNormal()
     {
-        if (Physics.Raycast(transform.position, transform.forward * 10 + transform.up * 2, out RaycastHit hit, 9, 1 << 3))
+        if (Physics.Raycast(transform.position, transform.forward * 10 + transform.up * 2, out RaycastHit hit, 15, 1 << 3))
         {
             Debug.DrawRay(transform.position, transform.forward * 10 + transform.up * 2, Color.red);
             wall = hit.transform.gameObject;
