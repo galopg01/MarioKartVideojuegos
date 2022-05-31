@@ -15,7 +15,7 @@ using weka.core.converters;
 
 public class AprendizGiroDotYVelocidad : MonoBehaviour
 {
-    weka.classifiers.trees.M5P saberPredecirGiro, saberPredecirDotFinal;
+    Classifier saberPredecirGiro, saberPredecirDotFinal;
     weka.core.Instances casosEntrenamiento;
     Text texto;
     private string ESTADO = "Sin conocimiento";
@@ -46,7 +46,12 @@ public class AprendizGiroDotYVelocidad : MonoBehaviour
 
         Time.timeScale = Velocidad_Simulacion;                                          //...opcional: hace que se vea más rápido (recomendable hasta 5)
         //texto = Canvas.FindObjectOfType<Text>();
-        if (ESTADO == "Sin conocimiento") StartCoroutine("Entrenamiento");              //Lanza el proceso de entrenamiento                                                                                    
+        //if (ESTADO == "Sin conocimiento") StartCoroutine("Entrenamiento");              //Lanza el proceso de entrenamiento
+
+        casosEntrenamiento = new weka.core.Instances(new java.io.FileReader("Assets/Finales_Experiencias_GiroDotYVelocidad.arff"));
+        saberPredecirGiro = (Classifier) SerializationHelper.read("Assets/saberPredecirGiroModelo");
+        saberPredecirDotFinal = (Classifier) SerializationHelper.read("Assets/saberPredecirDotFinalModelo");
+        ESTADO = "Con conocimiento";
     }
 
     IEnumerator Entrenamiento()
@@ -114,10 +119,12 @@ public class AprendizGiroDotYVelocidad : MonoBehaviour
         saberPredecirGiro = new M5P();                                                //crea un algoritmo de aprendizaje M5P (árboles de regresión)
         casosEntrenamiento.setClassIndex(3);                                             //y hace que aprenda Fx dada la distancia y Fy
         saberPredecirGiro.buildClassifier(casosEntrenamiento);                        //REALIZA EL APRENDIZAJE DE FX A PARTIR DE LA DISTANCIA Y FY
+        SerializationHelper.write("Assets/saberPredecirGiroModelo", saberPredecirGiro);
 
         saberPredecirDotFinal = new M5P();                                                //crea un algoritmo de aprendizaje M5P (árboles de regresión)
         casosEntrenamiento.setClassIndex(4);                                             //y hace que aprenda Fx dada la distancia y Fy
         saberPredecirDotFinal.buildClassifier(casosEntrenamiento);                        //REALIZA EL APRENDIZAJE DE FX A PARTIR DE LA DISTANCIA Y FY
+        SerializationHelper.write("Assets/saberPredecirDotFinalModelo", saberPredecirDotFinal);
 
         distanciaObjetivo = 0;
         
