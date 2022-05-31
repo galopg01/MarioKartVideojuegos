@@ -114,6 +114,7 @@ public class AprendizGiroDotYVelocidad : MonoBehaviour
         saberPredecirGiro = new M5P();                                                //crea un algoritmo de aprendizaje M5P (árboles de regresión)
         casosEntrenamiento.setClassIndex(3);                                             //y hace que aprenda Fx dada la distancia y Fy
         saberPredecirGiro.buildClassifier(casosEntrenamiento);                        //REALIZA EL APRENDIZAJE DE FX A PARTIR DE LA DISTANCIA Y FY
+      
 
         saberPredecirDotFinal = new M5P();                                                //crea un algoritmo de aprendizaje M5P (árboles de regresión)
         casosEntrenamiento.setClassIndex(4);                                             //y hace que aprenda Fx dada la distancia y Fy
