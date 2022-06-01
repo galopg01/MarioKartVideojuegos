@@ -1,4 +1,4 @@
-//Programación de Videojuegos, Universidad de Málaga (Prof. M. Nuñez, mnunez@uma.es)
+//Programaciï¿½n de Videojuegos, Universidad de Mï¿½laga (Prof. M. Nuï¿½ez, mnunez@uma.es)
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,7 +15,7 @@ using weka.core.converters;
 
 public class AprendizGiroDotYVelocidad : MonoBehaviour
 {
-    weka.classifiers.trees.M5P saberPredecirGiro, saberPredecirDotFinal;
+    Classifier saberPredecirGiro, saberPredecirDotFinal;
     weka.core.Instances casosEntrenamiento;
     Text texto;
     private string ESTADO = "Sin conocimiento";
@@ -44,18 +44,23 @@ public class AprendizGiroDotYVelocidad : MonoBehaviour
 
         r = GetComponent<Rigidbody>();
 
-        Time.timeScale = Velocidad_Simulacion;                                          //...opcional: hace que se vea más rápido (recomendable hasta 5)
+        Time.timeScale = Velocidad_Simulacion;                                          //...opcional: hace que se vea mï¿½s rï¿½pido (recomendable hasta 5)
         //texto = Canvas.FindObjectOfType<Text>();
-        if (ESTADO == "Sin conocimiento") StartCoroutine("Entrenamiento");              //Lanza el proceso de entrenamiento                                                                                    
+        //if (ESTADO == "Sin conocimiento") StartCoroutine("Entrenamiento");              //Lanza el proceso de entrenamiento
+
+        casosEntrenamiento = new weka.core.Instances(new java.io.FileReader("Assets/Finales_Experiencias_GiroDotYVelocidad.arff"));
+        saberPredecirGiro = (Classifier) SerializationHelper.read("Assets/saberPredecirGiroModelo");
+        saberPredecirDotFinal = (Classifier) SerializationHelper.read("Assets/saberPredecirDotFinalModelo");
+        ESTADO = "Con conocimiento";
     }
 
     IEnumerator Entrenamiento()
     {
 
-        //Uso de una tabla vacía:
+        //Uso de una tabla vacï¿½a:
         //casosEntrenamiento = new weka.core.Instances(new java.io.FileReader("Assets/Iniciales_Experiencias_GiroDotYVelocidad.arff"));  //Lee fichero con variables. Sin instancias
 
-        //Uso de una tabla con los datos del último entrenamiento:
+        //Uso de una tabla con los datos del ï¿½ltimo entrenamiento:
         casosEntrenamiento = new weka.core.Instances(new java.io.FileReader("Assets/Finales_Experiencias_GiroDotYVelocidad.arff"));    //... u otro con muchas experiencias
 
         if (casosEntrenamiento.numInstances() < 10)
@@ -68,7 +73,7 @@ public class AprendizGiroDotYVelocidad : MonoBehaviour
                 {
                     for (float aceleracion = 0; aceleracion <= 1.05; aceleracion = aceleracion + 0.2f)
                     {
-                        for (float giro = -1; giro <= 1.05; giro = giro + 0.2f)                    //Bucle de planificación de la fuerza FY durante el entrenamiento
+                        for (float giro = -1; giro <= 1.05; giro = giro + 0.2f)                    //Bucle de planificaciï¿½n de la fuerza FY durante el entrenamiento
                         {
                             r.velocity = transform.forward * 0;
                             transform.position = posicionActual;
@@ -86,7 +91,7 @@ public class AprendizGiroDotYVelocidad : MonoBehaviour
                             yield return new WaitUntil(() => Time.time - time >= 0.5);       //... y espera a que la pelota llegue al suelo
 
                             Instance casoAaprender = new Instance(casosEntrenamiento.numAttributes());
-                            print("ENTRENAMIENTO: con velocidad " + velocidad + " y dotInicial " + DotInicial + " y aceleración " + aceleracion + " y giro " + giro + " se alcanzó dotFinal de " + script.dot);
+                            print("ENTRENAMIENTO: con velocidad " + velocidad + " y dotInicial " + DotInicial + " y aceleraciï¿½n " + aceleracion + " y giro " + giro + " se alcanzï¿½ dotFinal de " + script.dot);
                             casoAaprender.setDataset(casosEntrenamiento);                          //crea un registro de experiencia
                             casoAaprender.setValue(0, velocidad);                                         //guarda los datos de las fuerzas Fx y Fy utilizadas
                             casoAaprender.setValue(1, DotInicial);
@@ -111,13 +116,15 @@ public class AprendizGiroDotYVelocidad : MonoBehaviour
 
         
         //APRENDIZAJE CONOCIMIENTO:  
-        saberPredecirGiro = new M5P();                                                //crea un algoritmo de aprendizaje M5P (árboles de regresión)
+        saberPredecirGiro = new M5P();                                                //crea un algoritmo de aprendizaje M5P (ï¿½rboles de regresiï¿½n)
         casosEntrenamiento.setClassIndex(3);                                             //y hace que aprenda Fx dada la distancia y Fy
         saberPredecirGiro.buildClassifier(casosEntrenamiento);                        //REALIZA EL APRENDIZAJE DE FX A PARTIR DE LA DISTANCIA Y FY
+        SerializationHelper.write("Assets/saberPredecirGiroModelo", saberPredecirGiro);
 
-        saberPredecirDotFinal = new M5P();                                                //crea un algoritmo de aprendizaje M5P (árboles de regresión)
+        saberPredecirDotFinal = new M5P();                                                //crea un algoritmo de aprendizaje M5P (ï¿½rboles de regresiï¿½n)
         casosEntrenamiento.setClassIndex(4);                                             //y hace que aprenda Fx dada la distancia y Fy
         saberPredecirDotFinal.buildClassifier(casosEntrenamiento);                        //REALIZA EL APRENDIZAJE DE FX A PARTIR DE LA DISTANCIA Y FY
+        SerializationHelper.write("Assets/saberPredecirDotFinalModelo", saberPredecirDotFinal);
 
         distanciaObjetivo = 0;
         
@@ -129,7 +136,7 @@ public class AprendizGiroDotYVelocidad : MonoBehaviour
         //EVALUACION DEL CONOCIMIENTO APRENDIDO: 
         if (casosEntrenamiento.numInstances() >= 10){
             casosEntrenamiento.setClassIndex(0);
-            Evaluation evaluador = new Evaluation(casosEntrenamiento);                   //...Opcional: si tien mas de 10 ejemplo, estima la posible precisión
+            Evaluation evaluador = new Evaluation(casosEntrenamiento);                   //...Opcional: si tien mas de 10 ejemplo, estima la posible precisiï¿½n
             evaluador.crossValidateModel(saberPredecirFuerzaX, casosEntrenamiento, 10, new java.util.Random(1));
             print("El Error Absoluto Promedio con Fx durante el entrenamiento fue de " + evaluador.meanAbsoluteError().ToString("0.000000") + " N");
             casosEntrenamiento.setClassIndex(2);
@@ -137,12 +144,12 @@ public class AprendizGiroDotYVelocidad : MonoBehaviour
             print("El Error Absoluto Promedio con Distancias durante el entrenamiento fue de " + evaluador.meanAbsoluteError().ToString("0.000000") + " m");
         }
 
-        //PRUEBA: Estimación de la distancia a la Canasta
-        //distanciaObjetivo = leer_Distancia_de_la_canasta...  //...habría que implementar un metodo para leer la distancia objetivo;    
+        //PRUEBA: Estimaciï¿½n de la distancia a la Canasta
+        //distanciaObjetivo = leer_Distancia_de_la_canasta...  //...habrï¿½a que implementar un metodo para leer la distancia objetivo;    
 
-        //... o generacion aleatoria de una distancia dependiendo de sus límites:        
+        //... o generacion aleatoria de una distancia dependiendo de sus lï¿½mites:        
         AttributeStats estadisticasDistancia = casosEntrenamiento.attributeStats(2);        //Opcional: Inicializa las estadisticas de las distancias
-        float maximaDistanciaAlcanzada = (float) estadisticasDistancia.numericStats.max;    //Opcional: Obtiene el valor máximo de las distancias alcanzadas
+        float maximaDistanciaAlcanzada = (float) estadisticasDistancia.numericStats.max;    //Opcional: Obtiene el valor mï¿½ximo de las distancias alcanzadas
         distanciaObjetivo = UnityEngine.Random.Range(maximaDistanciaAlcanzada * 0.2f, maximaDistanciaAlcanzada * 0.8f);  //Opcional: calculo aleatorio de la distancia 
 
         /////////////////    SITUA LA CANASTA EN LA "distanciaObjetivo"  ESTIMADA   ///////////////////
@@ -191,29 +198,29 @@ public class AprendizGiroDotYVelocidad : MonoBehaviour
                     float dotFinal = (float)saberPredecirDotFinal.classifyInstance(casoPrueba2);     //Predice la distancia dada Fx y Fy
 
                     print("donFinal = " + dotFinal + " menorDistancia = " + menorDistancia);
-                    if (Mathf.Abs(dotFinal - distanciaObjetivo) < menorDistancia || Mathf.Abs(dotFinal) - menorDistancia < 0.02)                     //Busca la Fy con una distancia más cercana al objetivo
+                    if (Mathf.Abs(dotFinal - distanciaObjetivo) < menorDistancia || Mathf.Abs(dotFinal) - menorDistancia < 0.02)                     //Busca la Fy con una distancia mï¿½s cercana al objetivo
                     {
                         menorDistancia = Mathf.Abs(dotFinal - distanciaObjetivo);                     //si encuentra una buena toma nota de esta distancia
                         mejorAceleracion = aceleracion;                                                                       //de la fuerzas que uso, Fx
                         mejorGiro = giro;                                                                       //tambien Fy
-                        //print("RAZONAMIENTO: Para dotInicial" + script.dot + " y velocidad " + r.velocity.magnitude + " , una posible acción es ejercer una aceleración de = " + mejorAceleracion + " y giro = " + mejorGiro + " se alcanzaría una distancia de " + dotFinal);
+                        //print("RAZONAMIENTO: Para dotInicial" + script.dot + " y velocidad " + r.velocity.magnitude + " , una posible acciï¿½n es ejercer una aceleraciï¿½n de = " + mejorAceleracion + " y giro = " + mejorGiro + " se alcanzarï¿½a una distancia de " + dotFinal);
                     }
                 }
 
                 wheelController.speed = mejorAceleracion;
                 wheelController.turn = mejorGiro;
 
-                print("DECISION REALIZADA: Se ejerció aceleración " + mejorAceleracion + " y giro " + mejorGiro);
+                print("DECISION REALIZADA: Se ejerciï¿½ aceleraciï¿½n " + mejorAceleracion + " y giro " + mejorGiro);
                 esperando = false;
             }
         }
-        /*if (ESTADO == "Acción realizada")
+        /*if (ESTADO == "Acciï¿½n realizada")
         {
-            texto.text = "Para una canasta a " + distanciaObjetivo.ToString("0.000") + " m, las fuerzas Fx y Fy a utilizar será: " + mejorFuerzaX.ToString("0.000") + "N y " + mejorFuerzaY.ToString("0.000") + "N, respectivamente";
+            texto.text = "Para una canasta a " + distanciaObjetivo.ToString("0.000") + " m, las fuerzas Fx y Fy a utilizar serï¿½: " + mejorFuerzaX.ToString("0.000") + "N y " + mejorFuerzaY.ToString("0.000") + "N, respectivamente";
             if (r.transform.position.y < 0)                                            //cuando la pelota cae por debajo de 0 m
             {                                                                          //escribe la distancia en x alcanzada
-                print("La canasta está a una distancia de " + distanciaObjetivo + " m");
-                print("La pelota lanzada llegó a " + r.transform.position.x + ". El error fue de " + (r.transform.position.x - distanciaObjetivo).ToString("0.000000") + " m");
+                print("La canasta estï¿½ a una distancia de " + distanciaObjetivo + " m");
+                print("La pelota lanzada llegï¿½ a " + r.transform.position.x + ". El error fue de " + (r.transform.position.x - distanciaObjetivo).ToString("0.000000") + " m");
                 r.isKinematic = true;
                 ESTADO = "FIN";
             }
