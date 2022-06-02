@@ -388,7 +388,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7445523689457551160, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
       propertyPath: Fx
-      value: 6
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7445523689457551160, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
       propertyPath: m_Enabled
@@ -396,7 +396,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7445523689457551160, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
       propertyPath: Velocidad_Simulacion
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8328359483698372678, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
       propertyPath: m_Name
