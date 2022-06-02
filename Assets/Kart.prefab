@@ -647,7 +647,6 @@ GameObject:
   - component: {fileID: 8328359483698373049}
   - component: {fileID: 9175291503864918642}
   - component: {fileID: 8328359483698373048}
-  - component: {fileID: 8328359483698373051}
   m_Layer: 0
   m_Name: Kart
   m_TagString: Untagged
@@ -670,6 +669,7 @@ Transform:
   - {fileID: 8119887104896764836}
   - {fileID: 8709845678834649006}
   - {fileID: 8867820877142422653}
+  - {fileID: 6695698556024438476}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 2, y: 90, z: 0}
@@ -759,22 +759,53 @@ MonoBehaviour:
   maxSpeed: 8
   speed: 0
   turn: 0
---- !u!114 &8328359483698373051
+--- !u!1 &8342860754918770287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6695698556024438476}
+  - component: {fileID: 7445523689457551160}
+  m_Layer: 0
+  m_Name: ThrowShell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6695698556024438476
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8342860754918770287}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8709845679535078140}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7445523689457551160
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8328359483698372678}
-  m_Enabled: 1
+  m_GameObject: {fileID: 8342860754918770287}
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc3dc0bc9b3aa1148bda18420b4e5962, type: 3}
+  m_Script: {fileID: 11500000, guid: c9384b64f9ae1b749bcf5889a98d3dd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PuntoObjetivo: {fileID: 0}
-  valorMaximoAceleracion: 0
-  valorMaximoGiro: 0
-  paso: 0
+  ShellPrefab: {fileID: 6505569373986951927, guid: f6c6a52d5063a0e408e5ea2d9a56d579, type: 3}
+  GoombaPrefab: {fileID: 807545106130906692, guid: c8e1d4c52b6421d4692148052ed7d57d, type: 3}
+  Fx: 1
   Velocidad_Simulacion: 1
 --- !u!1 &9175291503682419333
 GameObject:

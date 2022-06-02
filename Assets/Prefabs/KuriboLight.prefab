@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 1413480926462854480}
   - component: {fileID: 1540935668188262807}
   - component: {fileID: 1306607525792523357}
+  - component: {fileID: 4351065225762295972}
   m_Layer: 0
   m_Name: KuriboLight
   m_TagString: Untagged
@@ -108,10 +109,24 @@ BoxCollider:
   m_GameObject: {fileID: 807545106130906692}
   m_Material: {fileID: 13400000, guid: 7265e78681738dd4abe54b29d73d7bf3, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.4510727, y: 0.5472374, z: 0.42394257}
   m_Center: {x: 0.00850296, y: 0.22789192, z: -0.030628204}
+--- !u!136 &4351065225762295972
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807545106130906692}
+  m_Material: {fileID: 13400000, guid: 7265e78681738dd4abe54b29d73d7bf3, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.23841858
+  m_Height: 0.5795517
+  m_Direction: 1
+  m_Center: {x: 0.0020122528, y: 0.23711395, z: -0.042621613}
 --- !u!1 &2082293142070123623
 GameObject:
   m_ObjectHideFlags: 0
