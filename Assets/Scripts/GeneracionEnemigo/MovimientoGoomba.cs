@@ -31,15 +31,15 @@ public class MovimientoGoomba : MonoBehaviour
     void FixedUpdate()
     {
         alturaRelativa = calcularAltura();
-        print(alturaRelativa);
+        //print(alturaRelativa);
         float velocidad = Mathf.Sqrt( Mathf.Pow(rb.velocity.x, 2) + Mathf.Pow(rb.velocity.z, 2));
         if (velocidad < limSpeed)
         {
-            print("ENTRA");
+            //print("ENTRA");
             rb.AddForce(fuerza);
         }
 
-        rb.rotation = new Quaternion(orientacion.x, transform.rotation.y, orientacion.z,0);
+        rb.rotation = new Quaternion(orientacion.x, transform.rotation.y, orientacion.z,0).normalized;
 
         float distancia = alturaDeseada - alturaRelativa;
         if (rb.velocity.y >= 0f)
