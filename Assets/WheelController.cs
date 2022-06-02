@@ -17,7 +17,7 @@ public class WheelController : MonoBehaviour
     public float acceleration = 500f;
     public float breakingForce = 300f;
     public float maxTurnAngle = 15f;
-
+    string estado;
 
     private float currentAcceleration = 0f;
     private float currentBreakForce = 0f;
@@ -36,10 +36,12 @@ public class WheelController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         script = GetComponent<AprendizGiroDotYVelocidad>();
+        estado="Normal";
     }
 
     private void Update()
     {
+        
         if (rb.velocity.magnitude > maxSpeed)
         {
             rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
@@ -48,35 +50,44 @@ public class WheelController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.X))
-        {
-            rb.AddForce(2,0,0, ForceMode.VelocityChange);
+        if(estado.Equals("Volando")){
+            transform.GetChild(3).transform.LookAt(GameObject.Find("o1").transform);
+            if(Vector3.Distance(transform.position,GameObject.Find("o1").transform.position)<=3f){
+                transform.GetChild(3).gameObject.SetActive(false);
+                estado="Normal";
+            }
+
+        }else{
+            if (Input.GetKey(KeyCode.X))
+            {
+                rb.AddForce(2,0,0, ForceMode.VelocityChange);
+            }
+
+            currentAcceleration = acceleration * (script.enabled ? speed : Input.GetAxis("Vertical"));
+            //currentAcceleration = acceleration * 1;
+
+            if (Input.GetKeyUp(KeyCode.Space))
+                currentBreakForce = breakingForce;
+            else
+                currentBreakForce = 0f;
+
+            frontRight.motorTorque = currentAcceleration;
+            frontLeft.motorTorque = currentAcceleration;
+
+            frontRight.brakeTorque = currentBreakForce;
+            frontLeft.brakeTorque = currentBreakForce;
+            backLeft.brakeTorque = currentBreakForce;
+            backRight.brakeTorque = currentBreakForce;
+
+            currentTurnAngle = maxTurnAngle * (script.enabled ? turn : Input.GetAxis("Horizontal"));
+            frontLeft.steerAngle = currentTurnAngle;
+            frontRight.steerAngle = currentTurnAngle;
+
+            UpdateWheel(frontRight, frontRightTransform);
+            UpdateWheel(frontLeft, frontLeftTransform);
+            UpdateWheel(backRight, backRightTransform);
+            UpdateWheel(backLeft, backLeftTransform);
         }
-
-        currentAcceleration = acceleration * (script.enabled ? speed : Input.GetAxis("Vertical"));
-        //currentAcceleration = acceleration * 1;
-
-        if (Input.GetKeyUp(KeyCode.Space))
-            currentBreakForce = breakingForce;
-        else
-            currentBreakForce = 0f;
-
-        frontRight.motorTorque = currentAcceleration;
-        frontLeft.motorTorque = currentAcceleration;
-
-        frontRight.brakeTorque = currentBreakForce;
-        frontLeft.brakeTorque = currentBreakForce;
-        backLeft.brakeTorque = currentBreakForce;
-        backRight.brakeTorque = currentBreakForce;
-
-        currentTurnAngle = maxTurnAngle * (script.enabled ? turn : Input.GetAxis("Horizontal"));
-        frontLeft.steerAngle = currentTurnAngle;
-        frontRight.steerAngle = currentTurnAngle;
-
-        UpdateWheel(frontRight, frontRightTransform);
-        UpdateWheel(frontLeft, frontLeftTransform);
-        UpdateWheel(backRight, backRightTransform);
-        UpdateWheel(backLeft, backLeftTransform);
     }
 
     void UpdateWheel(WheelCollider col, Transform trans) 
@@ -87,5 +98,14 @@ public class WheelController : MonoBehaviour
 
          trans.position = position;
          trans.rotation = rotation;
+    }
+
+    private void OnTriggerEnter(Collider obj){ 
+
+        if (obj.gameObject.name.Equals("Rampa1")){ 
+            
+            transform.GetChild(3).gameObject.SetActive(true);
+            estado="Volando";
+        }
     }
 }
