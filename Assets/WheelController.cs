@@ -14,10 +14,13 @@ public class WheelController : MonoBehaviour
     [SerializeField] Transform backRightTransform;
     [SerializeField] Transform backLeftTransform;
 
+    public GameObject prefabAlaDelta;
+    public GameObject prefabParacaidas;
+
     public float acceleration = 500f;
     public float breakingForce = 300f;
     public float maxTurnAngle = 15f;
-    string estado;
+    public string estado;
 
     private float currentAcceleration = 0f;
     private float currentBreakForce = 0f;
@@ -51,11 +54,6 @@ public class WheelController : MonoBehaviour
     private void FixedUpdate()
     {
         if(estado.Equals("Volando")){
-            transform.GetChild(3).transform.LookAt(GameObject.Find("o1").transform);
-            if(Vector3.Distance(transform.position,GameObject.Find("o1").transform.position)<=3f){
-                transform.GetChild(3).gameObject.SetActive(false);
-                estado="Normal";
-            }
 
         }else{
             if (Input.GetKey(KeyCode.X))
@@ -103,9 +101,26 @@ public class WheelController : MonoBehaviour
     private void OnTriggerEnter(Collider obj){ 
 
         if (obj.gameObject.name.Equals("Rampa1")){ 
-            
-            transform.GetChild(3).gameObject.SetActive(true);
-            estado="Volando";
+            if(!estado.Equals("Volando")){
+                GameObject alaDelta = Instantiate(prefabAlaDelta, new Vector3(transform.position.x+0.1f,transform.position.y+0.1f,transform.position.z), transform.rotation);
+                alaDelta.AddComponent<FixedJoint>();
+                alaDelta.GetComponent<FixedJoint>().connectedBody= rb;
+                GameObject gm = GameObject.Find("o1");
+                alaDelta.GetComponent<ControlMovimiento>().ObjetoPerseguido=GameObject.Find("o1");
+
+                estado="Volando";
+            }
+        }
+
+        if (obj.gameObject.name.Equals("Rampa2")){ 
+            if(!estado.Equals("Volando")){
+                GameObject alaDelta = Instantiate(prefabParacaidas, new Vector3(transform.position.x,transform.position.y+0.1f,transform.position.z-0.1f), transform.rotation);
+                alaDelta.AddComponent<FixedJoint>();
+                alaDelta.GetComponent<FixedJoint>().connectedBody= rb;
+                alaDelta.GetComponent<ControlMovimiento>().ObjetoPerseguido=GameObject.Find("o2");
+
+                estado="Volando";
+            }
         }
     }
 }

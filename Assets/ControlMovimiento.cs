@@ -13,14 +13,26 @@ public class ControlMovimiento : MonoBehaviour{
 
     void Start() { 
         rb = GetComponent<Rigidbody>(); 
-        rbKart = transform.parent.gameObject.GetComponent<Rigidbody>();
+        rbKart = GameObject.Find("Kart").GetComponent<Rigidbody>();
         fuerzaLevitacion= -(rbKart.mass * Physics.gravity.y);
     }
 
     void FixedUpdate() {
         
         AlcanzarPosicion( ObjetoPerseguido.transform.position - SeparacionConObjetivo * ObjetoPerseguido.transform.forward, RapidezHorizontal, 1);
-        AlcanzarAltura( ObjetoPerseguido.transform.position.y, RapidezVertical);
+
+        if(gameObject.name.Contains("Paracaidas")){
+            rbKart.AddForce(Vector3.up * fuerzaLevitacion * 0.8f);
+        }else{
+            AlcanzarAltura( ObjetoPerseguido.transform.position.y, RapidezVertical);
+            
+        }
+
+        if(Vector3.Distance(transform.position,ObjetoPerseguido.transform.position)<=3f || (ObjetoPerseguido.name.Equals("o2") && transform.position.y-ObjetoPerseguido.transform.position.y<=1f)){              
+                GameObject.Find("Kart").GetComponent<WheelController>().estado="Normal";
+                Destroy(gameObject);
+    
+        }
     
     }
 
@@ -43,9 +55,9 @@ public class ControlMovimiento : MonoBehaviour{
             float factor = vectorHaciaObjetivo.magnitude * rapidezHorizontal;
             rbKart.AddForce(vectorHaciaObjetivo * propulsionFrontal * factor);
             rbKart.transform.LookAt(new Vector3(posObjetivo.x, rbKart.transform.position.y, posObjetivo.z));
-        } /*else { //Ir frenando... Tarea: cambiar la siguiente instrucción por rb.addForce... con el mismo efecto.
+        } /* else { //Ir frenando... Tarea: cambiar la siguiente instrucción por rb.addForce... con el mismo efecto.
             rbKart.velocity = rbKart.velocity * 0.95f;
             rbKart.transform.LookAt(new Vector3(posObjetivo.x, rbKart.transform.position.y, posObjetivo.z));
-        }*/
+        } */
     }
 }
