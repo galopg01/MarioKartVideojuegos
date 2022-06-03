@@ -68,7 +68,7 @@ public class MovimientoGoomba : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.tag == "Pared")
+        if (collision.transform.tag == "Pared" || collision.transform.tag == "Shell")
         {
             Destroy(this);
         }

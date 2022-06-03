@@ -28,13 +28,14 @@ public class AprenderLanzar : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
 
-        Time.timeScale = Velocidad_Simulacion;   
-        if (ESTADO == "Sin conocimiento") StartCoroutine("Entrenamiento");              //Lanza el proceso de entrenamiento
 
-        //casosEntrenamiento = new weka.core.Instances(new java.io.FileReader("Assets/Finales_Experiencias_LanzarShell.arff"));
-        //saberPredecirFx = (Classifier)SerializationHelper.read("Assets/saberPredecirFxLanzarShellModelo");
-        //saberPredecirDistanciaFinal = (Classifier)SerializationHelper.read("Assets/saberPredecirDistanciaFinalLanzarShellModelo");
-        //ESTADO = "Con conocimiento";
+        //Time.timeScale = Velocidad_Simulacion;   
+        //if (ESTADO == "Sin conocimiento") StartCoroutine("Entrenamiento");              //Lanza el proceso de entrenamiento
+
+        casosEntrenamiento = new weka.core.Instances(new java.io.FileReader("Assets/Finales_Experiencias_LanzarShell.arff"));
+        saberPredecirFx = (Classifier)SerializationHelper.read("Assets/saberPredecirFxLanzarShellModelo");
+        saberPredecirDistanciaFinal = (Classifier)SerializationHelper.read("Assets/saberPredecirDistanciaFinalLanzarShellModelo");
+        ESTADO = "Con conocimiento";
 
     }
 
