@@ -752,9 +752,12 @@ MonoBehaviour:
   frontLeftTransform: {fileID: 2722478859410407218}
   backRightTransform: {fileID: 1516661779757561452}
   backLeftTransform: {fileID: 9003077712710119909}
+  prefabAlaDelta: {fileID: 0}
+  prefabParacaidas: {fileID: 0}
   acceleration: 500
   breakingForce: 300
   maxTurnAngle: 15
+  estado: 
   maxSpeed: 8
   speed: 0
   turn: 0
@@ -783,7 +786,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8342860754918770287}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: -0, z: 1.576}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -804,8 +807,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShellPrefab: {fileID: 6505569373986951927, guid: f6c6a52d5063a0e408e5ea2d9a56d579, type: 3}
   GoombaPrefab: {fileID: 807545106130906692, guid: c8e1d4c52b6421d4692148052ed7d57d, type: 3}
-  Fx: 1
+  Goomba: {fileID: 0}
+  Fz: 10
   Velocidad_Simulacion: 1
+  lanzado: 0
 --- !u!1 &9175291503682419333
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ using weka.core.converters;
 public class AprenderLanzar : MonoBehaviour
 {
 
-    Classifier saberPredecirFy, saberPredecirDistanciaFinal;
+    Classifier saberPredecirFx, saberPredecirDistanciaFinal;
     weka.core.Instances casosEntrenamiento;
     private string ESTADO = "Sin conocimiento";
     
@@ -19,19 +19,24 @@ public class AprenderLanzar : MonoBehaviour
 
     public GameObject ShellPrefab, GoombaPrefab;
     GameObject ShellInstance, GoombaInstance;
-    public float Fx=1;
+    public GameObject Goomba;
+    public float Fz=10;
     public float Velocidad_Simulacion = 5;
-
+    public bool lanzado = false;
     private float distanciaAnterior;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
 
-        Time.timeScale = Velocidad_Simulacion;   
-        if (ESTADO == "Sin conocimiento") StartCoroutine("Entrenamiento");              //Lanza el proceso de entrenamiento
 
-        //casosEntrenamiento = new weka.core.Instances(new java.io.FileReader("Assets/Finales_Experiencias_LanzarShell.arff"));
-        
+        //Time.timeScale = Velocidad_Simulacion;   
+        //if (ESTADO == "Sin conocimiento") StartCoroutine("Entrenamiento");              //Lanza el proceso de entrenamiento
+
+        casosEntrenamiento = new weka.core.Instances(new java.io.FileReader("Assets/Finales_Experiencias_LanzarShell.arff"));
+        saberPredecirFx = (Classifier)SerializationHelper.read("Assets/saberPredecirFxLanzarShellModelo");
+        saberPredecirDistanciaFinal = (Classifier)SerializationHelper.read("Assets/saberPredecirDistanciaFinalLanzarShellModelo");
+        ESTADO = "Con conocimiento";
+
     }
 
     IEnumerator Entrenamiento()
@@ -46,21 +51,24 @@ public class AprenderLanzar : MonoBehaviour
         if (casosEntrenamiento.numInstances() < 10)
         {
 
-            for (float Fy = 0; Fy <= 2;Fy = Fy + 0.05f)
+            for (float Fx = -20f; Fx <= 20;Fx = Fx + 0.25f)
             {
-                for (float disGoombaX = -6; disGoombaX <= 6; disGoombaX += 0.5f)
+                for (float disGoombaX = -5; disGoombaX <= 5; disGoombaX += 0.25f)
                 {
-                    for (float disGoombaZ = 5 ; disGoombaZ <= 20; disGoombaZ += 0.5f)
+                    for (float disGoombaZ = 5 ; disGoombaZ <= 15; disGoombaZ += 0.5f)
                     {
-                        GoombaInstance = Instantiate(GoombaPrefab, new Vector3(disGoombaX,0.5f, disGoombaZ),Quaternion.Euler(0,45,0));
-                        ShellInstance = Instantiate(ShellPrefab, transform.position, transform.rotation);
-
-                        Rigidbody rbShell = ShellInstance.GetComponent<Rigidbody>();
                         
-                        rbShell.AddForce(transform.right * Fy);
+                        ShellInstance = Instantiate(ShellPrefab, transform.position, transform.rotation);
+                        GoombaInstance = Instantiate(GoombaPrefab, new Vector3(disGoombaX, 0.5f, disGoombaZ), Quaternion.Euler(0, 45, 0));
+                        transform.LookAt(GoombaInstance.transform);
+                        Rigidbody rbShell = ShellInstance.GetComponent<Rigidbody>();
+                        Vector3 fuerzaZ = transform.forward * Fz;
+                        Vector3 fuerzaX = transform.right * Fx;
+                        rbShell.AddForce(fuerzaX + fuerzaZ);
+                        
                         float time = Time.time;
                         distanciaAnterior = Vector3.Distance(ShellInstance.transform.position, GoombaInstance.transform.position);
-                        yield return new WaitUntil(() => Time.time - time > 0.1f);
+                        yield return new WaitUntil(() => Time.time - time > 0.01f);
                         
                         yield return new WaitUntil(() => seAlejen(ShellInstance, GoombaInstance));
 
@@ -69,9 +77,9 @@ public class AprenderLanzar : MonoBehaviour
                         Destroy(ShellInstance);
 
                         Instance casoAaprender = new Instance(casosEntrenamiento.numAttributes());
-                        print("ENTRENAMIENTO: con Fy " + Fy + " y distancia a enemigo X " + disGoombaX + " y distancia a enemigo Z " + disGoombaZ +" se alcanzo distancia a objetivo de " + finalDistanceToGoomba);
+                        print("ENTRENAMIENTO: con Fx " + Fx + " y distancia a enemigo X " + disGoombaX + " y distancia a enemigo Z " + disGoombaZ +" se alcanzo distancia a objetivo de " + finalDistanceToGoomba);
                         casoAaprender.setDataset(casosEntrenamiento);                          
-                        casoAaprender.setValue(0, Fy);                                         
+                        casoAaprender.setValue(0, Fx);                                         
                         casoAaprender.setValue(1, disGoombaX);
                         casoAaprender.setValue(2, disGoombaZ);
                         casoAaprender.setValue(3, finalDistanceToGoomba);
@@ -93,15 +101,15 @@ public class AprenderLanzar : MonoBehaviour
 
 
         //APRENDIZAJE CONOCIMIENTO:  
-        saberPredecirFy = new M5P();                                                
+        saberPredecirFx = new M5P();                                                
         casosEntrenamiento.setClassIndex(0);                                             
-        saberPredecirFy.buildClassifier(casosEntrenamiento);                        
-        SerializationHelper.write("Assets/saberPredecirFyLanzarShellModelo", saberPredecirFy);
+        saberPredecirFx.buildClassifier(casosEntrenamiento);                        
+        SerializationHelper.write("Assets/saberPredecirFxLanzarShellModelo", saberPredecirFx);
 
         saberPredecirDistanciaFinal = new M5P();
-        casosEntrenamiento.setClassIndex(0);
+        casosEntrenamiento.setClassIndex(3);
         saberPredecirDistanciaFinal.buildClassifier(casosEntrenamiento);
-        SerializationHelper.write("Assets/saberPredecirFyLanzarShellModelo", saberPredecirDistanciaFinal);
+        SerializationHelper.write("Assets/saberPredecirDistanciaFinalLanzarShellModelo", saberPredecirDistanciaFinal);
 
         ESTADO = "Con conocimiento";
         print("uwu");
@@ -123,32 +131,36 @@ public class AprenderLanzar : MonoBehaviour
 
     void FixedUpdate()                                                                                 
     {
-        if ((ESTADO == "Con conocimiento") && Time.time > 0.5)
+        if ((ESTADO == "Con conocimiento") && !lanzado && Time.time > 0.5)
         {
             float mejorDistanciaFinal=300;
-            float mejorFy=0;
-            for (float Fy =0; Fy<2;Fy+=0.1f)
+            float mejorFx=0;
+            transform.LookAt(Goomba.transform);
+            for (float Fx =-20; Fx<20;Fx+=1f)
             {
                 Instance casoPrueba = new Instance(casosEntrenamiento.numAttributes());
                 casoPrueba.setDataset(casosEntrenamiento);
-                casoPrueba.setValue(0, Fy);
-                casoPrueba.setValue(1, GoombaInstance.transform.position.x - transform.position.x);
-                casoPrueba.setValue(2, GoombaInstance.transform.position.z - transform.position.z);
+                casoPrueba.setValue(0, Fx);
+                casoPrueba.setValue(1, Goomba.transform.position.x - transform.parent.position.x );
+                casoPrueba.setValue(2, Goomba.transform.position.z - transform.parent.position.z );
                 float distanciaFinal = (float)saberPredecirDistanciaFinal.classifyInstance(casoPrueba);
 
                 if (distanciaFinal < mejorDistanciaFinal)
                 {
                     mejorDistanciaFinal = distanciaFinal;
-                    mejorFy = Fy;
+                    mejorFx = Fx;
                 }
+
             }
             
 
-            ShellInstance = Instantiate(ShellPrefab);
+            ShellInstance = Instantiate(ShellPrefab, transform.position, transform.rotation);
             Rigidbody rbShell = ShellInstance.GetComponent<Rigidbody>();
-            rbShell.AddForce(transform.right * mejorFy);
-
-            print("DECISION REALIZADA: Fy " + mejorFy);
+            Vector3 fuerzaZ = transform.forward * Fz;
+            Vector3 fuerzaX = transform.right * mejorFx;
+            rbShell.AddForce(fuerzaX + fuerzaZ);
+            lanzado = true;
+            print("DECISION REALIZADA: Fx " + mejorFx);
             
         }
 
