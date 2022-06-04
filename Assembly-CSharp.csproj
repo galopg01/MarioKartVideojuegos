@@ -63,18 +63,18 @@
     <Compile Include="Assets\AprendizLento_2_incognitas.cs" />
     <Compile Include="Assets\Scripts\GeneracionEnemigo\MovimientoGoomba.cs" />
     <Compile Include="Assets\WheelControllerV2.cs" />
+    <Compile Include="Assets\Scripts\LanzarShell\AprenderLanzar.cs" />
     <Compile Include="Assets\Aprendiz_1_incognita.cs" />
     <Compile Include="Assets\Scripts\GeneracionEnemigo\GenerarGoomba.cs" />
     <Compile Include="Assets\AprendizDotProduct.cs" />
     <Compile Include="Assets\WheelController.cs" />
+    <Compile Include="Assets\ControlMovimiento.cs" />
     <Compile Include="Assets\AprendizGiroDot.cs" />
     <Compile Include="Assets\AprendizPared.cs" />
+    <Compile Include="Assets\Scripts\LanzarShell\RotarShell.cs" />
     <Compile Include="Assets\Hola_Weka.cs" />
     <Compile Include="Assets\AprendizConduccionV1.cs" />
     <Compile Include="Assets\DotProduct.cs" />
-    <Compile Include="Assets\Scripts\LanzarShell\RotarShell.cs" />
-    <Compile Include="Assets\Scripts\LanzarShell\AprenderLanzar.cs" />
-    <Compile Include="Assets\ControlMovimiento.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Weka\ikvm-7.2.4630.5\bin\IKVM.OpenJDK.SwingAWT.dll" />

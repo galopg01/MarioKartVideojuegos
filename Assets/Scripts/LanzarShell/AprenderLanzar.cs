@@ -51,11 +51,11 @@ public class AprenderLanzar : MonoBehaviour
         if (casosEntrenamiento.numInstances() < 10)
         {
 
-            for (float Fx = -20f; Fx <= 20;Fx = Fx + 0.25f)
+            for (float Fx = -20f; Fx <= 20;Fx = Fx + 0.1f)
             {
-                for (float disGoombaX = -5; disGoombaX <= 5; disGoombaX += 0.25f)
+                for (float disGoombaX = -5; disGoombaX <= 5; disGoombaX += 0.20f)
                 {
-                    for (float disGoombaZ = 5 ; disGoombaZ <= 15; disGoombaZ += 0.5f)
+                    for (float disGoombaZ = 5 ; disGoombaZ <= 15; disGoombaZ += 0.25f)
                     {
                         
                         ShellInstance = Instantiate(ShellPrefab, transform.position, transform.rotation);
