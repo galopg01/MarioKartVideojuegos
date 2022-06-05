@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,7 +10,7 @@ public class RotarShell : MonoBehaviour
     private float alturaRelativa;
     private float fuerzaLevitacion;
     private float fuerzaRotacion;
-    private float rapidezVertical = 3f;
+    private float rapidezVertical = 2f;
     private float alturaDeseada = 0.5f;
     private Transform transformOriginal;
     Rigidbody rb;
@@ -30,8 +31,9 @@ public class RotarShell : MonoBehaviour
     void FixedUpdate()
     {
         AlcanzarAltura(alturaDeseada, calcularAltura());
-        rb.AddTorque(transform.up * fuerzaRotacion);
+        //rb.AddTorque(transform.up * fuerzaRotacion);
     }
+
 
     private void AlcanzarAltura(float alturaObjetivo, float alturaActual)
     {
@@ -39,12 +41,14 @@ public class RotarShell : MonoBehaviour
         if (rb.velocity.y >= 0f)
         {
             float factor = distancia * rapidezVertical;
-            rb.AddForce(transform.up * fuerzaLevitacion * factor);
+            Vector3 fuerzaAltura = transform.up * fuerzaLevitacion * factor;
+            rb.AddForce(fuerzaAltura);
         }
         else
         {
             float factor = Mathf.Max(0, distancia * rapidezVertical * 5);
-            rb.AddForce(Vector3.up * fuerzaLevitacion * factor);
+            Vector3 fuerzaAltura = transform.up * fuerzaLevitacion * factor;
+            rb.AddForce(fuerzaAltura);
         }
     }
 
@@ -60,12 +64,16 @@ public class RotarShell : MonoBehaviour
 
         return distancia;
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.transform.tag == "Enemy")
+        if (other.transform.tag == "Enemy")
         {
             Destroy(gameObject);
         }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        
 
     }
 }

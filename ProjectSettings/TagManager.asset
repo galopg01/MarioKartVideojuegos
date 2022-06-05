@@ -9,6 +9,7 @@ TagManager:
   - Rampa
   - Shell
   - Enemy
+  - Rampita
   layers:
   - Default
   - TransparentFX

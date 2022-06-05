@@ -58,7 +58,7 @@ public class WheelController : MonoBehaviour
         }else{
             if (Input.GetKey(KeyCode.X))
             {
-                rb.AddForce(2,0,0, ForceMode.VelocityChange);
+                rb.AddForce(transform.forward * 5, ForceMode.VelocityChange);
             }
 
             currentAcceleration = acceleration * (script.enabled ? speed : Input.GetAxis("Vertical"));
