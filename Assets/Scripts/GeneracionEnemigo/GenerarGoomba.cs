@@ -11,6 +11,7 @@ public class GenerarGoomba : MonoBehaviour
     public GameObject goomba, goombaGenerado;
     private int numSpot;
     public int frecuenciaAparicion;
+    public GameObject kart;
     
     void Start()
     {
@@ -35,6 +36,8 @@ public class GenerarGoomba : MonoBehaviour
             Vector3 rotationEuler = rotation.eulerAngles;
             rotationEuler += new Vector3(0, 45, 0);
             goombaGenerado = Instantiate(goomba, spots[randomSpot].transform.position, Quaternion.Euler(rotationEuler));
+            kart.GetComponent<AprenderLanzar>().Goomba = goombaGenerado;
+
             randomSpot = Random.Range(0, numSpot);
             Destroy(goombaGenerado, frecuenciaAparicion*3);
         }

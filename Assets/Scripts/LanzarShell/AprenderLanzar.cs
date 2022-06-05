@@ -20,22 +20,29 @@ public class AprenderLanzar : MonoBehaviour
     public GameObject ShellPrefab, GoombaPrefab;
     GameObject ShellInstance, GoombaInstance;
     public GameObject Goomba;
-    public float Fz=10;
-    public float Velocidad_Simulacion = 5;
+    public float Fz=100;
+    public float Velocidad_Simulacion = 100;
     public bool lanzado = false;
     private float distanciaAnterior;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
 
-
-        //Time.timeScale = Velocidad_Simulacion;   
-        //if (ESTADO == "Sin conocimiento") StartCoroutine("Entrenamiento");              //Lanza el proceso de entrenamiento
-
-        casosEntrenamiento = new weka.core.Instances(new java.io.FileReader("Assets/Finales_Experiencias_LanzarShell.arff"));
-        saberPredecirFx = (Classifier)SerializationHelper.read("Assets/saberPredecirFxLanzarShellModelo");
-        saberPredecirDistanciaFinal = (Classifier)SerializationHelper.read("Assets/saberPredecirDistanciaFinalLanzarShellModelo");
         ESTADO = "Con conocimiento";
+        if (ESTADO == "Sin conocimiento")
+        {
+            Time.timeScale = Velocidad_Simulacion;
+            StartCoroutine("Entrenamiento");              //Lanza el proceso de entrenamiento
+        }
+        else
+        {
+            casosEntrenamiento = new weka.core.Instances(new java.io.FileReader("Assets/Finales_Experiencias_LanzarShell.arff"));
+            saberPredecirFx = (Classifier)SerializationHelper.read("Assets/saberPredecirFxLanzarShellModelo");
+            saberPredecirDistanciaFinal = (Classifier)SerializationHelper.read("Assets/saberPredecirDistanciaFinalLanzarShellModelo");
+        }
+            
+
+        
 
     }
 
@@ -136,7 +143,7 @@ public class AprenderLanzar : MonoBehaviour
             float mejorDistanciaFinal=300;
             float mejorFx=0;
             transform.LookAt(Goomba.transform);
-            for (float Fx =-20; Fx<20;Fx+=1f)
+            for (float Fx =-20; Fx<20;Fx+=0.1f)
             {
                 Instance casoPrueba = new Instance(casosEntrenamiento.numAttributes());
                 casoPrueba.setDataset(casosEntrenamiento);
