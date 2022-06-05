@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3803,6 +3803,18 @@ MonoBehaviour:
   valorMaximoGiro: 1.05
   paso: 0.1
   Velocidad_Simulacion: 1
+--- !u!114 &1189192741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189192687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d64e796d801022b469d7ca83959d215c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1192627503
 GameObject:
   m_ObjectHideFlags: 0
@@ -4038,7 +4050,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1162422624313666241, guid: 9f3705efc0956924a8049888b3feeafe, type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: Rampa
       objectReference: {fileID: 0}
     - target: {fileID: 1558949301331392219, guid: 9f3705efc0956924a8049888b3feeafe, type: 3}
       propertyPath: m_Layer
@@ -4082,7 +4094,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7244553078993297253, guid: 9f3705efc0956924a8049888b3feeafe, type: 3}
       propertyPath: m_TagString
-      value: Suelo
+      value: Rampita
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f3705efc0956924a8049888b3feeafe, type: 3}
@@ -8101,6 +8113,10 @@ PrefabInstance:
     - target: {fileID: 9175291503864918643, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
       propertyPath: m_Mass
       value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 9175291503864918643, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
+      propertyPath: m_Constraints
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b18b502119bd434ab8185158595b5e3, type: 3}
