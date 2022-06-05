@@ -199,20 +199,20 @@ public class AprendizGiroDotYVelocidad : MonoBehaviour
                     casoPrueba2.setValue(3, giro);                                                             //Crea una registro con una Fy
                     float dotFinal = (float)saberPredecirDotFinal.classifyInstance(casoPrueba2);     //Predice la distancia dada Fx y Fy
 
-                    print("donFinal = " + dotFinal + " menorDistancia = " + menorDistancia);
+                    //print("donFinal = " + dotFinal + " menorDistancia = " + menorDistancia);
                     if (Mathf.Abs(dotFinal - distanciaObjetivo) < menorDistancia || Mathf.Abs(dotFinal) - menorDistancia < 0.02)                     //Busca la Fy con una distancia más cercana al objetivo
                     {
                         menorDistancia = Mathf.Abs(dotFinal - distanciaObjetivo);                     //si encuentra una buena toma nota de esta distancia
                         mejorAceleracion = aceleracion;                                                                       //de la fuerzas que uso, Fx
                         mejorGiro = giro;                                                                       //tambien Fy
-                        print("RAZONAMIENTO: Para dotInicial" + script.dot + " y velocidad " + r.velocity.magnitude + " , una posible acción es ejercer una aceleración de = " + mejorAceleracion + " y giro = " + mejorGiro + " se alcanzaría una distancia de " + dotFinal);
+                        //print("RAZONAMIENTO: Para dotInicial" + script.dot + " y velocidad " + r.velocity.magnitude + " , una posible acción es ejercer una aceleración de = " + mejorAceleracion + " y giro = " + mejorGiro + " se alcanzaría una distancia de " + dotFinal);
                     }
                 }
 
                 wheelController.speed = mejorAceleracion;
                 wheelController.turn = mejorGiro;
 
-                print("DECISION REALIZADA: Se ejerció aceleración " + mejorAceleracion + " y giro " + mejorGiro);
+                //print("DECISION REALIZADA: Se ejerció aceleración " + mejorAceleracion + " y giro " + mejorGiro);
                 esperando = false;
             }
         }

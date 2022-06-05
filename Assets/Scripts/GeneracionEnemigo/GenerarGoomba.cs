@@ -10,20 +10,20 @@ public class GenerarGoomba : MonoBehaviour
     private double timeUltLanzamiento;
     public GameObject goomba, goombaGenerado;
     private int numSpot;
-    public int frecuenciaAparicion;
+    public int frecuenciaAparicion=10;
     public GameObject kart;
     
     void Start()
     {
         timeUltLanzamiento = 0;
         numSpot = gameObject.transform.childCount;
-        frecuenciaAparicion = 5;
         spots = new GameObject[numSpot];
-        randomSpot = 0;// Random.Range(0, numSpot);
+        randomSpot = 3;// Random.Range(0, numSpot);
         for (int i=0; i<numSpot; i++)
         {
             spots[i]=gameObject.transform.GetChild(i).gameObject;
         }
+        Generar1Goomba();
     }
 
     // Update is called once per frame
@@ -32,14 +32,19 @@ public class GenerarGoomba : MonoBehaviour
         if(Time.time-timeUltLanzamiento > frecuenciaAparicion)
         {
             timeUltLanzamiento = Time.time;
-            Quaternion rotation = spots[randomSpot].transform.rotation;
-            Vector3 rotationEuler = rotation.eulerAngles;
-            rotationEuler += new Vector3(0, 45, 0);
-            goombaGenerado = Instantiate(goomba, spots[randomSpot].transform.position, Quaternion.Euler(rotationEuler));
-            kart.GetComponent<AprenderLanzar>().Goomba = goombaGenerado;
-
             randomSpot = Random.Range(0, numSpot);
-            Destroy(goombaGenerado, frecuenciaAparicion*3);
+            Generar1Goomba();
+            Destroy(goombaGenerado, frecuenciaAparicion*5);
         }
+    }
+
+    void Generar1Goomba()
+    {
+        Quaternion rotation = spots[randomSpot].transform.rotation;
+        Vector3 rotationEuler = rotation.eulerAngles;
+        rotationEuler += new Vector3(0, 45, 0);
+        goombaGenerado = Instantiate(goomba, spots[randomSpot].transform.position, Quaternion.Euler(rotationEuler));
+        kart.GetComponentInChildren<AprenderLanzar>().Goomba = goombaGenerado;
+        kart.GetComponentInChildren<AprenderLanzar>().hayEnemigo = true;
     }
 }

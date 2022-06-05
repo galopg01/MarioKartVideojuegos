@@ -17,7 +17,7 @@ public class MovimientoGoomba : MonoBehaviour
     void Start()
     {
         force = (float)1.5;
-        limSpeed = 1;
+        limSpeed = 2;
         rb = GetComponent<Rigidbody>();
         fuerza = transform.forward * force;
         fuerzaLevitacion = -(rb.mass * Physics.gravity.y);
@@ -65,12 +65,19 @@ public class MovimientoGoomba : MonoBehaviour
         return distancia;
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.tag == "Pared" || other.transform.tag == "Shell")
+        {
+            Destroy(gameObject);
+        }
 
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.transform.tag == "Pared" || collision.transform.tag == "Shell")
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
         
     }

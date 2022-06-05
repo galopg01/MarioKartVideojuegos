@@ -20,14 +20,16 @@ public class AprenderLanzar : MonoBehaviour
     public GameObject ShellPrefab, GoombaPrefab;
     GameObject ShellInstance, GoombaInstance;
     public GameObject Goomba;
-    public float Fz=100;
+    public float Fz=350;
     public float Velocidad_Simulacion = 100;
-    public bool lanzado = false;
+    public bool lanzado = false, hayEnemigo = false;
     private float distanciaAnterior;
+    private float distanciaInicial;
+    
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-
+        
         ESTADO = "Con conocimiento";
         if (ESTADO == "Sin conocimiento")
         {
@@ -58,16 +60,20 @@ public class AprenderLanzar : MonoBehaviour
         if (casosEntrenamiento.numInstances() < 10)
         {
 
-            for (float Fx = -20f; Fx <= 20;Fx = Fx + 0.1f)
+            for (float Fx = -5f; Fx <= 100f;Fx = Fx + 2f)
             {
-                for (float disGoombaX = -5; disGoombaX <= 5; disGoombaX += 0.20f)
+                for (float disGoombaX = -4; disGoombaX <= 4; disGoombaX += 1f)
                 {
-                    for (float disGoombaZ = 5 ; disGoombaZ <= 15; disGoombaZ += 0.25f)
+                    for (float disGoombaZ = 2 ; disGoombaZ <= 12; disGoombaZ += 1f)
                     {
-                        
-                        ShellInstance = Instantiate(ShellPrefab, transform.position, transform.rotation);
                         GoombaInstance = Instantiate(GoombaPrefab, new Vector3(disGoombaX, 0.5f, disGoombaZ), Quaternion.Euler(0, 45, 0));
-                        transform.LookAt(GoombaInstance.transform);
+                        transform.LookAt(GoombaInstance.transform.position);
+
+                        Vector3 forwardGoomba = GoombaInstance.transform.forward;
+                        Vector3 forwardLanzador = transform.forward;
+                        float angulo = Vector3.Angle(forwardGoomba, forwardLanzador);
+
+                        ShellInstance = Instantiate(ShellPrefab, transform.position, transform.rotation);
                         Rigidbody rbShell = ShellInstance.GetComponent<Rigidbody>();
                         Vector3 fuerzaZ = transform.forward * Fz;
                         Vector3 fuerzaX = transform.right * Fx;
@@ -75,7 +81,9 @@ public class AprenderLanzar : MonoBehaviour
                         
                         float time = Time.time;
                         distanciaAnterior = Vector3.Distance(ShellInstance.transform.position, GoombaInstance.transform.position);
-                        yield return new WaitUntil(() => Time.time - time > 0.01f);
+                        distanciaInicial = distanciaAnterior;
+                        
+                        yield return new WaitUntil(() => Time.time - time > Time.deltaTime);
                         
                         yield return new WaitUntil(() => seAlejen(ShellInstance, GoombaInstance));
 
@@ -84,11 +92,11 @@ public class AprenderLanzar : MonoBehaviour
                         Destroy(ShellInstance);
 
                         Instance casoAaprender = new Instance(casosEntrenamiento.numAttributes());
-                        print("ENTRENAMIENTO: con Fx " + Fx + " y distancia a enemigo X " + disGoombaX + " y distancia a enemigo Z " + disGoombaZ +" se alcanzo distancia a objetivo de " + finalDistanceToGoomba);
+                        print("ENTRENAMIENTO: con Fx " + Fx + " y distancia a enemigo  " + distanciaInicial + " y angulo a enemigo " + angulo +" se alcanzo distancia a objetivo de " + finalDistanceToGoomba);
                         casoAaprender.setDataset(casosEntrenamiento);                          
                         casoAaprender.setValue(0, Fx);                                         
-                        casoAaprender.setValue(1, disGoombaX);
-                        casoAaprender.setValue(2, disGoombaZ);
+                        casoAaprender.setValue(1, distanciaInicial);
+                        casoAaprender.setValue(2, angulo);
                         casoAaprender.setValue(3, finalDistanceToGoomba);
                         casosEntrenamiento.add(casoAaprender);                                 
                         
@@ -138,35 +146,30 @@ public class AprenderLanzar : MonoBehaviour
 
     void FixedUpdate()                                                                                 
     {
-        if ((ESTADO == "Con conocimiento") && !lanzado && Time.time > 0.5)
+        
+        if ((ESTADO == "Con conocimiento") && hayEnemigo && Goomba!=null && Vector3.Distance(Goomba.transform.position, transform.position)<15)
         {
-            float mejorDistanciaFinal=300;
-            float mejorFx=0;
-            transform.LookAt(Goomba.transform);
-            for (float Fx =-20; Fx<20;Fx+=0.1f)
-            {
-                Instance casoPrueba = new Instance(casosEntrenamiento.numAttributes());
-                casoPrueba.setDataset(casosEntrenamiento);
-                casoPrueba.setValue(0, Fx);
-                casoPrueba.setValue(1, Goomba.transform.position.x - transform.parent.position.x );
-                casoPrueba.setValue(2, Goomba.transform.position.z - transform.parent.position.z );
-                float distanciaFinal = (float)saberPredecirDistanciaFinal.classifyInstance(casoPrueba);
-
-                if (distanciaFinal < mejorDistanciaFinal)
-                {
-                    mejorDistanciaFinal = distanciaFinal;
-                    mejorFx = Fx;
-                }
-
-            }
             
+            transform.LookAt(Goomba.transform.position);
+            
+            Instance casoPrueba = new Instance(casosEntrenamiento.numAttributes());
+            casoPrueba.setDataset(casosEntrenamiento);
+
+            Vector3 forwardGoomba = Goomba.transform.forward;
+            Vector3 forwardLanzador = transform.forward;
+            float angulo = Vector3.Angle(forwardGoomba, forwardLanzador);
+
+            casoPrueba.setValue(1, Vector3.Distance(transform.position, Goomba.transform.position));
+            casoPrueba.setValue(2, angulo);
+            casoPrueba.setValue(3, 0);
+            float mejorFx = (float)saberPredecirFx.classifyInstance(casoPrueba);
 
             ShellInstance = Instantiate(ShellPrefab, transform.position, transform.rotation);
             Rigidbody rbShell = ShellInstance.GetComponent<Rigidbody>();
             Vector3 fuerzaZ = transform.forward * Fz;
             Vector3 fuerzaX = transform.right * mejorFx;
             rbShell.AddForce(fuerzaX + fuerzaZ);
-            lanzado = true;
+            hayEnemigo = false;
             print("DECISION REALIZADA: Fx " + mejorFx);
             
         }
