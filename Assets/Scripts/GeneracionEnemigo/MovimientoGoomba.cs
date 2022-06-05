@@ -70,7 +70,7 @@ public class MovimientoGoomba : MonoBehaviour
     {
         if (collision.transform.tag == "Pared" || collision.transform.tag == "Shell")
         {
-            Destroy(this);
+            Destroy(gameObject);
         }
         
     }

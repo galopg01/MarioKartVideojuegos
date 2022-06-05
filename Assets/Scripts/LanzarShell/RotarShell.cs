@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class RotarShell : MonoBehaviour
 {
    
@@ -58,5 +59,13 @@ public class RotarShell : MonoBehaviour
         }
 
         return distancia;
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.transform.tag == "Enemy")
+        {
+            Destroy(gameObject);
+        }
+
     }
 }
