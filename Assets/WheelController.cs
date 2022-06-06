@@ -127,6 +127,14 @@ public class WheelController : MonoBehaviour
             rb.mass=1000;
         }
 
+        /*if (obj.gameObject.tag.Equals("Boost"))
+        {
+            //maxSpeed = 1;
+            //rb.constraints = RigidbodyConstraints.FreezeRotation;
+            maxSpeed = 10;
+            rb.AddForce(transform.forward * 50, ForceMode.VelocityChange);
+        }*/
+
     }
 
     private void OnTriggerStay(Collider obj){
@@ -134,8 +142,18 @@ public class WheelController : MonoBehaviour
         if (obj.gameObject.tag.Equals("Boost"))
         {
             maxSpeed = 1;
-            rb.constraints = RigidbodyConstraints.FreezeRotation;
-            rb.AddForce(transform.forward * 3, ForceMode.VelocityChange);
+            //rb.constraints = RigidbodyConstraints.FreezeRotation;
+            rb.AddForce(transform.forward * 1, ForceMode.VelocityChange);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag.Equals("Boost"))
+        {
+            maxSpeed = 7;
+            //rb.constraints = RigidbodyConstraints.FreezeRotation;
+            rb.AddForce(transform.forward * 2, ForceMode.VelocityChange);
         }
     }
 }

@@ -165,6 +165,7 @@ public class AprendizGiroDotYVelocidad : MonoBehaviour
     }
     void FixedUpdate()                                                                                 //DURANTEL EL JUEGO: Aplica lo aprendido para lanzar a la canasta
     {
+        Time.timeScale = Velocidad_Simulacion;
         if ((ESTADO == "Con conocimiento") && Time.time > 0.5)
         {
             float menorDistancia = 1e9f;
@@ -212,7 +213,7 @@ public class AprendizGiroDotYVelocidad : MonoBehaviour
                 wheelController.speed = mejorAceleracion;
                 wheelController.turn = mejorGiro;
 
-                //print("DECISION REALIZADA: Se ejerció aceleración " + mejorAceleracion + " y giro " + mejorGiro);
+                print("DECISION REALIZADA: Se ejerció aceleración " + mejorAceleracion + " y giro " + mejorGiro);
                 esperando = false;
             }
         }
