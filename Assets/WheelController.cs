@@ -127,8 +127,15 @@ public class WheelController : MonoBehaviour
             rb.mass=1000;
         }
 
-        if (obj.gameObject.name.Equals("Cuesta")){ 
-            rb.mass=200;
+    }
+
+    private void OnTriggerStay(Collider obj){
+
+        if (obj.gameObject.tag.Equals("Boost"))
+        {
+            maxSpeed = 2;
+            rb.constraints = RigidbodyConstraints.FreezeRotation;
+            rb.AddForce(transform.forward * 30, ForceMode.VelocityChange);
         }
     }
 }
