@@ -122,5 +122,13 @@ public class WheelController : MonoBehaviour
                 estado="Volando";
             }
         }
+
+        if (obj.gameObject.name.Equals("Rampa3")){ 
+            rb.mass=1000;
+        }
+
+        if (obj.gameObject.name.Equals("Cuesta")){ 
+            rb.mass=400;
+        }
     }
 }
