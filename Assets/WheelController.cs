@@ -128,7 +128,7 @@ public class WheelController : MonoBehaviour
         }
 
         if (obj.gameObject.name.Equals("Cuesta")){ 
-            rb.mass=400;
+            rb.mass=200;
         }
     }
 }

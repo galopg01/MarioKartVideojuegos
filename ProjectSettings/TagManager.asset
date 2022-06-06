@@ -10,6 +10,7 @@ TagManager:
   - Shell
   - Enemy
   - Rampita
+  - Boost
   layers:
   - Default
   - TransparentFX
