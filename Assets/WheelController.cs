@@ -133,9 +133,9 @@ public class WheelController : MonoBehaviour
 
         if (obj.gameObject.tag.Equals("Boost"))
         {
-            maxSpeed = 2;
+            maxSpeed = 1;
             rb.constraints = RigidbodyConstraints.FreezeRotation;
-            rb.AddForce(transform.forward * 30, ForceMode.VelocityChange);
+            rb.AddForce(transform.forward * 3, ForceMode.VelocityChange);
         }
     }
 }
