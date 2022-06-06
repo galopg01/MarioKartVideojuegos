@@ -127,6 +127,11 @@ public class WheelController : MonoBehaviour
             rb.mass=1000;
         }
 
+        if (obj.gameObject.name.Equals("Rampa4")){ 
+            rb.mass=2000;
+            maxSpeed=2;
+        }
+
         /*if (obj.gameObject.tag.Equals("Boost"))
         {
             //maxSpeed = 1;
