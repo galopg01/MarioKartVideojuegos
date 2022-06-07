@@ -146,8 +146,11 @@ public class AprenderLanzar : MonoBehaviour
 
     void FixedUpdate()                                                                                 
     {
-        
-        if ((ESTADO == "Con conocimiento") && hayEnemigo && Goomba!=null && Vector3.Distance(Goomba.transform.position, transform.position)<15)
+        if (Goomba != null)
+        {
+            transform.LookAt(Goomba.transform.position);
+        }
+        if ((ESTADO == "Con conocimiento") && hayEnemigo && Goomba!=null && Vector3.Distance(Goomba.transform.position, transform.position)<15 && objetivoDelante())
         {
             
             transform.LookAt(Goomba.transform.position);
@@ -178,5 +181,15 @@ public class AprenderLanzar : MonoBehaviour
        
             
         
+    }
+
+    private bool objetivoDelante()
+    {
+        float angulo = Vector3.Angle(transform.forward, transform.parent.transform.forward);
+        if (angulo > 180)
+        {
+            angulo = 360 - angulo;
+        }
+        return angulo < 80;
     }
 }
