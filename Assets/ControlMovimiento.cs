@@ -51,13 +51,11 @@ public class ControlMovimiento : MonoBehaviour{
         Vector3 vectorHaciaObjetivo = posObjetivo - transform.position;
         float velocidadRelativa= ObjetoPerseguido.GetComponent<Rigidbody>().velocity.magnitude - rbKart.velocity.magnitude;
         float angulo = Vector3.Angle(vectorHaciaObjetivo, GetComponent<Rigidbody>().velocity);
+        
         if ((velocidadRelativa>0) || (angulo < 70)){
             float factor = vectorHaciaObjetivo.magnitude * rapidezHorizontal;
             rbKart.AddForce(vectorHaciaObjetivo * propulsionFrontal * factor);
             rbKart.transform.LookAt(new Vector3(posObjetivo.x, rbKart.transform.position.y, posObjetivo.z));
-        } /* else { //Ir frenando... Tarea: cambiar la siguiente instrucción por rb.addForce... con el mismo efecto.
-            rbKart.velocity = rbKart.velocity * 0.95f;
-            rbKart.transform.LookAt(new Vector3(posObjetivo.x, rbKart.transform.position.y, posObjetivo.z));
-        } */
+        } 
     }
 }
